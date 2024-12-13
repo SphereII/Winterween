@@ -1,0 +1,139 @@
+<configs>
+
+<!-- Zommbieish things  -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesNight']/text()" delim="\n" op="add" >
+		Abominable,3
+		fantasyNightmare03Flying,0.10
+	</csv>  
+	  
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesAll']/text()" delim="\n" op="add" >
+		Snowman,5
+		Snowcop,3
+	</csv> 
+	  
+	<append xpath="/entitygroups" >
+	
+    <entitygroup name="sleeperSphereII_Nightmares_Stage1">
+      fantasyNightmare01
+      fantasyNightmare02
+      fantasyNightmare03
+      fantasyNightmare04
+      fantasyNightmare05
+      fantasyNightmare06
+    </entitygroup>
+
+    <entitygroup name="Nightmares">
+      fantasyNightmare01
+      fantasyNightmare02
+      fantasyNightmare03
+      fantasyNightmare04
+      fantasyNightmare05
+      fantasyNightmare06
+    </entitygroup>
+
+    <entitygroup name="FlyingNightmares">
+      fantasyNightmare03Flying
+      animalSnowTornado_X
+    </entitygroup>
+  </append>
+  
+ 	  
+<!-- Animals   -->
+
+
+	  <csv xpath="/entitygroups/entitygroup[ starts-with(@name, 'WildGameForest')]/text()" delim="\n" op="add" >
+		SealCub,5
+		animalGoat
+		animalPenguin
+	  </csv>
+	  <csv xpath="/entitygroups/entitygroup[ starts-with(@name, 'EnemyAnimals')]/text()" delim="\n" op="add" >
+		DeadSnake,15
+		Polarbear,10 
+		DeadHead,15
+	  </csv>
+	<!--
+		<csv xpath="/entitygroups/entitygroup[@name='AnimalsSmall']/text()" delim="\n" op="add" >  
+		animalPug,.5
+		animalBeagle,.5
+		animalPenguin
+	</csv>
+		<csv xpath="/entitygroups/entitygroup[@name='AnimalsFarm']/text()" delim="\n" op="add" >
+		animalGoat
+		animalWolfhound,.25
+		animalPug,.25
+		animalBeagle,.25
+		animalPenguin
+	</csv>
+	-->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']/text()" delim="\n" op="add" >
+		animalWulf,10
+		animalWolfhound,10
+		animalSnowSwarm_X,20
+		animalSnowTornado_X,30
+		animalSnowShark_X,10
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']/text()" delim="\n" op="add" >
+		animalWulf,10
+		animalWolfhound,10
+		animalSnowSwarm_X,20
+		animalSnowTornado_X,30
+		animalSnowShark_X,10
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']/text()" delim="\n" op="add" >
+		animalWulf,3
+		animalPug,3
+		animalBeagle,3
+		animalWolfhound,3
+		animalSnowSwarm_X,20
+		animalSnowTornado_X,30
+		animalSnowShark_X,10
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForestAny']/text()" delim="\n" op="add" >
+		animalBanditWolf,10
+		animalSnowSwarm_X,20
+		animalSnowTornado_X,30
+		animalSnowShark_X,3
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/text()" delim="\n" op="add" >
+		animalBanditWolf,10
+		animalSnowSwarm_X,20
+		animalSnowTornado_X,30
+		animalSnowShark_X,5		
+	</csv>
+
+	<csv xpath="/entitygroups/entitygroup[@name='WolfGroup']/text()" delim="\n" op="add" >
+		animalWulf
+		animalBanditWolf
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='WolfPack']/text()" delim="\n" op="add" >
+		animalWulf
+		animalBanditWolf
+	</csv>
+
+<!--  Cave dwellers  -->	
+
+  <append xpath="/entitygroups">
+    <entitygroup name="EnemyAnimalsCaves">
+      animalSpider01,10
+      animalSpider02,10
+      animalSpider03,10
+	   zombieMannequinFemale,8
+    </entitygroup>
+  </append> 
+  
+  <append xpath="/entitygroups">
+    <entitygroup name="EnemyAnimalsCaves">
+      animalSpider01,10
+      animalSpider02,10
+      animalSpider03,10
+    </entitygroup>
+  </append>
+
+ 
+  
+  	
+</configs>

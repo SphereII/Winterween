@@ -1,0 +1,45 @@
+﻿<configs>
+  <!-- filluptorg doesn't have a depth, so we'll only target the top level, which has a depth -->
+  <set xpath="/worldgeneration/biomes/biome//layers/layer[@depth][1]/@depth">2</set>
+  <set xpath="/worldgeneration/biomes/biome//layers/layer[@depth][1]/@blockname">terrSnow</set>
+
+  <append xpath="/worldgeneration/biomes/biome//layers/layer[@depth][1]">
+    <resource blockname="terrIce" prob="0.6500" rwgGenerationType="all" cluster="0"/>
+    <resource blockname="terrSnowTrap" prob="0.6500" rwgGenerationType="all" cluster="0"/>
+  </append>
+
+  <!-- Set all global temperatures to be the same range-->
+  <set xpath="/worldgeneration/biomes/biome/weather/Temperature/@min">32</set>
+  <set xpath="/worldgeneration/biomes/biome/weather/Temperature/@max">0</set>
+
+  <!-- Remove all surface biome decorations -->
+  <remove xpath="/worldgeneration/biomes/biome//decorations/decoration" />
+
+
+  <!-- now that we've cleaned it up, let's lay down our own decorations -->
+  <append xpath="/worldgeneration/biomes/biome//decorations">
+    <decoration type="block" blockname="cntBirdnest" prob="0.0003" />
+    <decoration type="block" blockname="rock05" prob =".0002"/>
+    <decoration type="block" blockname="rock06" prob =".0002"/>
+    <decoration type="block" blockname="rock07" prob =".0002"/>
+    <decoration type="block" blockname="treeSnowyDeadBush" prob="0.0003" rotatemax="7" />
+    <decoration type="block" blockname="treeSnowyGrassDiagonal" prob="0.0004" />
+    <decoration type="block" blockname="snowFog" prob="0.0004" />
+
+  </append>
+
+  <!-- Clear out the roads -->
+  <!-- Remove the POIs, and add in our own, since we can't recursively remove -->
+
+  <remove xpath="/worldgeneration/pois/poi[@name='City Asphalt']"/>
+  <remove xpath="/worldgeneration/pois/poi[@name='Country Road Asphalt']"/>
+  <remove xpath="/worldgeneration/pois/poi[@name='Road Gravel']"/>
+
+  <append xpath="/worldgeneration/pois">
+    <poi name="City Asphalt" poimapcolor="#1" blockname="terrRoad"/>
+    <poi name="Country Road Asphalt" poimapcolor="#2" blockname="terrRoad"/>
+    <poi name="Road Gravel" poimapcolor="#3" blockname="terrRoad"/>
+  </append>
+
+  
+</configs>

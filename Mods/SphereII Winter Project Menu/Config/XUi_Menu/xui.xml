@@ -1,0 +1,10 @@
+<configs>
+  <!-- If this is enabled, then the menu background will show up in-game. Not cool.
+  
+  <append xpath="/xui/ruleset[@name='default']/window_group">
+    <window name="menuBackground" anchor="RightTop" />
+  </append>
+  -->
+  <remove xpath="/xui/ruleset[@name='default']/window_group[@name='toolTip']" />
+
+</configs>

@@ -1,0 +1,12 @@
+C:\Builds\7DaysToDie\Mods\SphereII Winter Project\obj\Debug\SphereII Winter Project.csproj.AssemblyReference.cache
+C:\Builds\7DaysToDie\Mods\SphereII Winter Project\obj\Debug\SphereII Winter Project.csproj.CoreCompileInputs.cache
+C:\Builds\7DaysToDie\Mods\SphereII Winter Project\obj\Debug\SphereII_Winter_Project.dll
+C:\Builds\7DaysToDie\Mods\SphereII Winter Project\obj\Debug\SphereII_Winter_Project.pdb
+C:\Builds\7DaysToDie\Mods\SphereII Winter Project\SphereII_Winter_Project.dll
+C:\Builds\7DaysToDie\Mods\SphereII Winter Project\SphereII_Winter_Project.pdb
+C:\Builds\7DaysToDie6\Mods\SphereII Winter Project\obj\Debug\SphereII Winter Project.csproj.AssemblyReference.cache
+C:\Builds\7DaysToDie6\Mods\SphereII Winter Project\obj\Debug\SphereII Winter Project.csproj.CoreCompileInputs.cache
+C:\Builds\7DaysToDie6\Mods\SphereII Winter Project\obj\Debug\SphereII_Winter_Project.dll
+C:\Builds\7DaysToDie6\Mods\SphereII Winter Project\obj\Debug\SphereII_Winter_Project.pdb
+C:\Builds\7DaysToDie6\Mods\SphereII Winter Project\SphereII_Winter_Project.dll
+C:\Builds\7DaysToDie6\Mods\SphereII Winter Project\SphereII_Winter_Project.pdb

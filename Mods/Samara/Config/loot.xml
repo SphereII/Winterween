@@ -1,0 +1,34 @@
+﻿<configs>
+
+  <insertBefore xpath="/lootcontainers/lootgroup[@name='groupJunk03']">
+    <lootgroup name="groupSamaraLoot">
+      <item name="SamaraMorganHorse01" loot_prob_template="veryLow"/>
+      <item name="SamaraMorganHorse02" loot_prob_template="veryLow"/>
+      <item name="SamaraMorganHorse03" loot_prob_template="veryLow"/>
+      <item name="SamaraMorganHorse04" loot_prob_template="veryLow"/>
+      <item name="SamaraPostCard01" loot_prob_template="veryLow"/>
+      <item name="SamaraPostCard02" loot_prob_template="veryLow"/>
+      <item name="SamaraPostCard03" loot_prob_template="veryLow"/>
+      <item name="SamaraPostCard04" loot_prob_template="veryLow"/>
+      <item name="SamaraMemories01" loot_prob_template="veryLow"/>
+      <item name="SamaraMemories02" loot_prob_template="veryLow"/>
+    </lootgroup>
+
+    <lootgroup name="SamaraMorganDiary01">
+      <item name="SamaraMorganDiary01" />
+    </lootgroup>
+
+    <lootcontainer name="SamaraMorganDiary" id="665" count="1" size="1,1" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate">
+      <item name="SamaraMorganDiary01" count="1"/>
+    </lootcontainer>
+
+    <lootcontainer name="SamaraMorganBody" id="666" count="1" size="1,1" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate">
+      <item name="SamaraMorganBody" count="1"/>
+    </lootcontainer>
+  </insertBefore>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupJunk03']">
+    <item group="groupSamaraLoot" prob="0.06"/>
+  </append>
+
+</configs>

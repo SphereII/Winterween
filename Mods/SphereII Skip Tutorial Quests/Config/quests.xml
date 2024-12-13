@@ -1,0 +1,18 @@
+﻿<configs>
+
+	<insertBefore xpath="/quests/quest[@id='quest_whiteRiverCitizen1']">
+		<quest id="quest_winterween_startup">
+			<property name="group_name_key" value="quest_WhiteRiverCitizen"/>
+			<property name="name_key" value="quest_WhiteRiverCitizen1"/>
+			<property name="subtitle_key" value="quest_WhiteRiverCitizen1_subtitle"/>
+			<property name="description_key" value="quest_WhiteRiverCitizen1_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+	
+			<reward type="SkillPoints" value="4" chainreward="true"/>
+		<reward type="Quest" id="quest_whiteRiverCitizen1"/>
+		</quest>
+	</insertBefore>
+</configs>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <DisplayName value="SphereII Winter Project Menu" />
+	    <Name value="sphereii-winter-project-menu_sphereii" />
+    <Description value="A modlet that extends SMX Main Menu for the Winter Project" />
+    <Author value="sphereii" />
+    <Version value="20.6.1.1" />
+
+</xml>
