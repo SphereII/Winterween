@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="DifficultyTier" value="0" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="TraderArea" value="False" />
+  <property name="PrefabSize" value="42, 25, 42" />
+  <property name="RotationToFaceNorth" value="2" />
+  <property name="Zoning" value="none" />
+  <property name="YOffset" value="-3" />
+  <property name="Tags" value="gateway" />
+  <property name="SleeperVolumeSize" value="15, 6, 15" />
+  <property name="SleeperVolumeStart" value="2, 3, 4" />
+  <property name="SleeperVolumeGroupId" value="0" />
+  <property name="SleeperVolumeGroup" value="GroupGenericZombie,1,1" />
+  <property name="SleeperIsLootVolume" value="False" />
+  <property name="SleeperIsQuestExclude" value="False" />
+  <property name="SleeperVolumeFlags" value="0" />
+  <property name="POIMarkerSize" value="5, 1, 5#5, 1, 1#5, 2, 2#7, 13, 2" />
+  <property name="POIMarkerStart" value="26, 5, 23#17, 3, 1#17, 3, 14#16, 2, -2" />
+  <property name="POIMarkerGroup" value="campsite,spikes,targets,driveway" />
+  <property name="POIMarkerTags" value="###gateway" />
+  <property name="POIMarkerType" value="PartSpawn,PartSpawn,PartSpawn,PartSpawn" />
+  <property name="POIMarkerPartToSpawn" value="part_zztong_campsite_01,part_zztong_spikes_wood5,part_zztong_targets_02,part_zztong_driveway_gateway_07" />
+  <property name="POIMarkerPartRotations" value="0,0,0,2" />
+  <property name="POIMarkerPartSpawnChance" value="0.6,0.1,0.1,1" />
+  <property name="SleeperVolumeTriggeredBy" value=" " />
+  <property class="Stats">
+    <property name="TotalVertices" value="150143" />
+    <property name="TotalTriangles" value="108487" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="144864" />
+      <property name="Triangles" value="105426" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="5279" />
+      <property name="Triangles" value="3061" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+  </property>
+  <property class="IndexedBlockOffsets">
+    <property class="quest_wood">
+      <property name="0" value="39, 3, 37" />
+      <property name="1" value="38, 4, 38" />
+      <property name="2" value="38, 3, 39" />
+    </property>
+    <property class="quest_wood_trees">
+      <property name="0" value="37, 4, 7" />
+    </property>
+    <property class="challenge_polymers">
+      <property name="0" value="25, 5, 32" />
+    </property>
+    <property class="POILight">
+      <property name="0" value="14, 5, 16" />
+    </property>
+    <property class="quest_stone_boulder">
+      <property name="0" value="37, 4, 34" />
+    </property>
+  </property>
+</prefab>

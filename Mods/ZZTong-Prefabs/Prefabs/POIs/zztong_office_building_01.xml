@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="AllowTopSoilDecorations" value="True" />
+  <property name="TraderArea" value="False" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="QuestTags" value="clear, fetch, infested" />
+  <property name="DifficultyTier" value="3" />
+  <property name="Zoning" value="none" />
+  <property name="RotationToFaceNorth" value="2" />
+  <property name="YOffset" value="-6" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="EditorGroups" value="commercial" />
+  <property name="SleeperVolumeStart" value="10, 33, 9#10, 26, 9#10, 19, 9#10, 12, 9#13, 6, 9#22, 2, 25#10, 26, 29#27, 19, 29#10, 19, 29" />
+  <property name="SleeperVolumeSize" value="32, 9, 32#32, 7, 20#32, 7, 20#32, 7, 32#25, 6, 28#9, 5, 8#32, 7, 12#15, 7, 12#15, 7, 12" />
+  <property name="SleeperVolumeGroup" value="ZomBusinessman,9,10,ZomBusinessman,4,5,ZomBusinessman,5,5,ZomBusinessman,4,5,GroupGenericZombie,3,3,ZomJanitorOnly,2,2,GroupGenericZombie,4,4,GroupGenericZombie,2,2,GroupGenericZombie,2,2" />
+  <property name="SleeperVolumeGameStageAdjust" value=",,,," />
+  <property name="SleeperIsLootVolume" value="False,False,False,False,False,False,False,False,False" />
+  <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False,False,False,False" />
+  <property name="SleeperVolumeFlags" value="0,0,0,0,0,0,0,0,0" />
+  <property name="SleeperVolumeGroupId" value="0,0,0,0,0,0,0,0,0" />
+  <property name="ShowQuestClearCount" value="2" />
+  <property name="Tags" value="commercial" />
+  <property name="PrefabSize" value="42, 41, 42" />
+  <property name="POIMarkerSize" value="2, 1, 1#4, 1, 1#3, 4, 3#3, 4, 3" />
+  <property name="POIMarkerStart" value="8, 6, 39#24, 6, 7#36, 6, 4#36, 6, 4" />
+  <property name="POIMarkerGroup" value="spikes1,spikes2,sculpture1,sculpture2" />
+  <property name="POIMarkerTags" value="##decor#decor" />
+  <property name="POIMarkerType" value="PartSpawn,PartSpawn,PartSpawn,PartSpawn" />
+  <property name="POIMarkerPartToSpawn" value="part_zztong_spikes_wood2,part_zztong_spikes_wood4,part_sculpture_01,part_sculpture_02" />
+  <property name="POIMarkerPartRotations" value="0,0,2,0" />
+  <property name="POIMarkerPartSpawnChance" value="0.4,0.2,0.4,0.4" />
+  <property name="SleeperVolumeTriggeredBy" value=" # # # # # # # # " />
+  <property class="IndexedBlockOffsets">
+    <property class="challenge_gore">
+      <property name="0" value="30, 35, 22" />
+      <property name="1" value="26, 40, 25" />
+      <property name="2" value="28, 7, 26" />
+      <property name="3" value="24, 17, 27" />
+      <property name="4" value="25, 10, 27" />
+      <property name="5" value="28, 31, 27" />
+      <property name="6" value="24, 24, 28" />
+    </property>
+    <property class="quest_wood_trees">
+      <property name="0" value="5, 6, 13" />
+    </property>
+    <property class="challenge_polymers">
+      <property name="0" value="40, 8, 28" />
+      <property name="1" value="40, 8, 33" />
+    </property>
+    <property class="Rally">
+      <property name="0" value="13, 7, 2" />
+    </property>
+    <property class="quest_wood">
+      <property name="0" value="38, 6, 9" />
+      <property name="1" value="40, 6, 9" />
+    </property>
+    <property class="quest_feather">
+      <property name="0" value="40, 21, 24" />
+    </property>
+    <property class="POILight">
+      <property name="0" value="38, 29, 25" />
+      <property name="1" value="38, 21, 26" />
+      <property name="2" value="37, 9, 31" />
+      <property name="3" value="38, 15, 33" />
+      <property name="4" value="38, 29, 33" />
+    </property>
+    <property class="challenge_mech_parts">
+      <property name="0" value="37, 14, 21" />
+      <property name="1" value="37, 14, 24" />
+      <property name="2" value="37, 28, 25" />
+      <property name="3" value="37, 14, 28" />
+      <property name="4" value="37, 28, 28" />
+      <property name="5" value="37, 7, 29" />
+      <property name="6" value="37, 21, 30" />
+      <property name="7" value="38, 7, 31" />
+      <property name="8" value="37, 21, 32" />
+      <property name="9" value="37, 14, 33" />
+      <property name="10" value="37, 21, 34" />
+      <property name="11" value="37, 28, 34" />
+    </property>
+    <property class="TraderOnOff">
+      <property name="0" value="21, 35, 21" />
+      <property name="1" value="27, 35, 21" />
+      <property name="2" value="22, 7, 23" />
+      <property name="3" value="25, 7, 23" />
+      <property name="4" value="25, 14, 23" />
+      <property name="5" value="25, 21, 23" />
+      <property name="6" value="25, 28, 23" />
+      <property name="7" value="25, 35, 23" />
+      <property name="8" value="23, 3, 29" />
+      <property name="9" value="31, 14, 29" />
+      <property name="10" value="31, 21, 29" />
+      <property name="11" value="31, 28, 29" />
+      <property name="12" value="34, 7, 30" />
+      <property name="13" value="34, 28, 31" />
+      <property name="14" value="31, 7, 33" />
+    </property>
+    <property class="challenge_sinks">
+      <property name="0" value="24, 14, 37" />
+      <property name="1" value="24, 21, 37" />
+      <property name="2" value="24, 28, 37" />
+      <property name="3" value="27, 14, 37" />
+      <property name="4" value="27, 21, 37" />
+      <property name="5" value="27, 28, 37" />
+    </property>
+    <property class="challenge_leather">
+      <property name="0" value="24, 35, 11" />
+    </property>
+    <property class="challenge_steel">
+      <property name="0" value="26, 36, 20" />
+    </property>
+    <property class="FetchContainer">
+      <property name="0" value="28, 28, 37" />
+    </property>
+  </property>
+  <property class="Stats">
+    <property name="TotalVertices" value="1300369" />
+    <property name="TotalTriangles" value="472391" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="1144225" />
+      <property name="Triangles" value="381136" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="147470" />
+      <property name="Triangles" value="80199" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="2696" />
+      <property name="Triangles" value="1492" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="5978" />
+      <property name="Triangles" value="9564" />
+    </property>
+  </property>
+</prefab>

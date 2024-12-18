@@ -1,0 +1,100 @@
+﻿<worldgeneration>
+
+    <!-- **************************************************************
+        SNOW BIOME
+    *************************************************************** -->
+
+	<append xpath="/worldgeneration/biomes/biome[@name='snow']/decorations">
+		<decoration type="prefab" name="zztong_hunters_trap_01" onslopes="true" prob=".001" />
+		<decoration type="prefab" name="zztong_hunters_trap_02" onslopes="true" prob=".001" />
+		<decoration type="prefab" name="zztong_tent_02" onslopes="true" prob=".0001" />
+		<decoration type="prefab" name="zztong_ruined_horde_base_02" prob=".001" />
+        <decoration type="prefab" name="zztong_rubble_10" onslopes="true" prob=".002" />
+        <decoration type="prefab" name="zztong_rubble_11" onslopes="true" prob=".002" />
+        <decoration type="prefab" name="zztong_rubble_12" onslopes="true" prob=".002" />
+		<decoration type="prefab" name="zztong_buried_treasure_01" onslopes="true" prob=".001" />
+	</append>
+
+    <!-- **************************************************************
+        PINE FOREST
+    *************************************************************** -->
+
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/decorations">
+		<decoration type="prefab" name="zztong_hunters_trap_01" onslopes="true" prob=".001" />
+		<decoration type="prefab" name="zztong_hunters_trap_02" onslopes="true" prob=".001" />
+		<decoration type="prefab" name="zztong_tent_04" onslopes="true" prob=".001" />
+		<decoration type="prefab" name="zztong_tent_05" onslopes="true" prob=".0002" />
+		<decoration type="prefab" name="zztong_ruined_horde_base_01" prob=".001" />
+		<decoration type="prefab" name="zztong_ruined_horde_base_02" prob=".001" />
+		<decoration type="prefab" name="zztong_tete1805_deco_01" prob=".001" />
+        <decoration type="prefab" name="zztong_grave_01" onslopes="true" prob=".001" />
+        <decoration type="prefab" name="zztong_grave_02" onslopes="true" prob=".001" />
+        <decoration type="prefab" name="zztong_rubble_16" onslopes="true" prob=".001" />
+        <decoration type="prefab" name="zztong_rubble_17" onslopes="true" prob=".001" />
+        <decoration type="prefab" name="zztong_rubble_18" onslopes="true" prob=".001" />
+        <decoration type="prefab" name="zztong_rubble_19" onslopes="true" prob=".001" />
+        <decoration type="prefab" name="zztong_rubble_20" onslopes="true" prob=".001" />
+		<decoration type="prefab" name="zztong_buried_treasure_01" onslopes="true" prob=".0001" />
+	</append>
+
+    <!-- **************************************************************
+        DESERT
+    *************************************************************** -->
+
+	<append xpath="/worldgeneration/biomes/biome[@name='desert']/decorations">
+		<decoration type="prefab" name="zztong_hunters_trap_01" onslopes="true" prob=".001" />
+		<decoration type="prefab" name="zztong_hunters_trap_02" onslopes="true" prob=".001" />
+		<decoration type="prefab" name="zztong_tent_01" onslopes="true" prob=".001" />
+		<decoration type="prefab" name="zztong_tent_03" onslopes="true" prob=".001" />
+		<decoration type="prefab" name="zztong_ruined_horde_base_01" prob=".0001" />
+        <decoration type="prefab" name="zztong_grave_01" onslopes="true" prob=".003" />
+        <decoration type="prefab" name="zztong_grave_02" onslopes="true" prob=".003" />
+        <decoration type="prefab" name="zztong_rubble_10" onslopes="true" prob=".001" />
+        <decoration type="prefab" name="zztong_rubble_11" onslopes="true" prob=".001" />
+        <decoration type="prefab" name="zztong_rubble_12" onslopes="true" prob=".001" />
+        <decoration type="prefab" name="zztong_rubble_13" onslopes="true" prob=".004" />
+        <decoration type="prefab" name="zztong_rubble_14" onslopes="true" prob=".004" />
+        <decoration type="prefab" name="zztong_rubble_15" onslopes="true" prob=".004" />
+        <decoration type="prefab" name="zztong_rubble_16" onslopes="true" prob=".002" />
+        <decoration type="prefab" name="zztong_rubble_17" onslopes="true" prob=".002" />
+        <decoration type="prefab" name="zztong_mystery_01" onslopes="true" prob=".002" />
+        <decoration type="prefab" name="zztong_mystery_02" onslopes="true" prob=".002" />
+        <decoration type="prefab" name="zztong_mystery_03" onslopes="true" prob=".001" />
+        <decoration type="prefab" name="zztong_cactus_01" onslopes="true" prob=".007" />
+        <decoration type="prefab" name="zztong_cactus_02" onslopes="true" prob=".007" />
+        <decoration type="prefab" name="zztong_cactus_03" onslopes="true" prob=".007" />
+        <decoration type="prefab" name="zztong_cactus_04" onslopes="true" prob=".007" />
+        <decoration type="prefab" name="zztong_cactus_05" onslopes="true" prob=".007" />
+        <decoration type="prefab" name="zztong_oil_pump_01" prob=".001" />
+		<decoration type="prefab" name="zztong_buried_treasure_01" onslopes="true" prob=".001" />
+	</append>
+
+    <!-- **************************************************************
+        WASTELAND
+    *************************************************************** -->
+
+	<append xpath="/worldgeneration/biomes/biome[@name='wasteland']/decorations">
+		<decoration type="prefab" name="zztong_rubble_01" onslopes="true" prob=".01" />
+		<decoration type="prefab" name="zztong_rubble_02" onslopes="true" prob=".01" />
+		<decoration type="prefab" name="zztong_rubble_03" onslopes="true" prob=".01" />
+		<decoration type="prefab" name="zztong_rubble_04" onslopes="true" prob=".01" />
+		<decoration type="prefab" name="zztong_rubble_05" onslopes="true" prob=".01" />
+		<decoration type="prefab" name="zztong_rubble_06" onslopes="true" prob=".01" />
+		<decoration type="prefab" name="zztong_rubble_07" onslopes="true" prob=".01" />
+		<decoration type="prefab" name="zztong_rubble_08" onslopes="true" prob=".01" />
+		<decoration type="prefab" name="zztong_rubble_09" onslopes="true" prob=".02" />
+		<decoration type="prefab" name="zztong_rubble_21" onslopes="true" prob=".02" />
+		<decoration type="prefab" name="zztong_rubble_22" onslopes="true" prob=".02" />
+		<decoration type="prefab" name="zztong_rubble_23" onslopes="true" prob=".02" />
+		<decoration type="prefab" name="zztong_rubble_24" onslopes="true" prob=".02" />
+		<decoration type="prefab" name="zztong_rubble_25" onslopes="true" prob=".02" />
+		<decoration type="prefab" name="zztong_rubble_26" onslopes="true" prob=".01" />
+		<decoration type="prefab" name="zztong_rubble_27" onslopes="true" prob=".01" />
+		<decoration type="prefab" name="zztong_rubble_28" onslopes="true" prob=".01" />
+		<decoration type="prefab" name="zztong_rubble_29" onslopes="true" prob=".02" />
+		<decoration type="prefab" name="zztong_rubble_30" onslopes="true" prob=".01" />
+		<decoration type="prefab" name="zztong_rubble_31" onslopes="true" prob=".01" />
+		<decoration type="prefab" name="zztong_buried_treasure_01" onslopes="true" prob=".001" />
+	</append>
+
+</worldgeneration>
