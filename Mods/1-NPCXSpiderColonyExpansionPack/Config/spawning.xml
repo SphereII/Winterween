@@ -1,0 +1,54 @@
+<configs>
+
+	<!-- *** BIOME_SPAWNING -->
+
+	<!-- *** PINE_FOREST_SPAWNS -->
+	<append xpath="/spawning/biome[@name='pine_forest']">
+		<spawn id="adxythsd01" maxcount="1" respawndelay="1" time="Day" entitygroup="XythSpiddiesDay" notags="commercial,industrial,downtown" />
+		<spawn id="anxythsn01" maxcount="1" respawndelay="1" time="Night" entitygroup="XythSpiddiesNight" notags="commercial,industrial,downtown" />
+		<spawn id="adxythsd02" maxcount="1" respawndelay="3" time="Day" entitygroup="XythSpiddiesDay" tags="commercial,industrial" notags="downtown" />
+		<spawn id="anxythsn02" maxcount="1" respawndelay="3" time="Night" entitygroup="XythSpiddiesNight" tags="commercial,industrial" notags="downtown" />
+		<spawn id="adxythsd03" maxcount="1" respawndelay="3" time="Day" entitygroup="XythSpiddiesNight" tags="downtown" />
+		<spawn id="anxythsn03" maxcount="1" respawndelay="3" time="Night" entitygroup="XythSpiddiesNight" tags="downtown" />
+	</append>
+	
+	<!-- *** BURNT_FOREST_SPAWNS -->		
+	<append xpath="/spawning/biome[@name='burnt_forest']">
+		<spawn id="adxythsd01" maxcount="1" respawndelay="1" time="Day" entitygroup="XythSpiddiesDay" notags="commercial,industrial,downtown" />
+		<spawn id="anxythsn01" maxcount="2" respawndelay="0.5" time="Night" entitygroup="XythSpiddiesNight" notags="commercial,industrial,downtown" />
+		<spawn id="adxythsd02" maxcount="1" respawndelay="2" time="Day" entitygroup="XythSpiddiesDay" tags="commercial,industrial" notags="downtown" />
+		<spawn id="anxythsn02" maxcount="1" respawndelay="2" time="Night" entitygroup="XythSpiddiesNight" tags="commercial,industrial" notags="downtown" />
+		<spawn id="adxythsd03" maxcount="1" respawndelay="2" time="Day" entitygroup="XythSpiddiesNight" tags="downtown" />
+		<spawn id="anxythsn03" maxcount="1" respawndelay="2" time="Night" entitygroup="XythSpiddiesNight" tags="downtown" />
+	</append>
+
+	<!-- *** DESERT_SPAWNS -->	
+	<append xpath="/spawning/biome[@name='desert']">
+		<spawn id="adxythsd01" maxcount="1" respawndelay="1" time="Day" entitygroup="XythSpiddiesDay" notags="commercial,industrial,downtown" />
+		<spawn id="anxythsn01" maxcount="2" respawndelay="0.5" time="Night" entitygroup="XythSpiddiesNight" notags="commercial,industrial,downtown" />
+		<spawn id="adxythsd02" maxcount="1" respawndelay="2" time="Day" entitygroup="XythSpiddiesDay" tags="commercial,industrial" notags="downtown" />
+		<spawn id="anxythsn02" maxcount="1" respawndelay="2" time="Night" entitygroup="XythSpiddiesNight" tags="commercial,industrial" notags="downtown" />
+		<spawn id="adxythsd03" maxcount="1" respawndelay="2" time="Day" entitygroup="XythSpiddiesNight" tags="downtown" />
+		<spawn id="anxythsn03" maxcount="1" respawndelay="2" time="Night" entitygroup="XythSpiddiesNight" tags="downtown" />
+	</append>	
+
+	<!-- *** SNOW_SPAWNS -->	
+	<append xpath="/spawning/biome[@name='snow']">
+		<spawn id="adxythsd01" maxcount="1" respawndelay="1" time="Day" entitygroup="XythSpiddiesDay" notags="commercial,industrial,downtown" />
+		<spawn id="anxythsn01" maxcount="2" respawndelay="0.5" time="Night" entitygroup="XythSpiddiesNight" notags="commercial,industrial,downtown" />
+		<spawn id="adxythsd02" maxcount="1" respawndelay="2" time="Day" entitygroup="XythSpiddiesDay" tags="commercial,industrial" notags="downtown" />
+		<spawn id="anxythsn02" maxcount="1" respawndelay="2" time="Night" entitygroup="XythSpiddiesNight" tags="commercial,industrial" notags="downtown" />
+		<spawn id="adxythsd03" maxcount="1" respawndelay="2" time="Day" entitygroup="XythSpiddiesNight" tags="downtown" />
+		<spawn id="anxythsn03" maxcount="1" respawndelay="2" time="Night" entitygroup="XythSpiddiesNight" tags="downtown" />
+	</append>	
+
+	<!-- *** WASTELAND_SPAWNS -->	
+	<append xpath="/spawning/biome[@name='wasteland']">
+		<spawn id="aaxythsa01" maxcount="2" respawndelay="0.25" time="Any" entitygroup="XythSpiddiesAny" notags="commercial,industrial,downtown" />
+		<spawn id="adxythsd02" maxcount="1" respawndelay="2" time="Day" entitygroup="XythSpiddiesDay" tags="commercial,industrial" notags="downtown" />
+		<spawn id="anxythsn02" maxcount="1" respawndelay="2" time="Night" entitygroup="XythSpiddiesNight" tags="commercial,industrial" notags="downtown" />
+		<spawn id="adxythsd03" maxcount="1" respawndelay="2" time="Day" entitygroup="XythSpiddiesNight" tags="downtown" />
+		<spawn id="anxythsn03" maxcount="1" respawndelay="2" time="Night" entitygroup="XythSpiddiesNight" tags="downtown" />
+	</append>
+	
+</configs>

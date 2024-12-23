@@ -1,0 +1,23 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+animalSpider01,entityclasses,Entity,,,Spider Samantha,,,,,,,,,,,,,
+animalSpider01Feral,entityclasses,Entity,,,Feral Spider Samantha,,,,,,,,,,,,,
+animalSpider01Radiated,entityclasses,Entity,,,Radiated Spider Samantha,,,,,,,,,,,,,
+animalSpider01Mini,entityclasses,Entity,,,Mini Spider Samantha,,,,,,,,,,,,,
+animalSpider01Queen,entityclasses,Entity,,,Queen Spider Samantha,,,,,,,,,,,,,
+animalSpider02,entityclasses,Entity,,,Spider Sabrina,,,,,,,,,,,,,
+animalSpider02Feral,entityclasses,Entity,,,Feral Spider Sabrina,,,,,,,,,,,,,
+animalSpider02Radiated,entityclasses,Entity,,,Radiated Spider Sabrina,,,,,,,,,,,,,
+animalSpider02Mini,entityclasses,Entity,,,Mini Spider Sabrina,,,,,,,,,,,,,
+animalSpider02Queen,entityclasses,Entity,,,Queen Spider Sabrina,,,,,,,,,,,,,
+animalSpider03,entityclasses,Entity,,,Spider Sydney,,,,,,,,,,,,,
+animalSpider03Feral,entityclasses,Entity,,,Feral Spider Sydney,,,,,,,,,,,,,
+animalSpider03Radiated,entityclasses,Entity,,,Radiated Spider Sydney,,,,,,,,,,,,,
+animalSpider03Mini,entityclasses,Entity,,,Mini Spider Sydney,,,,,,,,,,,,,
+animalSpider03Queen,entityclasses,Entity,,,Queen Spider Sydney,,,,,,,,,,,,,
+
+spider_barn_01,POI,POIName,,x,Spider Barn,,,,,,,,,,,,,
+spider_cave_04,POI,POIName,,x,Spider Cave,,,,,,,,,,,,,
+spider_nest_01,POI,POIName,,x,Spider Nest,,,,,,,,,,,,,
+spider_remnant_downtown_filler_02,POI,POIName,,x,Spider 666,,,,,,,,,,,,,
+spider_remnant_house_04,POI,POIName,,x,Old Spider House,,,,,,,,,,,,,
