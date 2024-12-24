@@ -91,7 +91,7 @@
       <property name="AITarget-3" value="SetNearestCorpseAsTarget" data="class=EntityPlayer"/>
       <property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityNPC,0,0"/>
       <property name="AITarget-5" value=""/>
-      <property name="SoundRandomTime" value="60.0"/>
+      <property name="SoundRandomTime" value="60"/>
       <property name="SoundRandom" value="AbominableRandom" />
       <property name="SoundAlert" value="AbominableAlert" />
       <property name="SoundAttack" value="AbominableAttack" />
@@ -403,7 +403,7 @@
 				<property name="Ragdoll" data="weight=0.2"/>
 			</property>
 			<property name="WalkType" value="7"/>
-			<property name="SoundRandomTime" value="60.0"/> <!-- It will play the roam every 60/30 seconds -->
+			<property name="SoundRandomTime" value="60"/> <!-- It will play the roam every 60/30 seconds -->
 			<property name="SoundRandom" value="Enemies/Base_Zombie_Male/zombiemaleroam"/>
 			<property name="SoundAlertTime" value="25.0"/> <!-- It will play the roam every 25/12.5 seconds-->
 			<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert"/>
@@ -621,7 +621,7 @@
 			<property name="CanClimbLadders" value="false"/>
 			<property name="TimeStayAfterDeath" value="300"/>
 			<property name="DeadBodyHitPoints" value="200"/>
-			<property name="SoundRandomTime" value="10.0"/>
+			<property name="SoundRandomTime" value="10"/>
 			<property name="SoundRandom" value="SpiritSounds"/>
 			<property name="SoundAlert" value="SpiritWhispers"/>
 			<property name="SoundHurt" value="SpiritAngry"/>
@@ -675,7 +675,7 @@
 			<property name="IsEntityAnimal" value="true"/>
 			<property name="IsEnemyEntity" value="false"/> <!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 			<property name="Faction" value="animals"/>
-			<property name="SoundRandomTime" value="10.0"/>
+			<property name="SoundRandomTime" value="10"/>
 			<property name="SoundRandom" value="SpiritSounds"/>
 			<property name="SoundAlert" value="SpiritWhispers"/>
 			<property name="SoundHurt" value="SpiritAngry"/>
@@ -908,7 +908,7 @@
 			<property name="Mesh" value="#@modfolder:Resources/Swarms.unity3d?SnowSwarm2_X" /> 
 			<property name="HandItem" value="meleeHandSnowstorm" />
 			<property name="SoundRandom" value="" />
-			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundRandomTime" value="60"/>
 			<property name="SoundAlert" value=""/>
 			<property name="SoundHurt" value=""/>
 			<property name="SoundDeath" value=""/>
@@ -941,7 +941,7 @@
 			<property name="SurfaceCategory" value="earth"/>
 			<property name="Mass" value="10"/>
 			<property name="SoundRandom" value="" />
-			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundRandomTime" value="60"/>
 			<property name="SoundAlert" value=""/>
 			<property name="SoundHurt" value=""/>
 			<property name="SoundDeath" value=""/>
@@ -972,7 +972,7 @@
 			<property name="Mesh" value="#@modfolder:Resources/Swarms.unity3d?SnowTornado_X" /> 
 			<property name="HandItem" value="meleeHandSnowstorm" />
 			<property name="SoundRandom" value="" />
-			<property name="SoundRandomTime" value="60.0"/>
+			<property name="SoundRandomTime" value="60"/>
 			<property name="SoundAlert" value=""/>
 			<property name="SoundHurt" value=""/>
 			<property name="SoundDeath" value=""/>
@@ -1193,7 +1193,7 @@
 			<property name="HandItem" value="meleeHandAnimalDireWolf"/>
 			<property name="ExperienceGain" value="250"/>
 			<property name="DeadBodyHitPoints" value="100"/>
-			<property name="SoundRandomTime" value="5.0"/>
+			<property name="SoundRandomTime" value="5"/>
 			<property name="SoundRandom" value="animalhornetroam" />
 			<property name="SoundAlert" value="animalhornetalert"/>
 			<property name="SoundHurt" value="animalhornethurt"/>
