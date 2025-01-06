@@ -85,12 +85,12 @@ public class SphereII_WinterProject
         public static bool Prefix(DynamicPrefabDecorator __instance, PrefabInstance _pi)
         {
 
-            if (_pi.prefab.size.y < 11)
+            if (_pi.prefab.size.y < 5)
                 return false;
 
             // Prefabs with too great of an offset should be removed.
             // Example: Size y size 30 with an offset of -25 would only be 5 above terrain; not visible.
-            if (_pi.prefab.size.y - Math.Abs(_pi.prefab.yOffset) < 11)
+            if (_pi.prefab.size.y - Math.Abs(_pi.prefab.yOffset) < 8)
                 return false;
 
             // Keep the trader above.

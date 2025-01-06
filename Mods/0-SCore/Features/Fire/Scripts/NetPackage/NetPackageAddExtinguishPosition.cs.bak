@@ -1,17 +1,21 @@
-﻿using JetBrains.Annotations;
-using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using JetBrains.Annotations;
 
 /// <summary>
-/// Distributes the call to all clients to remove a block that is considered burning.
+/// Distributes the call to all clients to extinguish a block
 /// </summary>
 
 [UsedImplicitly]
-public class NetPackageRemoveFirePosition : NetPackage
+public class NetPackageAddExtinguishPosition : NetPackage
 {
     private Vector3i _position;
     private int _entityThatCausedIt;
 
-    public NetPackageRemoveFirePosition Setup(Vector3i position, int entityThatCausedIt)
+    public NetPackageAddExtinguishPosition Setup(Vector3i position, int entityThatCausedIt)
     {
         _position = position;
         _entityThatCausedIt = entityThatCausedIt;
@@ -20,7 +24,7 @@ public class NetPackageRemoveFirePosition : NetPackage
 
     public override void read(PooledBinaryReader br)
     {
-        _position = new Vector3i(br.ReadInt32(),  br.ReadInt32(),  br.ReadInt32());
+        _position = new Vector3i(br.ReadInt32(), br.ReadInt32(), br.ReadInt32());
         _entityThatCausedIt = br.ReadInt32();
     }
 
@@ -45,6 +49,7 @@ public class NetPackageRemoveFirePosition : NetPackage
             return;
         }
 
-        FireManager.Instance?.RemoveFire(_position);
+        FireManager.Instance.ExtinguishBlock(_position, _entityThatCausedIt);
     }
 }
+

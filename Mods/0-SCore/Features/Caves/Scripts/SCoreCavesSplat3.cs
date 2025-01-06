@@ -26,8 +26,6 @@ public static class SCoreCavesSplat3 {
     private static readonly BlockValue topCaveDecoration =
         new BlockValue((uint)Block.GetBlockByName("cntCaveCeilingRandomLootHelper").blockID);
 
-    private static readonly BlockValue terrRoad =
-        new BlockValue((uint)Block.GetBlockByName("terrRoad").blockID);
 
     private static PoiMapElement GetElement(int worldX, int worldZ) {
         var world = GameManager.Instance.World;
@@ -42,14 +40,12 @@ public static class SCoreCavesSplat3 {
         return poiForColor;
     }
 
-    
     private static bool IsRoad(PoiMapElement poiMapElement) {
         if (poiMapElement == null) return false;
         // All roads
 
         // terrGravel = 16
         // terrAsphalt = 17
-        return poiMapElement.m_BlockValue.type == terrRoad.type;
         return poiMapElement.m_BlockValue.type != 240;
 
         // just terrGravel
@@ -110,8 +106,6 @@ public static class SCoreCavesSplat3 {
         var chunkPos = chunk.GetWorldPos();
         var caveOpen = false;
         var caveCount = 0;
-        
-        Debug.Log("Splat3 Caves");
 
         for (var chunkX = 0; chunkX < 16; chunkX++)
         {
@@ -124,11 +118,20 @@ public static class SCoreCavesSplat3 {
                 var position = GetPosition(worldX, terrainHeight, worldZ);
                 var poiMapElement = flip ? GetElement(worldZ, worldX) : GetElement(worldX, worldZ);
                 if (!IsRoad(poiMapElement)) continue;
-
+                
                 // terrGravel
-          //      if (poiMapElement.m_BlockValue.type != 16) continue;
-                Debug.Log("Creating Empty Prefab");
-                CreateEmptyPrefab(chunk, position);
+                if (poiMapElement.m_BlockValue.type == 16)
+                {
+                    
+                    // Leave special blocks in it's place, maybe tileEntity, as cave points. THen pass over again,
+                    // replacing the points with the empty prefab.
+                    caveCount++;
+                    if (caveCount < 3)
+                    {
+                        CreateEmptyPrefab(chunk, position);
+                        caveCount = 0;
+                    }
+                }
             }
         }
 
@@ -141,12 +144,14 @@ public static class SCoreCavesSplat3 {
                 var terrainHeight = chunk.GetTerrainHeight(chunkX, chunkZ);
                 var poiMapElement = flip ? GetElement(worldZ, worldX) : GetElement(worldX, worldZ);
                 if (!IsRoad(poiMapElement)) continue;
-
+        
                 // Make cave opening.
-                if (poiMapElement.m_BlockValue.type != 17) continue;
-                if (!IsVoid(chunk, chunkX, chunkZ)) continue;
-                CreateCaveOpening(chunk, chunkX, chunkZ);
-                return;
+                if (poiMapElement.m_BlockValue.type == 17)
+                {
+                    if ( !IsVoid(chunk, chunkX, chunkZ)) continue;
+                    CreateCaveOpening(chunk, chunkX, chunkZ);
+                    return;
+                }
             }
         }
     }
@@ -154,7 +159,6 @@ public static class SCoreCavesSplat3 {
     private static bool IsVoid(Chunk chunk, int chunkX, int chunkZ) {
         return VoidsUnder(chunk, chunkX, chunkZ) > 4;
     }
-
     private static int VoidsUnder(Chunk chunk, int chunkX, int chunkZ) {
         var terrainHeight = chunk.GetTerrainHeight(chunkX, chunkZ);
         var voids = 2;
@@ -162,8 +166,8 @@ public static class SCoreCavesSplat3 {
         {
             for (var z = -2; z < 2; z++)
             {
-                var position = new Vector3i(chunkX + x, terrainHeight - 8, chunkZ + z);
-                if (position.x > 15 || position.z > 15) continue;
+                var position = new Vector3i(chunkX + x, terrainHeight - 8, chunkZ +z);
+                if (position.x > 15 || position.z > 15)continue;
                 if (position.x < 0 || position.z < 0) continue;
                 if (chunk.GetBlock(position.x, position.y, position.z).isair)
                     voids++;
@@ -172,7 +176,6 @@ public static class SCoreCavesSplat3 {
 
         return voids;
     }
-
     private static void CreateCaveOpening(Chunk chunk, int chunkX, int chunkZ) {
         int terrainHeight = chunk.GetTerrainHeight(chunkX, chunkZ);
         var destination = new Vector3i(chunkX, terrainHeight + 1, chunkZ);
@@ -193,6 +196,7 @@ public static class SCoreCavesSplat3 {
             PlaceAround(chunk, destination);
             destination.y--;
             destination = new Vector3i(chunkX, destination.y, chunkZ);
+
         }
     }
 
@@ -214,6 +218,7 @@ public static class SCoreCavesSplat3 {
 
     // Generate a prefab to push around.
     public static void CreateEmptyPrefab(Chunk chunk, Vector3i position) {
+        
         var prefab = new Prefab(new Vector3i(1, 3, 1));
         prefab.CopyBlocksIntoChunkNoEntities(GameManager.Instance.World, chunk, position, true);
     }

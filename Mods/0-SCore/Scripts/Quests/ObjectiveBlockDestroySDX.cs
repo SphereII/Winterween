@@ -9,7 +9,7 @@ using UnityEngine;
 		<objective type="BlockDestroySDX, SCore" id="woodChair1,officeChair01VariantHelper,woodChair1Broken" value="1" phase="2"/>
 
 
-		<!-- If the base.ID does not match the passed in block, check if it's a tag instead. -->
+		<!-- If the base.ID does not match the passed in block, check if its a tag instead. -->
 		<objective type="BlockDestroySDX, SCore" id="deepOre" value="1" phase="2"/>
 
 		<!-- This can also be a comma delimited list -->
@@ -109,19 +109,11 @@ public class ObjectiveBlockDestroySDX : BaseObjective
         {
 			foreach (var tag in base.ID.Split(','))
 			{
-				if (FastTags<TagGroup.Global>.tags.ContainsKey(tag))
+				if (block.HasAnyFastTags(FastTags<TagGroup.Global>.Parse(tag)))
 				{
-					if (block.HasAnyFastTags(FastTags<TagGroup.Global>.Parse(tag)))
-					{
-						flag = true;
-						break;
-					}
+					flag = true;
+					break;
 				}
-				// if (block.HasAnyFastTags(FastTags<TagGroup.Global>.Parse(tag)))
-				// {
-				// 	flag = true;
-				// 	break;
-				// }
 			}
         }
 

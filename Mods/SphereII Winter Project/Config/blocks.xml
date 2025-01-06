@@ -1,34 +1,40 @@
 ﻿<configs>
+    <!-- Food Spoilage global settings -->
     <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FoodSpoilage']/property[@name='FoodSpoilage']/@value">true</set>
-
-    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='OneBlockCrouch']/@value">true</set>
-    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='AutoRedeemChallenges']/@value">true</set>
-
-    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedUI']/property[@name='ShowTargetHealthBar']/@value">true</set>
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FoodSpoilage']/property[@name='TickPerLoss']/@value">30</set>
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FoodSpoilage']/property[@name='Logging']/@value">false</set>
+    <!-- Causes the entire stack to freeze at the same time -->
+    <append xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FoodSpoilage']">
+        <property name="FullStackSpoil" value="true"/>
+    </append>
 
     
+    <!-- QoL features -->
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='OneBlockCrouch']/@value">true</set>
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='AutoRedeemChallenges']/@value">true</set>
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedUI']/property[@name='ShowTargetHealthBar']/@value">true</set>
+
+    <!-- Trader Tweaks -->    
     <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedNPCFeatures']/property[@name='MakeTraderVulnerable']/@value">true</set>
     <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPrefabFeatures']/property[@name='DisableTraderProtection']/@value">true</set>
     <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPrefabFeatures']/property[@name='AllowBuildingInTraderArea']/@value">true</set>
 
-    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FoodSpoilage']/property[@name='TickPerLoss']/@value">30</set>
-    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FoodSpoilage']/property[@name='Logging']/@value">false</set>
-
+    <!-- Darken the sky -->
     <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='Theme']/property[@name='Spook']/@value">true</set>
 
     <!-- Caves -->
     <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='CaveConfiguration']/property[@name='CaveEnabled']/@value">true</set>
     <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='CaveConfiguration']/property[@name='CaveType']/@value">All</set>
     <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='CaveConfiguration']/property[@name='CavePrefab']/@value">Large</set>
-    <append xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FoodSpoilage']">
-        <property name="FullStackSpoil" value="true"/>
-    </append>
+
+    <!-- Fire! -->
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FireManagement']/property[@name='FireEnable']/@value">true</set>
 
     <append xpath="/blocks/block[@name='ConfigFeatureBlock']">
         <property class="WinterProject" >
             <property name="Logging" value="false"/>
-            <property name="SnowDepth" value="8" />
-            <property name="RoofSnowDepth" value="3" />
+            <property name="SnowDepth" value="5" />
+            <property name="RoofSnowDepth" value="2" />
         </property>
     </append>
     
