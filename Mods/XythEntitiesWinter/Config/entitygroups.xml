@@ -118,25 +118,19 @@
 
   <append xpath="/entitygroups">
     <entitygroup name="EnemyAnimalsCaves">
-		<!--
       animalSpider01,10
       animalSpider02,10
       animalSpider03,10
-      -->
-	   zombieMannequinFemale,8
+	  zombieMannequinFemale,4
+	  zombieMannequinMale,4
     </entitygroup>
   </append> 
   
   <append xpath="/entitygroups">
     <entitygroup name="EnemyAnimalsCaves">
-		<!--
       animalSpider01,10
       animalSpider02,10
       animalSpider03,10
-
-
-      -->
-		zombieMannequinFemale,8
     </entitygroup>
   </append>
 
