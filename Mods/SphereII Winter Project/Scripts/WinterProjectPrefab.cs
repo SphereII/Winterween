@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
 
-public static class WinterProjectPrefab
+public static class  WinterProjectPrefab
 {
     private static BlockValue snow = new BlockValue((uint) Block.GetBlockByName("terrSnow").blockID);
     private static BlockValue ice = new BlockValue((uint) Block.GetBlockByName("terrIce").blockID);
