@@ -160,6 +160,12 @@
         <property name="MultiBlockDim" value="1,18,1"/>
     </append>
 
+    <remove xpath="/blocks/block[starts-with( @name, 'treeSmallThinRandomHelper')]/property[@name='MultiBlockDim']"/>
+    <append xpath="/blocks/block[starts-with( @name, 'treeSmallThinRandomHelper')]">
+        <property name="MultiBlockDim" value="1,18,1"/>
+    </append>
+
+    
     <set xpath="/blocks/block[starts-with( @name, 'treeWinter')]/property[@name='Model']/@value">
         #@modfolder:Resources/WinterTrees.unity3d?PineTree1_X
     </set>
