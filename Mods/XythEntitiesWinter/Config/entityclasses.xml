@@ -721,7 +721,7 @@
 
 <!--  Xyth's Nightmares  -->		
 		
-		<entity_class name="fantasyNightmare01" extends="fantasyAnimalTemplate"> 
+		<entity_class name="fantasyNightmare01" extends="animalTemplateHostileWalking"> 
 			<property name="Tags" value="entity,male,nightmare"/> 
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Faction" value="undead"/>			
@@ -745,8 +745,17 @@
         <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8.1"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
       </effect_group>
+			<property name="SoundRandomTime" value="10"/>
+			<property name="SoundRandom" value="SpiritSounds"/>
+			<property name="SoundAlert" value="SpiritWhispers"/>
+			<property name="SoundHurt" value="SpiritAngry"/>
+			<property name="SoundDeath" value="SpiritAngry"/>
+			<property name="SoundAttack" value="SpiritAngry"/>
+			<property name="SoundSense" value="SpiritWhispers"/>
+			<property name="SoundGiveUp" value="SpiritWhispers"/>
 		</entity_class>
-		<entity_class name="fantasyNightmare02" extends="fantasyAnimalTemplate"> 
+		
+		<entity_class name="fantasyNightmare02" extends="animalTemplateHostileWalking"> 
 		<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,male,nightmare"/> 
 			<property name="Faction" value="undead"/>			
@@ -769,9 +778,16 @@
         <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8.1"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
       </effect_group>
-
+			<property name="SoundRandomTime" value="10"/>
+			<property name="SoundRandom" value="SpiritSounds"/>
+			<property name="SoundAlert" value="SpiritWhispers"/>
+			<property name="SoundHurt" value="SpiritAngry"/>
+			<property name="SoundDeath" value="SpiritAngry"/>
+			<property name="SoundAttack" value="SpiritAngry"/>
+			<property name="SoundSense" value="SpiritWhispers"/>
+			<property name="SoundGiveUp" value="SpiritWhispers"/>
     </entity_class>		
-		<entity_class name="fantasyNightmare03" extends="fantasyAnimalTemplate"> 
+		<entity_class name="fantasyNightmare03" extends="animalTemplateHostileWalking"> 
 		<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,male,nightmare"/> 
 			<property name="Faction" value="undead"/>			
@@ -790,8 +806,17 @@
 			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
 			<drop event="Harvest" name="nightmareBlood" tag="allToolsHarvest" count="1"/>
-    </entity_class>
-		<entity_class name="fantasyNightmare03Flying" extends="fantasyAnimalHostileFlyingTemplate"> 
+			<property name="SoundRandomTime" value="10"/>
+			<property name="SoundRandom" value="SpiritSounds"/>
+			<property name="SoundAlert" value="SpiritWhispers"/>
+			<property name="SoundHurt" value="SpiritAngry"/>
+			<property name="SoundDeath" value="SpiritAngry"/>
+			<property name="SoundAttack" value="SpiritAngry"/>
+			<property name="SoundSense" value="SpiritWhispers"/>
+			<property name="SoundGiveUp" value="SpiritWhispers"/>
+			</entity_class>
+			
+		<entity_class name="fantasyNightmare03Flying" extends="animalTemplateHostileFlying"> 
 		<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,male,nightmare"/> 
 			<property name="Faction" value="undead"/>			
@@ -810,14 +835,17 @@
 			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
 			<drop event="Harvest" name="nightmareBlood" tag="allToolsHarvest" count="1"/>
-
-      <property name="SoundDeath" value="sphereiiAtmosphericDeath"/>
-      <property name="SoundSense" value="sphereiiAtmospheric"/>
-      
+			<property name="SoundRandomTime" value="10"/>
+			<property name="SoundRandom" value="SpiritSounds"/>
+			<property name="SoundAlert" value="SpiritWhispers"/>
+			<property name="SoundHurt" value="SpiritAngry"/>
+			<property name="SoundAttack" value="SpiritAngry"/>
+			<property name="SoundGiveUp" value="SpiritWhispers"/>
+			<property name="SoundDeath" value="sphereiiAtmosphericDeath"/>
+			<property name="SoundSense" value="sphereiiAtmospheric"/>
 		</entity_class>		
 		
-		
-		<entity_class name="fantasyNightmare04" extends="fantasyAnimalTemplate"> 
+		<entity_class name="fantasyNightmare04" extends="animalTemplateHostileWalking"> 
 		<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,female,nightmare"/> 
 			<property name="Faction" value="undead"/>			
@@ -840,9 +868,17 @@
         <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8.1"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
       </effect_group>
-
-    </entity_class>				
-		<entity_class name="fantasyNightmare05" extends="fantasyAnimalTemplate"> 
+			<property name="SoundRandomTime" value="10"/>
+			<property name="SoundRandom" value="SpiritSounds"/>
+			<property name="SoundAlert" value="SpiritWhispers"/>
+			<property name="SoundHurt" value="SpiritAngry"/>
+			<property name="SoundDeath" value="SpiritAngry"/>
+			<property name="SoundAttack" value="SpiritAngry"/>
+			<property name="SoundSense" value="SpiritWhispers"/>
+			<property name="SoundGiveUp" value="SpiritWhispers"/>
+    </entity_class>	
+	
+		<entity_class name="fantasyNightmare05" extends="animalTemplateHostileWalking"> 
 		<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,male,nightmare"/> 
 			<property name="Faction" value="undead"/>			
@@ -865,9 +901,17 @@
         <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8.1"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
       </effect_group>
-
+			<property name="SoundRandomTime" value="10"/>
+			<property name="SoundRandom" value="SpiritSounds"/>
+			<property name="SoundAlert" value="SpiritWhispers"/>
+			<property name="SoundHurt" value="SpiritAngry"/>
+			<property name="SoundDeath" value="SpiritAngry"/>
+			<property name="SoundAttack" value="SpiritAngry"/>
+			<property name="SoundSense" value="SpiritWhispers"/>
+			<property name="SoundGiveUp" value="SpiritWhispers"/>
     </entity_class>
-		<entity_class name="fantasyNightmare06" extends="fantasyAnimalTemplate"> 
+	
+		<entity_class name="fantasyNightmare06" extends="animalTemplateHostileWalking"> 
 		<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,female,nightmare"/> 
 			<property name="Faction" value="undead"/>			
@@ -890,11 +934,18 @@
         <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8.1"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
       </effect_group>
-
+			<property name="SoundRandomTime" value="10"/>
+			<property name="SoundRandom" value="SpiritSounds"/>
+			<property name="SoundAlert" value="SpiritWhispers"/>
+			<property name="SoundHurt" value="SpiritAngry"/>
+			<property name="SoundDeath" value="SpiritAngry"/>
+			<property name="SoundAttack" value="SpiritAngry"/>
+			<property name="SoundSense" value="SpiritWhispers"/>
+			<property name="SoundGiveUp" value="SpiritWhispers"/>
     </entity_class>			
 	
 	
-			<entity_class name="animalSnowSwarm_X" extends="animalTemplateHostileFlying">
+		<entity_class name="animalSnowSwarm_X" extends="animalTemplateHostileFlying">
 			<property name="Tags" value="entity,cp,animal,hostile"/>
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Class" value="EntityZombieFlyingSDX, SCore"/>
@@ -906,6 +957,7 @@
 			<property name="SurfaceCategory" value="earth"/>
 			<property name="Mass" value="10"/>
 			<property name="Mesh" value="#@modfolder:Resources/Swarms.unity3d?SnowSwarm2_X" /> 
+			<property name="Prefab" value="NPC"/>
 			<property name="HandItem" value="meleeHandSnowstorm" />
 			<property name="SoundRandom" value="" />
 			<property name="SoundRandomTime" value="60"/>
@@ -1115,8 +1167,8 @@
 		<entity_class name="animalBanditWolf" extends="animalTemplateHostileWalking">
 		<property name="UserSpawnType" value="Menu"/>
 			<property name="Mesh" value="#@modfolder:Resources/XythAnimals.unity3d?WarWolf_X"/>
-			<property name="Tags" value="entity,animal,cp,NPCAnimalWarWolf"/>
-			<property name="Faction" value="whiteriver"/>	
+			<property name="Tags" value="entity,animal,cp,AnimalWarWolf"/>
+			<property name="Faction" value="bandits"/>	
 			<property name="Weight" value="60"/>
 			<property name="HandItem" value="meleeHandAnimalWarWolf"/>	
 			<property name="PhysicsBody" value="wolf"/>
@@ -1140,84 +1192,14 @@
 			<property name="ReplaceMaterial0" value="#@modfolder:Resources/animal_snowmats.unity3d?bandit_snow"/>
 		</entity_class>		
 		
-<!-- Flying Things  -->
-
-	
-		
-<!--  Hostile Flyers  -->		
-		<!-- <entity_class name="animalBloatfly" extends="animalTemplateHostileFlying"> 
-			<property name="Tags" value="entity,animal,hostile,animalBloatfly"/>
-			<property name="UserSpawnType" value="Menu"/>
-			<property name="Faction" value="animals"/>					
-			<property name="Mass" value="100"/>
-			<property name="Mesh" value="#@modfolder:Resources/XythAnimals.unity3d?Bloatfly_X"/>
-			<property name="MoveSpeed" value="1"/>
-			<property name="MoveSpeedAggro" value="2.1, 2.1"/>
-			<property name="MaxViewAngle" value="360"/>
-			<property name="MaxTurnSpeed" value="190"/>      
-			<property name="HandItem" value="meleeHandAnimalDireWolf"/>
-			<property name="ExperienceGain" value="250"/>
-			<property name="DeadBodyHitPoints" value="100"/>
-			<property name="SoundRandomTime" value="5"/>
-			<property name="SoundRandom" value="flySounds" />
-			<property name="SoundAlert" value="flySounds"/>
-			<property name="SoundHurt" value="animalhornethurt"/>
-			<property name="SoundDeath" value="animalhornetdeath"/>
-			<property name="SoundAttack" value="animalhornetattack"/>
-			<property name="SoundSense" value=""/>
-			<property name="SoundGiveUp" value=""/>
-			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="500"/>
-			</effect_group>
-			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="5"/> 
-			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="3"/>
-			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
-			<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="1"/>
-			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="0"/>
-			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
-			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="0"/>
-			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="0"/>
-		</entity_class>	
-		
-		<entity_class name="animalGuppyInsect" extends="animalTemplateHostileFlying"> 
-		<property name="UserSpawnType" value="Menu"/>
-			<property name="Tags" value="entity,animal,hostile,animalGuppyInsect"/>
-			<property name="Faction" value="animals"/>					
-			<property name="Mass" value="100"/>
-			<property name="Mesh" value="#@modfolder:Resources/XythAnimals.unity3d?creatureGuppyFlyingInsect"/>
-			<property name="MoveSpeed" value="1"/>
-			<property name="MoveSpeedAggro" value="2.1, 2.1"/>
-			<property name="MaxViewAngle" value="360"/>
-			<property name="MaxTurnSpeed" value="190"/>      
-			<property name="HandItem" value="meleeHandAnimalDireWolf"/>
-			<property name="ExperienceGain" value="250"/>
-			<property name="DeadBodyHitPoints" value="100"/>
-			<property name="SoundRandomTime" value="5"/>
-			<property name="SoundRandom" value="animalhornetroam" />
-			<property name="SoundAlert" value="animalhornetalert"/>
-			<property name="SoundHurt" value="animalhornethurt"/>
-			<property name="SoundDeath" value="animalhornetdeath"/>
-			<property name="SoundAttack" value="animalhornetattack"/>
-			<property name="SoundSense" value=""/>
-			<property name="SoundGiveUp" value=""/>
-			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="350"/>
-			</effect_group>
-			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-            <drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="2"/> 
-            <drop event="Harvest" name="foodHoney" tag="butcherHarvest" count="2"/>
-		</entity_class>	-->
-		
 		
 <!--  DarkStarDragons Animals   -->
 		
 		<entity_class name="animalWolfhound" extends="animalTemplateHostileWalking">
 			<property name="Tags" value="entity,animal,hostile"/>
 			<property name="UserSpawnType" value="Menu"/>
-			<property name="Faction" value="animals"/>				
+			<property name="Faction" value="aggressiveanimalsmedium"/>				
 			<property name="Prefab" value="NPC"/>
-			<property name="Class" value="EntityAnimalStag"/>
 			<property name="PhysicsBody" value="Goat"/>
 			<property name="ExperienceGain" value="130"/>
 			<property name="AvatarController" value="AvatarAnimalController"/> 
@@ -1253,7 +1235,7 @@
 		<property name="UserSpawnType" value="Menu"/>
 			<property name="Mesh" value="#@modfolder:Resources/XythAnimals.unity3d?BeagleDark"/>
 			<property name="Tags" value="entity,animal,hostile"/>
-			<property name="Faction" value="animals"/>					
+			<property name="Faction" value="aggressiveanimalsmedium"/>					
 			<property name="HandItem" value="meleeHandAnimalFox"/>					
 			<property name="SoundRandom" value="coyoteroam"/>
 			<property name="SoundAlert" value="wolfalert"/>
@@ -1279,7 +1261,7 @@
 		<property name="UserSpawnType" value="Menu"/>
 			<property name="Mesh" value="#@modfolder:Resources/XythAnimals.unity3d?PugDark"/>
 			<property name="Tags" value="entity,animal,hostile"/>
-			<property name="Faction" value="animals"/>	
+			<property name="Faction" value="aggressiveanimalsmedium"/>	
 			<property name="Weight" value="10"/>
 			<property name="HandItem" value="meleeHandAnimalFox"/>					
 			<property name="SoundRandom" value="coyoteroam"/>
@@ -1306,7 +1288,7 @@
 		<property name="UserSpawnType" value="Menu"/>
 			<property name="Mesh" value="#@modfolder:Resources/XythAnimals.unity3d?WolfDark"/>
 			<property name="Tags" value="entity,animal,hostile"/>
-			<property name="Faction" value="animals"/>				
+			<property name="Faction" value="aggressiveanimalsmedium"/>				
 			<property name="HandItem" value="meleeHandAnimalDireWolf"/>					
 			<property name="SoundRandom" value="wolfroam"/>
 			<property name="SoundAlert" value="wolfalert"/>
