@@ -268,7 +268,8 @@ namespace Harmony.WorldGen {
                     // If the player is above ground, do not run this spawner.
                     var position = new Vector3i(playerPosition);
                     float offSet = GameManager.Instance.World.GetTerrainHeight(position.x, position.z);
-                    if (offSet <= playerPosition.y)
+                    // Only spawn when we are 10 meters below the terrain.
+                    if (offSet - 10 <= playerPosition.y)
                     {
                         return Vector3.zero;
                     }

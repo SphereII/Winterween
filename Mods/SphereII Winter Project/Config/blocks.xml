@@ -41,7 +41,7 @@
 
     <append xpath="/blocks/block[@name='questRallyMarker']">
         <!-- Flag model by s.probka is licensed under CC Attribution  -->
-        <property name="ModelOffset" value="0,8,0"/>
+        <property name="ModelOffset" value="0,6,0"/>
         <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
     </append>
 
