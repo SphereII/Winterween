@@ -44,6 +44,7 @@
 			<requirement name="HasBuff" buff="buffCursed"/>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffCutscene07"/>
 			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffCutscene07"/>
+			<triggered_effect trigger="onCombatEntered" action="RemovePrefabFromEntity" prefab="Cutscene07"/>
 		</effect_group>
 		
 		<effect_group>
@@ -51,6 +52,7 @@
 			<requirement name="HasBuff" buff="buffCursed"/>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffCutscene08"/>
 			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffCutscene08"/>
+			<triggered_effect trigger="onCombatEntered" action="RemovePrefabFromEntity" prefab="Cutscene08"/>
 		</effect_group>	
 	</buff>
 
