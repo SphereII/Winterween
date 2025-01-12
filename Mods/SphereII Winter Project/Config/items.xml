@@ -104,7 +104,6 @@
       <property name="EconomicValue" value="1"/>
       <property name="Stacknumber" value="125"/>
       <property name="Group" value="Food"/>
-      <property name="DescriptionKey" value="foodFrozenDesc" />
       <property name="ItemTypeIcon" value="cold"/>
     </item>
   </append>

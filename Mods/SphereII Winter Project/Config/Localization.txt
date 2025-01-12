@@ -1,188 +1,253 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english
-loadingTipMainWWHUD,UI,Loading Screen,,,This is a test of the HUD Main screen.  Blah Blah.......,,,,,
-loadingTipMainWWHUD_title,UI,Loading Screen,x,,Test of the Main Screen Bars,,,,,
-buffsmallBed,items,Medical,KgNone,Small bed,,,,,
-buffsmallBedDesc,items,Medical,New,A small bed will help you rest up.,,,,,
-tutorialTipQuest01,Journal Tip,,,,"Welcome to the WinterWeen Project\nExplore and try to survive in the frozen madness of WinterWeen.\n\n-sphereii and xyth",,,,,
-quest_WhiteRiverCitizen1_description,Quest,Quest Info,,,"We have marked your map with the nearest White River Outpost location, though few ever seem to make it that far. You better head that way before you freeze or starve to death.\n\nRumor is that other survivors might have dug too deep and released more than the dead, so don't go out at night!",,,,
-foodHoneyFrozen,items,Food,newKey,"Frozen Jar of Honey",,,,,
-foodCanBeefFrozen,items,Food,newKey,"Frozen Large Beef Ration",,,,,
-foodCanChickenFrozen,items,Food,newKey,"Frozen Chicken Ration",,,,,
-foodCanLambFrozen,items,Food,newKey,"Frozen Lamb Rations",,,,,
-foodCanCatfoodFrozen,items,Food,newKey,"Frozen Can of Cat Food",,,,,
-foodCanDogfoodFrozen,items,Food,newKey,"Frozen Can of Dog Food",,,,,
-foodCanChiliFrozen,items,Food,newKey,"Frozen Can of Chili",,,,,
-foodCanTunaFrozen,items,Food,newKey,"Frozen Can of Tuna",,,,,
-foodCanShamFrozen,items,Food,newKey,"Frozen Can of Sham",,,,,
-foodCanPastaFrozen,items,Food,newKey,"Frozen Can of Pasta",,,,,
-foodCanSalmonFrozen,items,Food,newKey,"Frozen Can of Salmon",,,,,
-foodCanMisoFrozen,items,Food,newKey,"Frozen Can of Miso",,,,,
-foodCanPeasFrozen,items,Food,newKey,"Frozen Can of Peas",,,,,
-foodCanPearsFrozen,items,Food,newKey,"Frozen Can of Pears",,,,,
-foodCanSoupFrozen,items,Food,newKey,"Frozen Chicken Soup",,,,,
-foodCanStockFrozen,items,Food,newKey,"Frozen Can of Stock",,,,,
-foodCornOnTheCobFrozen,items,Food,newKey,"Frozen Corn on the Cob",,,,,
-foodCornBreadFrozen,items,Food,newKey,"Frozen Corn Bread",,,,,
-foodMoldyBreadFrozen,items,Food,newKey,"Frozen Moldy Bread",,,,,
-foodShamSandwichFrozen,items,Food,newKey,"Frozen Old Sham Sandwich",,,,,
-foodCharredMeatFrozen,items,Food,newKey,"Frozen Charred Meat",,,,,
-foodGrilledMeatFrozen,items,Food,newKey,"Frozen Grilled Meat",,,,,
-foodBoiledMeatFrozen,items,Food,newKey,"Frozen Boiled Meat",,,,,
-foodMeatStewFrozen,items,Food,newKey,"Frozen Meat Stew",,,,,
-foodSteakAndPotatoFrozen,items,Food,newKey,"Frozen Steak and Potato Meal",,,,,
-foodShamChowderFrozen,items,Food,newKey,"Frozen Sham Chowder",,,,,
-foodHoboStewFrozen,items,Food,newKey,"Frozen Hobo Stew",,,,,
-foodFishTacosFrozen,items,Food,newKey,"Frozen Fish Tacos",,,,,
-foodChiliDogFrozen,items,Food,newKey,"Frozen Chili Dog",,,,,
-foodBakedPotatoFrozen,items,Food,newKey,"Frozen Baked Potato",,,,,
-foodBlueberryPieFrozen,items,Food,newKey,"Frozen Blueberry Pie",,,,,
-foodPumpkinPieFrozen,items,Food,newKey,"Frozen Pumpkin Pie",,,,,
-foodPumpkinCheesecakeFrozen,items,Food,newKey,"Frozen Pumpkin Cheesecake",,,,,
-foodPumpkinBreadFrozen,items,Food,newKey,"Frozen Pumpkin Bread",,,,,
-foodGumboStewFrozen,items,Food,newKey,"Frozen Gumbo Stew",,,,,
-foodShepardsPieFrozen,items,Food,newKey,"Frozen Shepards Pie",,,,,
-foodSpaghettiFrozen,items,Food,newKey,"Frozen Spaghetti",,,,,
-foodTunaFishGravyToastFrozen,items,Food,newKey,"Frozen Tuna Fish Gravy Toast",,,,,
-foodEggBoiledFrozen,items,Food,newKey,"Frozen Boiled Egg",,,,,
-foodBaconAndEggsFrozen,items,Food,newKey,"Frozen Bacon and Eggs",,,,,
-foodVegetableStewFrozen,items,Food,newKey,"Frozen Vegetable Stew",,,,,
-foodRawMeatFrozen,items,Food,newKey,"Frozen Raw Meat",,,,,
-foodRottingFleshFrozen,items,Food,newKey,"Frozen Rotting Flesh",,,,,
-foodEggFrozen,items,Food,newKey,"Frozen Egg",,,,,
-foodCornMealFrozen,items,Food,newKey,"Frozen Cornmeal",,,,,
-foodCropBlueberriesFrozen,items,Food,newKey,"Frozen Blueberries",,,,,
-foodCropCornFrozen,items,Food,newKey,"Frozen Ear of Corn",,,,,
-foodCropGraceCornFrozen,items,Food,newKey,"Frozen Ear of Super Corn",,,,,
-foodCropPotatoFrozen,items,Food,newKey,"Frozen Potato",,,,,
-foodCropMushroomsFrozen,items,Food,newKey,"Frozen Mushrooms",,,,,
-foodCropYuccaFruitFrozen,items,Food,newKey,"Frozen Yucca Fruit",,,,,
-foodCropPumpkinFrozen,items,Food,newKey,"Frozen Pumpkin",,,,,
-drinkCanEmptyFrozen,items,Food,newKey,"Frozen Empty Can",,,,,
-drinkCanRiverWaterFrozen,items,Food,newKey,"Frozen drinkCanRiverWater",,,,,
-drinkCanBoiledWaterFrozen,items,Food,newKey,"Frozen drinkCanBoiledWater",,,,,
-drinkJarEmptyFrozen,items,Food,newKey,"Frozen Empty Water Jar",,,,,
-drinkJarRiverWaterFrozen,items,Food,newKey,"Frozen Murky Water",,,,,
-drinkJarBoiledWaterFrozen,items,Food,newKey,"Frozen Boiled Water",,,,,
-drinkJarPureMineralWaterFrozen,items,Food,newKey,"Frozen Pure Mineral Water",,,,,
-drinkJarYuccaJuiceFrozen,items,Food,newKey,"Frozen Yucca Juice",,,,,
-drinkJarGoldenRodTeaFrozen,items,Food,newKey,"Frozen Goldenrod Tea",,,,,
-drinkJarRedTeaFrozen,items,Food,newKey,"Frozen Red Tea",,,,,
-drinkJarYuccaCocktailFrozen,items,Food,newKey,"Frozen drinkJarYuccaCocktail",,,,,
-drinkYuccaJuiceSmoothieFrozen,items,Food,newKey,"Frozen Yucca Juice Smoothie",,,,,
-drinkCanMegaCrushFrozen,items,Food,newKey,"Frozen Mega Crush",,,,,
-drinkJarCoffeeFrozen,items,Food,newKey,"Frozen Coffee",,,,,
-drinkJarBlackStrapCoffeeFrozen,items,Food,newKey,"Frozen Blackstrap Coffee",,,,,
-drinkJarBeerFrozen,items,Food,newKey,"Frozen Beer",,,,,
-drinkJarGrainAlcoholFrozen,items,Food,newKey,"Frozen Grain Alcohol",,,,,
-drinkJarGrandpasMoonshineFrozen,items,Food,newKey,"Frozen Grandpa's Moonshine",,,,,
-drinkJarGrandpasAwesomeSauceFrozen,items,Food,newKey,"Frozen Grandpa's Awesome Sauce",,,,,
-drinkJarGrandpasLearningElixirFrozen,items,Food,newKey,"Frozen Grandpas Learnin' Elixir",,,,,
-drinkJarGrandpasForgettingElixirFrozen,items,Food,newKey,"Frozen Grandpa's Fergit'n Elixir",,,,,
-foodCanShamSchematicFrozen,items,Food,newKey,"Frozen Shamway Secret Recipe",,,,,
-drinkJarBeerSchematicFrozen,items,Food,newKey,"Frozen Beer Recipe",,,,,
-drinkJarCoffeeSchematicFrozen,items,Food,newKey,"Frozen Coffee Recipe",,,,,
-drinkJarGoldenRodTeaSchematicFrozen,items,Food,newKey,"Frozen Goldenrod Tea Recipe",,,,,
-drinkJarGrandpasAwesomeSauceSchematicFrozen,items,Food,newKey,"Frozen Grandpa's Awesome Sauce Recipe",,,,,
-drinkJarGrandpasLearningElixirSchematicFrozen,items,Food,newKey,"Frozen Grandpas Learnin' Elixir Recipe",,,,,
-drinkJarGrandpasMoonshineSchematicFrozen,items,Food,newKey,"Frozen Grandpa's Moonshine Recipe",,,,,
-drinkJarRedTeaSchematicFrozen,items,Food,newKey,"Frozen Red Tea Recipe",,,,,
-drinkYuccaJuiceSmoothieSchematicFrozen,items,Food,newKey,"Frozen Yucca Juice Smoothie Recipe",,,,,
-foodBaconAndEggsSchematicFrozen,items,Food,newKey,"Frozen Bacon and Eggs Recipe",,,,,
-foodBakedPotatoSchematicFrozen,items,Food,newKey,"Frozen Baked Potato Recipe",,,,,
-foodBlueberryPieSchematicFrozen,items,Food,newKey,"Frozen Blueberry Pie Recipe",,,,,
-foodPumpkinPieSchematicFrozen,items,Food,newKey,"Frozen Pumpkin Pie Recipe",,,,,
-foodPumpkinCheesecakeSchematicFrozen,items,Food,newKey,"Frozen Pumpkin Cheesecake Recipe",,,,,
-foodPumpkinBreadSchematicFrozen,items,Food,newKey,"Frozen Pumpkin Bread Recipe",,,,,
-foodGumboStewSchematicFrozen,items,Food,newKey,"Frozen Gumbo Stew Recipe",,,,,
-foodShepardsPieSchematicFrozen,items,Food,newKey,"Frozen Shepards Pie Recipe",,,,,
-foodSpaghettiSchematicFrozen,items,Food,newKey,"Frozen Spaghetti Recipe",,,,,
-foodTunaFishGravyToastSchematicFrozen,items,Food,newKey,"Frozen Tuna Fish Gravy Toast Recipe",,,,,
-foodBoiledMeatSchematicFrozen,items,Food,newKey,"Frozen Boiled Meat Recipe",,,,,
-foodChiliDogSchematicFrozen,items,Food,newKey,"Frozen Chili Dog Recipe",,,,,
-foodCornBreadSchematicFrozen,items,Food,newKey,"Frozen Corn Bread Recipe",,,,,
-foodCornOnTheCobSchematicFrozen,items,Food,newKey,"Frozen Corn on the Cob Recipe",,,,,
-foodFishTacosSchematicFrozen,items,Food,newKey,"Frozen Fish Tacos Recipe",,,,,
-foodGrilledMeatSchematicFrozen,items,Food,newKey,"Frozen Grilled Meat Recipe",,,,,
-foodHoboStewSchematicFrozen,items,Food,newKey,"Frozen Hobo Stew Recipe",,,,,
-foodMeatStewSchematicFrozen,items,Food,newKey,"Frozen Meat Stew Recipe",,,,,
-foodShamChowderSchematicFrozen,items,Food,newKey,"Frozen Sham Chowder Recipe",,,,,
-foodSteakAndPotatoSchematicFrozen,items,Food,newKey,"Frozen Steak and Potato Meal  Recipe",,,,,
-foodVegetableStewSchematicFrozen,items,Food,newKey,"Frozen Vegetable Stew Recipe",,,,,
-drinkJarFullRespecAdminFrozen,items,Food,newKey,"Frozen Dev: Full Respec",,,,,
-Frozen,items,Food,newKey,"Frozen ",,,,,
-xmasGifts,blocks,Block,New,"A Christmas Gift",,,,,
-xmasGiftsDesc,blocks,Block,New,"A cute little Christmas present",,,,,
-xmasGift,blocks,Block,New,"A Christmas Gift",,,,,
-xmasGiftDesc,blocks,Block,New,"A cute little Christmas present",,,,,
-ChristmasTreeCB,blocks,Block,New,"A Christmas Tree",,,,,
-ChristmasTreeCBDesc,blocks,Block,New,"A lovely little Christmas tree",,,,,
-ChristmasTreeNaughty,blocks,Block,New,"A Naughty Christmas Tree",,,,,
-ChristmasTreeNaughtyDesc,blocks,Block,New,"A Naughty Christmas tree",,,,,
-ChristmasTreeNice,blocks,Block,New,"A Nice Christmas Tree",,,,,
-ChristmasTreeNiceDesc,blocks,Block,New,"A Nice Christmas tree",,,,,
-iceBlock,blocks,Block,New,"A sturdy ice block",,,,,
-iceBlockDesc,blocks,Block,New,"A study ice block that can be used for building.",,,,,
-snowBlock,blocks,Block,New,"A sturdy snow block",,,,,
-snowBlockDesc,blocks,Block,New,"A study snow block that can be used for building. Maybe we can build an igloo?",,,,,
-rabbitBlock,blocks,Block,New,"A Rabbit block",,,,,
-rabbitBlockDesc,blocks,Block,New,"A cute little toy rabbit",,,,,
-wreath,blocks,Block,New,"A wreath",,,,,
-wreathDesc,blocks,Block,New,"A very festive Christmas Wreath",,,,,
-wrappingstation,blocks,Block,New,"A Wrapping Station",,,,,
-wrappingstationDesc,blocks,Block,New,"A sturdy workbench for wrapping and making presents",,,,,
-poinsettia,blocks,Block,New,"A poinsettia",,,,,
-poinsettiaDesc,blocks,Block,New,"A traditional holiday plant",,,,,
-lightString,blocks,Block,New,"A light string",,,,,
-lightStringDesc,blocks,Block,New,"A christmas light string",,,,,
-lightStringDiag,blocks,Block,New,"A diagonal light string",,,,,
-lightStringDiagDesc,blocks,Block,New,"A christmas diagonal light string",,,,,
-xmasCandle,blocks,Block,New,"A christmas candle",,,,,
-xmasCandleDesc,blocks,Block,New,"A christmas candle",,,,,
-beesWaxCandle,blocks,Block,New,"A bees wax candle",,,,,
-beesWaxCandleDesc,blocks,Block,New,"A bees wax candle",,,,,
-XmasPoster01,blocks,Block,New,"A christmas poster",,,,,
-XmasPoster01Desc,blocks,Block,New,"A christmas poster",,,,,
-rabbitItem,items,Tool,KgNone,An rabbit,,,,,
-toysDesc,items,Tool,KgNone,"An little rabbit toy",,,,,
-candyCane,items,Tool,KgNone,An Candy Cane,,,,,
-candyCaneDesc,items,Tool,KgNone,"A tasty treat used to smash the face of the zombies.",,,,,
-waxCandle,items,Tool,KgNone,An wax candle,,,,,
-waxCandleDesc,items,Tool,KgNone,"A pretty little wax candle.",,,,,
-Cookies,items,Tool,KgNone,A cookie,,,,,
-CookiesDesc,items,Tool,KgNone,"A small christmas cookie to tide you over until supper",,,,,
-snowShovel,items,Tool,KgNone,An sturdy shovel,,,,,
-snowShovelDesc,items,Tool,KgNone,"A sturdy snow shovel, for all our winter shovelling needs.",,,,,
-drinkThermosEmpty,items,Tool,KgNone,"An empty thermos",,,,,
-drinkThermosEmptyDesc,items,Tool,KgNone,"An empty thermos, which is useful for keeping things warm longer.",,,,,
-loadingTipMainHUD,UI,Loading Screen,x,,"The apocalypse is a desolate and depressing place. We hope you enjoy your forever stay..."
-loadingTipMainHUD_title,UI,Loading Screen,x,,"Winterween"
-loadingTipMainHUD_02,UI,Loading Screen,x,,"Don't eat yellow snow. It isn't safe. It could even be pee. It's probably pee. Yup. It's pee."
-loadingTipMainHUD_02_title,UI,Loading Screen,x,,"Yellow Snow"
-
-loadingTipMainHUD_03,UI,Loading Screen,x,,"Be mindful of your stamina! Your next leap may be your last."
-loadingTipMainHUD_03_title,UI,Loading Screen,x,,"Stamina is important"
-
-loadingTipMainHUD_04,UI,Loading Screen,x,,"Not all occupants in the apocalypse wants your brains! Some also want your warmth."
-loadingTipMainHUD_04_title,UI,Loading Screen,x,,"Find your friends!"
-
-loadingTipMainHUD_05,UI,Loading Screen,x,,"The world is very cold. Many things will freeze, so plan ahead."
-loadingTipMainHUD_05_title,UI,Loading Screen,x,,"It's very cold"
-
-loadingTipMainHUD_06,UI,Loading Screen,x,,"From time to time, you may hear musical voices. Could they belong to your new best friend?"
-loadingTipMainHUD_06_title,UI,Loading Screen,x,,"Follow the Music"
-
-loadingTipMainHUD_08,UI,Loading Screen,x,,"No one knows where the Shaman came from or what it was, only its unrelenting goal of exterminating the human race."
-loadingTipMainHUD_08_title,UI,Loading Screen,x,,"The Shaman..."
-
-loadingTipMainHUD_07,UI,Loading Screen,x,,"Following a terrible battle against the Shaman and its Minions, the survivors launched their final, and complete assault, plunging the world into a nuclear winter."
-loadingTipMainHUD_07_title,UI,Loading Screen,x,,"Winter Apocalypse"
-
-loadingTipMainHUD_08,UI,Loading Screen,x,,"The Shaman and its Minions were driven from the world from the intense cold. They have not been seen since."
-loadingTipMainHUD_08_title,UI,Loading Screen,x,,"The Shaman is gone..."
-
-loadingTipMainHUD_09,UI,Loading Screen,x,,"It took many years, but the survivors have started leaving their caves and hiding spots and exploring them."
-loadingTipMainHUD_09_title,UI,Loading Screen,x,,"World Recovery"
-
-loadingTipMainHUD_10,UI,Loading Screen,x,,"BA-GOSHI A-KHA NA-AS-TSO-SI DZEH TOISH-JEH AH-NAH AH-JAD A-KHA GLOE-IH D-AH TSE-GAH AH-JAH DIBEH SHI-DA AH-LOSZ MA-E BE-LA-SANA MOASI AH-JAH TSE-NILL A-CHIN LHA-CHA-EH AH-JAD AH-NAH D-AH A-WOH TSE-GAH AH-JAH TSAH A-CHI JEHA CHA A-WOH TSIN-TLITI WOL-LA-CHEE AH-LOSZ AH-JAH TSA-E-DONIN-EE AH-JAH WOL-LA-CHEE KLESH THAN-ZIE TLO-CHIN A-CHIN TSAH-AS-ZIH A-KHA SHI-DA"
-loadingTipMainHUD_10_title,UI,Loading Screen,x,,"D-AH TSE-GAH DZEH DIBEH LIN BE-LA-SANA NA-AS-TSO-SI TSE-NILL A-CHIN"
-
+Key,english
+cntSphereDropBox,Drop Box
+cntSphereDropBoxDesc,A box that will auto-sort items placed inside of it into nearby matching containers.
+loadingTipMainWWHUD,This is a test of the HUD Main screen.  Blah Blah.......
+loadingTipMainWWHUD_title,Test of the Main Screen Bars
+buffsmallBed,Small bed
+buffsmallBedDesc,A small bed will help you rest up.
+tutorialTipQuest01,Welcome to the WinterWeen Project\nExplore and try to survive in the frozen madness of WinterWeen.\n\n-sphereii and xyth
+quest_WhiteRiverCitizen1_description,"We have marked your map with the nearest White River Outpost location, though few ever seem to make it that far. You better head that way before you freeze or starve to death.\n\nRumor is that other survivors might have dug too deep and released more than the dead, so don't go out at night!"
+foodHoneyFrozen,Frozen Jar of Honey
+foodCanBeefFrozen,Frozen Large Beef Ration
+foodCanChickenFrozen,Frozen Chicken Ration
+foodCanLambFrozen,Frozen Lamb Rations
+foodCanCatfoodFrozen,Frozen Can of Cat Food
+foodCanDogfoodFrozen,Frozen Can of Dog Food
+foodCanChiliFrozen,Frozen Can of Chili
+foodCanTunaFrozen,Frozen Can of Tuna
+foodCanShamFrozen,Frozen Can of Sham
+foodCanPastaFrozen,Frozen Can of Pasta
+foodCanSalmonFrozen,Frozen Can of Salmon
+foodCanMisoFrozen,Frozen Can of Miso
+foodCanPeasFrozen,Frozen Can of Peas
+foodCanPearsFrozen,Frozen Can of Pears
+foodCanSoupFrozen,Frozen Chicken Soup
+foodCanStockFrozen,Frozen Can of Stock
+foodCornOnTheCobFrozen,Frozen Corn on the Cob
+foodCornBreadFrozen,Frozen Corn Bread
+foodMoldyBreadFrozen,Frozen Moldy Bread
+foodShamSandwichFrozen,Frozen Old Sham Sandwich
+foodCharredMeatFrozen,Frozen Charred Meat
+foodGrilledMeatFrozen,Frozen Grilled Meat
+foodBoiledMeatFrozen,Frozen Boiled Meat
+foodMeatStewFrozen,Frozen Meat Stew
+foodSteakAndPotatoFrozen,Frozen Steak and Potato Meal
+foodShamChowderFrozen,Frozen Sham Chowder
+foodHoboStewFrozen,Frozen Hobo Stew
+foodFishTacosFrozen,Frozen Fish Tacos
+foodChiliDogFrozen,Frozen Chili Dog
+foodBakedPotatoFrozen,Frozen Baked Potato
+foodBlueberryPieFrozen,Frozen Blueberry Pie
+foodPumpkinPieFrozen,Frozen Pumpkin Pie
+foodPumpkinCheesecakeFrozen,Frozen Pumpkin Cheesecake
+foodPumpkinBreadFrozen,Frozen Pumpkin Bread
+foodGumboStewFrozen,Frozen Gumbo Stew
+foodShepardsPieFrozen,Frozen Shepards Pie
+foodSpaghettiFrozen,Frozen Spaghetti
+foodTunaFishGravyToastFrozen,Frozen Tuna Fish Gravy Toast
+foodEggBoiledFrozen,Frozen Boiled Egg
+foodBaconAndEggsFrozen,Frozen Bacon and Eggs
+foodVegetableStewFrozen,Frozen Vegetable Stew
+foodRawMeatFrozen,Frozen Raw Meat
+foodRottingFleshFrozen,Frozen Rotting Flesh
+foodEggFrozen,Frozen Egg
+foodCornMealFrozen,Frozen Cornmeal
+foodCropBlueberriesFrozen,Frozen Blueberries
+foodCropCornFrozen,Frozen Ear of Corn
+foodCropGraceCornFrozen,Frozen Ear of Super Corn
+foodCropPotatoFrozen,Frozen Potato
+foodCropMushroomsFrozen,Frozen Mushrooms
+foodCropYuccaFruitFrozen,Frozen Yucca Fruit
+foodCropPumpkinFrozen,Frozen Pumpkin
+drinkCanEmptyFrozen,Frozen Empty Can
+drinkCanRiverWaterFrozen,Frozen drinkCanRiverWater
+drinkCanBoiledWaterFrozen,Frozen drinkCanBoiledWater
+drinkJarEmptyFrozen,Frozen Empty Water Jar
+drinkJarRiverWaterFrozen,Frozen Murky Water
+drinkJarBoiledWaterFrozen,Frozen Boiled Water
+drinkJarPureMineralWaterFrozen,Frozen Pure Mineral Water
+drinkJarYuccaJuiceFrozen,Frozen Yucca Juice
+drinkJarGoldenRodTeaFrozen,Frozen Goldenrod Tea
+drinkJarRedTeaFrozen,Frozen Red Tea
+drinkJarYuccaCocktailFrozen,Frozen drinkJarYuccaCocktail
+drinkYuccaJuiceSmoothieFrozen,Frozen Yucca Juice Smoothie
+drinkCanMegaCrushFrozen,Frozen Mega Crush
+drinkJarCoffeeFrozen,Frozen Coffee
+drinkJarBlackStrapCoffeeFrozen,Frozen Blackstrap Coffee
+drinkJarBeerFrozen,Frozen Beer
+drinkJarGrainAlcoholFrozen,Frozen Grain Alcohol
+drinkJarGrandpasMoonshineFrozen,Frozen Grandpa's Moonshine
+drinkJarGrandpasAwesomeSauceFrozen,Frozen Grandpa's Awesome Sauce
+drinkJarGrandpasLearningElixirFrozen,Frozen Grandpas Learnin' Elixir
+drinkJarGrandpasForgettingElixirFrozen,Frozen Grandpa's Fergit'n Elixir
+foodCanShamSchematicFrozen,Frozen Shamway Secret Recipe
+drinkJarBeerSchematicFrozen,Frozen Beer Recipe
+drinkJarCoffeeSchematicFrozen,Frozen Coffee Recipe
+drinkJarGoldenRodTeaSchematicFrozen,Frozen Goldenrod Tea Recipe
+drinkJarGrandpasAwesomeSauceSchematicFrozen,Frozen Grandpa's Awesome Sauce Recipe
+drinkJarGrandpasLearningElixirSchematicFrozen,Frozen Grandpas Learnin' Elixir Recipe
+drinkJarGrandpasMoonshineSchematicFrozen,Frozen Grandpa's Moonshine Recipe
+drinkJarRedTeaSchematicFrozen,Frozen Red Tea Recipe
+drinkYuccaJuiceSmoothieSchematicFrozen,Frozen Yucca Juice Smoothie Recipe
+foodBaconAndEggsSchematicFrozen,Frozen Bacon and Eggs Recipe
+foodBakedPotatoSchematicFrozen,Frozen Baked Potato Recipe
+foodBlueberryPieSchematicFrozen,Frozen Blueberry Pie Recipe
+foodPumpkinPieSchematicFrozen,Frozen Pumpkin Pie Recipe
+foodPumpkinCheesecakeSchematicFrozen,Frozen Pumpkin Cheesecake Recipe
+foodPumpkinBreadSchematicFrozen,Frozen Pumpkin Bread Recipe
+foodGumboStewSchematicFrozen,Frozen Gumbo Stew Recipe
+foodShepardsPieSchematicFrozen,Frozen Shepards Pie Recipe
+foodSpaghettiSchematicFrozen,Frozen Spaghetti Recipe
+foodTunaFishGravyToastSchematicFrozen,Frozen Tuna Fish Gravy Toast Recipe
+foodBoiledMeatSchematicFrozen,Frozen Boiled Meat Recipe
+foodChiliDogSchematicFrozen,Frozen Chili Dog Recipe
+foodCornBreadSchematicFrozen,Frozen Corn Bread Recipe
+foodCornOnTheCobSchematicFrozen,Frozen Corn on the Cob Recipe
+foodFishTacosSchematicFrozen,Frozen Fish Tacos Recipe
+foodGrilledMeatSchematicFrozen,Frozen Grilled Meat Recipe
+foodHoboStewSchematicFrozen,Frozen Hobo Stew Recipe
+foodMeatStewSchematicFrozen,Frozen Meat Stew Recipe
+foodShamChowderSchematicFrozen,Frozen Sham Chowder Recipe
+foodSteakAndPotatoSchematicFrozen,Frozen Steak and Potato Meal  Recipe
+foodVegetableStewSchematicFrozen,Frozen Vegetable Stew Recipe
+drinkJarFullRespecAdminFrozen,Frozen Dev: Full Respec
+Frozen,Frozen 
+xmasGifts,A Christmas Gift
+xmasGiftsDesc,A cute little Christmas present
+xmasGift,A Christmas Gift
+xmasGiftDesc,A cute little Christmas present
+ChristmasTreeCB,A Christmas Tree
+ChristmasTreeCBDesc,A lovely little Christmas tree
+ChristmasTreeNaughty,A Naughty Christmas Tree
+ChristmasTreeNaughtyDesc,A Naughty Christmas tree
+ChristmasTreeNice,A Nice Christmas Tree
+ChristmasTreeNiceDesc,A Nice Christmas tree
+iceBlock,A sturdy ice block
+iceBlockDesc,A study ice block that can be used for building.
+snowBlock,A sturdy snow block
+snowBlockDesc,A study snow block that can be used for building. Maybe we can build an igloo?
+rabbitBlock,A Rabbit block
+rabbitBlockDesc,A cute little toy rabbit
+wreath,A wreath
+wreathDesc,A very festive Christmas Wreath
+wrappingstation,A Wrapping Station
+wrappingstationDesc,A sturdy workbench for wrapping and making presents
+poinsettia,A poinsettia
+poinsettiaDesc,A traditional holiday plant
+lightString,A light string
+lightStringDesc,A christmas light string
+lightStringDiag,A diagonal light string
+lightStringDiagDesc,A christmas diagonal light string
+xmasCandle,A christmas candle
+xmasCandleDesc,A christmas candle
+beesWaxCandle,A bees wax candle
+beesWaxCandleDesc,A bees wax candle
+XmasPoster01,A christmas poster
+XmasPoster01Desc,A christmas poster
+rabbitItem,An rabbit
+toysDesc,An little rabbit toy
+candyCane,An Candy Cane
+candyCaneDesc,A tasty treat used to smash the face of the zombies.
+waxCandle,An wax candle
+waxCandleDesc,A pretty little wax candle.
+Cookies,A cookie
+CookiesDesc,A small christmas cookie to tide you over until supper
+snowShovel,An sturdy shovel
+snowShovelDesc,"A sturdy snow shovel, for all our winter shovelling needs."
+drinkThermosEmpty,An empty thermos
+drinkThermosEmptyDesc,"An empty thermos, which is useful for keeping things warm longer."
+loadingTipMainHUD,The apocalypse is a desolate and depressing place. We hope you enjoy your forever stay...
+loadingTipMainHUD_title,Winterween
+loadingTipMainHUD_02,Don't eat yellow snow. It isn't safe. It could even be pee. It's probably pee. Yup. It's pee.
+loadingTipMainHUD_02_title,Yellow Snow
+loadingTipMainHUD_03,Be mindful of your stamina! Your next leap may be your last.
+loadingTipMainHUD_03_title,Stamina is important
+loadingTipMainHUD_04,Not all occupants in the apocalypse wants your brains! Some also want your warmth.
+loadingTipMainHUD_04_title,Find your friends!
+loadingTipMainHUD_05,"The world is very cold. Many things will freeze, so plan ahead."
+loadingTipMainHUD_05_title,It's very cold
+loadingTipMainHUD_06,"From time to time, you may hear musical voices. Could they belong to your new best friend?"
+loadingTipMainHUD_06_title,Follow the Music
+loadingTipMainHUD_08,"No one knows where the Shaman came from or what it was, only its unrelenting goal of exterminating the human race."
+loadingTipMainHUD_08_title,The Shaman...
+loadingTipMainHUD_07,"Following a terrible battle against the Shaman and its Minions, the survivors launched their final, and complete assault, plunging the world into a nuclear winter."
+loadingTipMainHUD_07_title,Winter Apocalypse
+loadingTipMainHUD_08,The Shaman and its Minions were driven from the world from the intense cold. They have not been seen since.
+loadingTipMainHUD_08_title,The Shaman is gone...
+loadingTipMainHUD_09,"It took many years, but the survivors have started leaving their caves and hiding spots and exploring them."
+loadingTipMainHUD_09_title,World Recovery
+loadingTipMainHUD_10,BA-GOSHI A-KHA NA-AS-TSO-SI DZEH TOISH-JEH AH-NAH AH-JAD A-KHA GLOE-IH D-AH TSE-GAH AH-JAH DIBEH SHI-DA AH-LOSZ MA-E BE-LA-SANA MOASI AH-JAH TSE-NILL A-CHIN LHA-CHA-EH AH-JAD AH-NAH D-AH A-WOH TSE-GAH AH-JAH TSAH A-CHI JEHA CHA A-WOH TSIN-TLITI WOL-LA-CHEE AH-LOSZ AH-JAH TSA-E-DONIN-EE AH-JAH WOL-LA-CHEE KLESH THAN-ZIE TLO-CHIN A-CHIN TSAH-AS-ZIH A-KHA SHI-DA
+loadingTipMainHUD_10_title,D-AH TSE-GAH DZEH DIBEH LIN BE-LA-SANA NA-AS-TSO-SI TSE-NILL A-CHIN
+foodFrozenDesc,Thaw item on the campfire before using.
+foodCanBeefFrozenDesc,Thaw item on the campfire before using.
+foodCanChickenFrozenDesc,Thaw item on the campfire before using.
+foodCanLambFrozenDesc,Thaw item on the campfire before using.
+foodCanCatfoodFrozenDesc,Thaw item on the campfire before using.
+foodCanDogfoodFrozenDesc,Thaw item on the campfire before using.
+foodCanChiliFrozenDesc,Thaw item on the campfire before using.
+foodCanTunaFrozenDesc,Thaw item on the campfire before using.
+foodCanShamFrozenDesc,Thaw item on the campfire before using.
+foodCanPastaFrozenDesc,Thaw item on the campfire before using.
+foodCanSalmonFrozenDesc,Thaw item on the campfire before using.
+foodCanMisoFrozenDesc,Thaw item on the campfire before using.
+foodCanPeasFrozenDesc,Thaw item on the campfire before using.
+foodCanPearsFrozenDesc,Thaw item on the campfire before using.
+foodCanSoupFrozenDesc,Thaw item on the campfire before using.
+foodCanStockFrozenDesc,Thaw item on the campfire before using.
+foodCornOnTheCobFrozenDesc,Thaw item on the campfire before using.
+foodCornBreadFrozenDesc,Thaw item on the campfire before using.
+foodMoldyBreadFrozenDesc,Thaw item on the campfire before using.
+foodShamSandwichFrozenDesc,Thaw item on the campfire before using.
+foodCharredMeatFrozenDesc,Thaw item on the campfire before using.
+foodGrilledMeatFrozenDesc,Thaw item on the campfire before using.
+foodBoiledMeatFrozenDesc,Thaw item on the campfire before using.
+foodMeatStewFrozenDesc,Thaw item on the campfire before using.
+foodSteakAndPotatoFrozenDesc,Thaw item on the campfire before using.
+foodShamChowderFrozenDesc,Thaw item on the campfire before using.
+foodHoboStewFrozenDesc,Thaw item on the campfire before using.
+foodFishTacosFrozenDesc,Thaw item on the campfire before using.
+foodChiliDogFrozenDesc,Thaw item on the campfire before using.
+foodBakedPotatoFrozenDesc,Thaw item on the campfire before using.
+foodBlueberryPieFrozenDesc,Thaw item on the campfire before using.
+foodPumpkinPieFrozenDesc,Thaw item on the campfire before using.
+foodPumpkinCheesecakeFrozenDesc,Thaw item on the campfire before using.
+foodPumpkinBreadFrozenDesc,Thaw item on the campfire before using.
+foodGumboStewFrozenDesc,Thaw item on the campfire before using.
+foodShepardsPieFrozenDesc,Thaw item on the campfire before using.
+foodSpaghettiFrozenDesc,Thaw item on the campfire before using.
+foodTunaFishGravyToastFrozenDesc,Thaw item on the campfire before using.
+foodEggBoiledFrozenDesc,Thaw item on the campfire before using.
+foodBaconAndEggsFrozenDesc,Thaw item on the campfire before using.
+foodVegetableStewFrozenDesc,Thaw item on the campfire before using.
+foodRawMeatFrozenDesc,Thaw item on the campfire before using.
+foodRottingFleshFrozenDesc,Thaw item on the campfire before using.
+foodEggFrozenDesc,Thaw item on the campfire before using.
+foodCornMealFrozenDesc,Thaw item on the campfire before using. Suck it, non-believers.
+foodCropBlueberriesFrozenDesc,Thaw item on the campfire before using.
+foodCropCornFrozenDesc,Thaw item on the campfire before using.
+foodCropGraceCornFrozenDesc,Thaw item on the campfire before using.
+foodCropPotatoFrozenDesc,Thaw item on the campfire before using.
+foodCropMushroomsFrozenDesc,Thaw item on the campfire before using.
+foodCropYuccaFruitFrozenDesc,Thaw item on the campfire before using.
+foodCropPumpkinFrozenDesc,Thaw item on the campfire before using.
+drinkCanEmptyFrozenDesc,Thaw item on the campfire before using.
+drinkCanRiverWaterFrozenDesc,Thaw item on the campfire before using.
+drinkCanBoiledWaterFrozenDesc,Thaw item on the campfire before using.
+drinkJarEmptyFrozenDesc,Thaw item on the campfire before using.
+drinkJarRiverWaterFrozenDesc,Thaw item on the campfire before using.
+drinkJarBoiledWaterFrozenDesc,Thaw item on the campfire before using.
+drinkJarPureMineralWaterFrozenDesc,Thaw item on the campfire before using.
+drinkJarYuccaJuiceFrozenDesc,Thaw item on the campfire before using.
+drinkJarGoldenRodTeaFrozenDesc,Thaw item on the campfire before using.
+drinkJarRedTeaFrozenDesc,Thaw item on the campfire before using.
+drinkJarYuccaCocktailFrozenDesc,Thaw item on the campfire before using.
+drinkYuccaJuiceSmoothieFrozenDesc,Thaw item on the campfire before using.
+drinkCanMegaCrushFrozenDesc,Thaw item on the campfire before using.
+drinkJarCoffeeFrozenDesc,Thaw item on the campfire before using.
+drinkJarBlackStrapCoffeeFrozenDesc,Thaw item on the campfire before using.
+drinkJarBeerFrozenDesc,Thaw item on the campfire before using.
+drinkJarGrainAlcoholFrozenDesc,Thaw item on the campfire before using.
+drinkJarGrandpasMoonshineFrozenDesc,Thaw item on the campfire before using.
+drinkJarGrandpasAwesomeSauceFrozenDesc,Thaw item on the campfire before using.
+drinkJarGrandpasLearningElixirFrozenDesc,Thaw item on the campfire before using.
+drinkJarGrandpasForgettingElixirFrozenDesc,Thaw item on the campfire before using.
