@@ -130,7 +130,9 @@
 		<Content Include="Config\blockplaceholders.xml"/>
 		<Content Include="Config\blocks.xml"/>
 		<Content Include="Config\buffs.xml"/>
+		<Content Include="Config\challenges.xml" />
 		<Content Include="Config\entityclasses.xml"/>
+		<Content Include="Config\gameevents.xml" />
 		<Content Include="Config\gamestages.xml"/>
 		<Content Include="Config\items.xml"/>
 		<Content Include="Config\loadingscreen.xml"/>

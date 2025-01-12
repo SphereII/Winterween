@@ -267,9 +267,9 @@ namespace Harmony.WorldGen {
 
                     // If the player is above ground, do not run this spawner.
                     var position = new Vector3i(playerPosition);
-                    float offSet = GameManager.Instance.World.GetTerrainHeight(position.x, position.z);
+                    float offSet = GameManager.Instance.World.GetTerrainHeight(position.x, position.z) - 15;
                     // Only spawn when we are 10 meters below the terrain.
-                    if (offSet - 10 <= playerPosition.y)
+                    if (offSet <= playerPosition.y)
                     {
                         return Vector3.zero;
                     }
@@ -282,6 +282,9 @@ namespace Harmony.WorldGen {
                     if (GameManager.Instance.World.FindRandomSpawnPointNearPositionUnderground(playerPosition, 16,
                             out int x, out int y, out int z, size))
                     {
+                        // If the spawn position is above the terrain, don't trigger the cave spawn.
+                        if ( y > offSet) return Vector3.zero;
+                        
                         return new Vector3(x, y, z);
                     }
 

@@ -30,6 +30,28 @@
     <!-- Fire! -->
     <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FireManagement']/property[@name='FireEnable']/@value">true</set>
 
+    <!-- Random Walk Types -->
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedZombieFeatures']/property[@name='RandomWalk']/@value">true</set>
+
+    <!-- Craft From Container -->
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedRecipes']/property[@name='ReadFromContainers']/@value">true</set>
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='BlockUpgradeRepair']/property[@name='ReadFromContainers']/@value">true</set>
+    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='BlockUpgradeRepair']/property[@name='BlockOnNearbyEnemies']/@value">true</set>
+    <append xpath="/blocks">
+        <block name="cntSphereDropBox">
+            <property name="Extends" value="cntWoodWritableCrate"/>
+            <property name="CustomIcon" value="cntWoodWritableCrate"/>
+            <property name="Class" value="DropBoxContainer, SCore"/>
+            <property name="CustomIconTint" value="A0A0A0"/>
+            <property name="TintColor" value="A0A0A0"/>
+            <property name="LootList" value="playerWoodWritableStorage"/>
+            <property name="DescriptionKey" value="cntSphereDropBoxDesc"/>
+            <property name="DropBox" value="true" />
+
+        </block>
+    </append>
+
+    
     <append xpath="/blocks/block[@name='ConfigFeatureBlock']">
         <property class="WinterProject" >
             <property name="Logging" value="false"/>
@@ -37,8 +59,8 @@
             <property name="RoofSnowDepth" value="2" />
         </property>
     </append>
-    
 
+    
     <append xpath="/blocks/block[@name='questRallyMarker']">
         <!-- Flag model by s.probka is licensed under CC Attribution  -->
         <property name="ModelOffset" value="0,6,0"/>
