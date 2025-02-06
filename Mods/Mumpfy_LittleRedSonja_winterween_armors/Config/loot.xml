@@ -1,0 +1,16 @@
+<MumpfyAndLittleRedSonja>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupAllArmor']">
+	
+		<item name="armorWinterHelmet_ww_male"/>
+		<item name="armorWinterOutfit_ww_male"/>
+		<item name="armorWinterGloves_ww_male"/>
+		<item name="armorWinterBoots_ww_male"/>
+		<item name="armorWinterHelmet_ww_female"/>
+		<item name="armorWinterOutfit_ww_female"/>
+		<item name="armorWinterGloves_ww_female"/>
+		<item name="armorWinterBoots_ww_female"/>
+		
+	</append>
+
+</MumpfyAndLittleRedSonja>

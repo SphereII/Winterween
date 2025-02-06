@@ -1,0 +1,14 @@
+<config>
+
+	<set xpath="/doc/backgrounds">
+		<tex file="@modfolder://Textures/loadingscreens/mum_loadingscreen_1.png" />
+		<tex file="@modfolder://Textures/loadingscreens/mum_loadingscreen_2.png" />
+		<tex file="@modfolder://Textures/loadingscreens/mum_loadingscreen_3.png" />
+		<tex file="@modfolder://Textures/loadingscreens/mum_loadingscreen_4.png" />
+		<tex file="@modfolder://Textures/loadingscreens/mum_loadingscreen_5.png" />
+		<tex file="@modfolder://Textures/loadingscreens/mum_loadingscreen_6.png" />
+		<tex file="@modfolder://Textures/loadingscreens/mum_loadingscreen_7.png" />
+		<tex file="@modfolder://Textures/loadingscreens/mum_loadingscreen_8.png" />
+	</set>
+
+</config>

@@ -1,0 +1,22 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+armorWinterArmor,items,Item,,,"Winter Armors [5286ec](WW)",,,,,,,,,,,,,
+armorWinterArmorDesc,items,Item,,,"Warm and comfy hats, outfits, gloves and boots for male and female survivors[5286ec](WW)",,,,,,,,,,,,,
+
+armorWinterHelmet_ww_male,items,Clothes,,,"Male Winter Armor Helmet [5286ec](WW)",,,,,,,,,,,,,
+armorWinterHelmet_ww_female,items,Clothes,,,"Female Winter Armor Helmet [5286ec](WW)",,,,,,,,,,,,,
+armorWinterOutfit_ww_male,items,Clothes,,,"Male Winter Armor Outfit [5286ec](WW)",,,,,,,,,,,,,
+armorWinterOutfit_ww_female,items,Clothes,,,"Female Winter Armor Outfit [5286ec](WW)",,,,,,,,,,,,,
+armorWinterGloves_ww_male,items,Clothes,,,"Male Winter Armor Gloves [5286ec](WW)",,,,,,,,,,,,,
+armorWinterGloves_ww_female,items,Clothes,,,"Female Winter Armor Gloves [5286ec](WW)",,,,,,,,,,,,,
+armorWinterBoots_ww_male,items,Clothes,,,"Male Winter Armor Boots [5286ec](WW)",,,,,,,,,,,,,
+armorWinterBoots_ww_female,items,Clothes,,,"Female Winter Armor Boots [5286ec](WW)",,,,,,,,,,,,,
+
+armorWinterHelmetDesc,items,Clothes,,,"Medium Armor\nA winter survivor always knows where to look.\nIncreases loot stage.\n\n[5286ec]Full Set Bonus:[-] Use less food and water."
+armorWinterOutfitDesc,items,Clothes,,,"Medium Armor\nMade out of the best polar bear fur, this comfy outfit will keep you protected from Zombies and Nightmares.\nReduces incoming damage.\n\n[5286ec]Full Set Bonus:[-] Use less food and water."
+armorWinterGlovesDesc,items,Clothes,,,"Medium Armor\nEnjoy the hunt with enhanced grip and precision.\nIncreases damage with all ranged weapons.\n\n[5286ec]Full Set Bonus:[-] Use less food and water."
+armorWinterBootsDesc,items,Clothes,,,"Medium Armor\nThese padded winter boots keep your feet warm and dry and help you run faster.\nIncreases run speed.\n\n[5286ec]Full Set Bonus:[-] Use less food and water."
+
+buffWinterSetBonusName,buffs,Buff,,,"Winter Armor Full Set Bonus",,,,,,,,,,,,,
+buffWinterSetBonusDesc,buffs,Buff,,,"Designed to preserve the body's moisture and warmth. Kept in working order and maintained properly, a full set of Winter Armor will help you survive longer with very little food and water.\n\nUse {cvar(.armorAthleticFSBDisplay:0)}% less food and water."
+buffWinterSetBonusTooltip,buffs,Buff,,,"Winter Armor Full Set Bonus Active",,,,,,,,,,,,,

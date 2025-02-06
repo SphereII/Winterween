@@ -1,0 +1,116 @@
+<MumpfyAndLittleRedSonja>
+
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']">
+	
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffHideThirdPersonArmor"/>
+		</effect_group>
+		
+	</append>
+	
+	<append xpath="/buffs">
+	
+		<buff name="buffHideThirdPersonArmor" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value=".05"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="bodyTP">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+	</append>
+	
+	<append xpath="/buffs/buff[@name='buffStatusCheck02']">
+	
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffWinterSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupWinter" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffWinterSetBonus"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffWinterSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupWinter" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffWinterSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+		
+	</append>
+	
+	<append xpath="/buffs">
+	
+		<buff name="buffWinterSetBonus" name_key="buffWinterSetBonusName" description_key="buffWinterSetBonusDesc" tooltip_key="buffWinterSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+			<stack_type value="ignore"/>
+			<display_value_key value="Bonus"/>
+			<display_value value="xxx"/>
+
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupWinter" operation="Equals" value="1"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="10"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAthleticFSBDisplay"/>
+					<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.1"/>
+					<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.1"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupWinter" operation="Equals" value="2"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="20"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="20"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAthleticFSBDisplay"/>
+					<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.2"/>
+					<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.2"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupWinter" operation="Equals" value="3"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="30"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="30"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAthleticFSBDisplay"/>
+					<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.3"/>
+					<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.3"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupWinter" operation="Equals" value="4"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="40"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="40"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAthleticFSBDisplay"/>
+					<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.4"/>
+					<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.4"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupWinter" operation="Equals" value="5"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="50"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="50"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAthleticFSBDisplay"/>
+					<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.5"/>
+					<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.5"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="ArmorGroupLowestQuality" group_name="groupWinter" operation="Equals" value="6"/>
+				</requirements>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="60"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorAthleticFSBDisplay" operation="set" value="60"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAthleticFSBDisplay"/>
+					<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.6"/>
+					<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.6"/>
+			</effect_group>
+		</buff>
+	
+	</append>	
+		
+</MumpfyAndLittleRedSonja>

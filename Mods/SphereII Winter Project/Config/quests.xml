@@ -12,14 +12,14 @@
 
             <conditional evaluator="client">
                 <if cond="(time_minutes() % 2) == 0">
-                    <reward type="Item" id="armorScavengerGloves" value="1"/>
-                    <reward type="Item" id="armorScavengerOutfit" value="1"/>
-                    <reward type="Item" id="armorScavengerBoots" value="1"/>
+                    <reward type="Item" id="armorWinterGloves_ww_male" value="1"/>
+                    <reward type="Item" id="armorWinterOutfit_ww_male" value="1"/>
+                    <reward type="Item" id="armorWinterBoots_ww_male" value="1"/>
                 </if>
                 <else>                
-                    <reward type="Item" id="armorRogueGloves" value="1"/>
-                    <reward type="Item" id="armorRogueOutfit" value="1"/>
-                    <reward type="Item" id="armorRogueBoots" value="1"/>
+                    <reward type="Item" id="armorWinterGloves_ww_female" value="1"/>
+                    <reward type="Item" id="armorWinterOutfit_ww_female" value="1"/>
+                    <reward type="Item" id="armorWinterBoots_ww_female" value="1"/>
                 </else>
             </conditional>
             <reward type="Item" id="gunBowT1WoodenBow" value="1"/>

@@ -1,0 +1,29 @@
+<config>
+
+	<remove xpath="/windows/window[@name='loadingScreen']" />
+
+	<append xpath="/windows">
+		<window name="loadingScreen" depth="200" pos="0,0" width="1185" height="780" anchor="CenterCenter" controller="LoadingScreen" browse_sound="Sounds/Crafting/craft_click_recipe">
+			<panel name="pnlBlack" depth="1" pos="-3000,3000" width="10000" height="10000" createuipanel="true" on_press="true" disableautobackground="true" gamepad_selectable="false" />
+
+			<texture name="loading_image" depth="2" texture="{background_texture}" color="[white]" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5" original_aspect_ratio="true" keep_aspect_ratio="BasedOnWidth" aspect_ratio="1.779" />
+
+			<texture name="smxMumpfyTag" depth="10" pos="1100,565" width="108" height="30" pivot="center" texture="@modfolder://Textures/loadingscreens/mum_mumpfy_watermark.png" rotation="90" />
+
+			<rect name="tips_enabled" visible="{show_tips}">
+
+				<sprite name="mum_panel_background" depth="4" pos="0,0" pivot="center" type="sliced" sprite="menu_empty" color="7,7,7,0" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,-775" />
+
+				<label name="lblTitle"    depth="6" anchor_left="#cam,0,20"   anchor_right="#cam,1,-280" anchor_bottom="#cam,0,180" anchor_top="#cam,0,240" font_size="50" color="230,26,22" justify="left" parse_actions="true" text="{title}" upper_case="true" />
+
+				<label name="lblLeft"     depth="6" anchor_left="#cam,1,-200" anchor_right="#cam,1,-150"  anchor_bottom="#cam,0,180" anchor_top="#cam,0,240" font_size="30" color="[white]" pivot="center" justify="right" parse_actions="true" max_line_count="1" text=" [action:local:Secondary]" />
+				<label name="lblIndex"    depth="6" anchor_left="#cam,1,-150" anchor_right="#cam,1,-70"   anchor_bottom="#cam,0,180" anchor_top="#cam,0,240" font_size="30" color="[white]" pivot="center" justify="center" parse_actions="true" max_line_count="1" text="{index}/{count}" />
+				<label name="lblRight"    depth="6" anchor_left="#cam,1,-70"  anchor_right="#cam,1,-20"   anchor_bottom="#cam,0,180" anchor_top="#cam,0,240" font_size="30" color="[white]" pivot="center" justify="left" parse_actions="true" max_line_count="1" text="[action:local:Primary] " />
+
+				<label name="lblText"     depth="6" anchor_left="#cam,0,20"   anchor_right="#cam,1,-20"   anchor_bottom="#cam,0,20"  anchor_top="#cam,0,170" font_size="32" justify="left" parse_actions="true" actions_default_format="( [e61a16]###[-] )" spacing_y="5" text="{text}" />
+
+			</rect>
+		</window>
+	</append>
+
+</config>
