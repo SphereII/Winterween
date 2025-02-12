@@ -1,0 +1,378 @@
+<configs>
+
+	<append xpath="/entitygroups">
+
+	<!-- Adding up to a total of 100 for conformity -->
+	<!-- *** DAY -->	
+	<entitygroup name="XythSpiddiesDay">
+		animalSpider01Mini, 1
+		animalSpider02Mini, 1
+		animalSpider03Mini, 1
+		animalSpider01, 1
+		animalSpider02, 1
+		animalSpider03, 1
+		animalSpider01Feral, .5
+		animalSpider02Feral, .5
+		animalSpider03Feral, .5
+		animalSpider01Radiated, .3
+		animalSpider02Radiated, .3
+		animalSpider03Radiated, .3
+		animalSpider01Queen, .2
+		animalSpider02Queen, .2
+		animalSpider03Queen, .2
+		none, 91
+	</entitygroup>
+	
+	<!-- *** NIGHT -->
+	<entitygroup name="XythSpiddiesNight">
+		animalSpider01, 1
+		animalSpider02, 1
+		animalSpider03, 1
+		animalSpider01Feral, .75
+		animalSpider02Feral, .75
+		animalSpider03Feral, .75
+		animalSpider01Radiated, .75
+		animalSpider02Radiated, .75
+		animalSpider03Radiated, .75
+		animalSpider01Queen, .5
+		animalSpider02Queen, .5
+		animalSpider03Queen, .5
+		none, 91
+	</entitygroup>
+	
+	<!-- *** ANY -->	
+	<entitygroup name="XythSpiddiesAny">
+		animalSpider01, 1
+		animalSpider02, 1
+		animalSpider03, 1
+		animalSpider01Feral, 1
+		animalSpider02Feral, 1
+		animalSpider03Feral, 1
+		animalSpider01Radiated, .5
+		animalSpider02Radiated, .5
+		animalSpider03Radiated, .5
+		animalSpider01Queen, .5
+		animalSpider02Queen, .5
+		animalSpider03Queen, .5
+		animalSpider01Mini, .33
+		animalSpider02Mini, .33
+		animalSpider03Mini, .33
+		none, 90.01
+	</entitygroup>
+
+	</append>
+
+	<!-- *** SLEEPER VOLUMES FOR POIS -->
+	<!-- *** NPC MODE CORE -->
+	<csv xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsAllGroupGS01']/text()" delim="\n" op="add" >
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini
+		animalSpider01
+		animalSpider02
+		animalSpider03
+		animalSpider01Feral, .2
+		animalSpider02Feral, .2
+		animalSpider03Feral, .2
+		animalSpider01Radiated, .1
+		animalSpider02Radiated, .1
+		animalSpider03Radiated, .1
+		animalSpider01Queen, .075
+		animalSpider02Queen, .075
+		animalSpider03Queen, .075
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsAllGroupGS50']/text()" delim="\n" op="add" >
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini
+		animalSpider01
+		animalSpider02
+		animalSpider03
+		animalSpider01Feral, .35
+		animalSpider02Feral, .35
+		animalSpider03Feral, .35
+		animalSpider01Radiated, .1
+		animalSpider02Radiated, .1
+		animalSpider03Radiated, .1
+		animalSpider01Queen, .075
+		animalSpider02Queen, .075
+		animalSpider03Queen, .075
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsAllGroupGS100']/text()" delim="\n" op="add" >
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini
+		animalSpider01
+		animalSpider02
+		animalSpider03
+		animalSpider01Feral, .5
+		animalSpider02Feral, .5
+		animalSpider03Feral, .5
+		animalSpider01Radiated, .25
+		animalSpider02Radiated, .25
+		animalSpider03Radiated, .25
+		animalSpider01Queen, .1
+		animalSpider02Queen, .1
+		animalSpider03Queen, .1
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsAllGroupGS200']/text()" delim="\n" op="add" >
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini
+		animalSpider01
+		animalSpider02
+		animalSpider03
+		animalSpider01Feral, .7
+		animalSpider02Feral, .7
+		animalSpider03Feral, .7
+		animalSpider01Radiated, .35
+		animalSpider02Radiated, .35
+		animalSpider03Radiated, .35
+		animalSpider01Queen, .15
+		animalSpider02Queen, .15
+		animalSpider03Queen, .15
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsAllGroupGS400']/text()" delim="\n" op="add" >
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini
+		animalSpider01
+		animalSpider02
+		animalSpider03
+		animalSpider01Feral, .7
+		animalSpider02Feral, .7
+		animalSpider03Feral, .7
+		animalSpider01Radiated, .5
+		animalSpider02Radiated, .5
+		animalSpider03Radiated, .5
+		animalSpider01Queen, .25
+		animalSpider02Queen, .25
+		animalSpider03Queen, .25
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcEnemyAnimalsAllGroupGS800']/text()" delim="\n" op="add" >
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini
+		animalSpider01
+		animalSpider02
+		animalSpider03
+		animalSpider01Feral, .7
+		animalSpider02Feral, .7
+		animalSpider03Feral, .7
+		animalSpider01Radiated, .5
+		animalSpider02Radiated, .5
+		animalSpider03Radiated, .5
+		animalSpider01Queen, .25
+		animalSpider02Queen, .25
+		animalSpider03Queen, .25
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcArachnidsAllGroupGS01']/text()" delim="\n" op="add" >
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini
+		animalSpider01
+		animalSpider02
+		animalSpider03
+		animalSpider01Feral, .2
+		animalSpider02Feral, .2
+		animalSpider03Feral, .2
+		animalSpider01Radiated, .1
+		animalSpider02Radiated, .1
+		animalSpider03Radiated, .1
+		animalSpider01Queen, .075
+		animalSpider02Queen, .075
+		animalSpider03Queen, .075
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcArachnidsAllGroupGS50']/text()" delim="\n" op="add" >
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini
+		animalSpider01
+		animalSpider02
+		animalSpider03
+		animalSpider01Feral, .35
+		animalSpider02Feral, .35
+		animalSpider03Feral, .35
+		animalSpider01Radiated, .1
+		animalSpider02Radiated, .1
+		animalSpider03Radiated, .1
+		animalSpider01Queen, .075
+		animalSpider02Queen, .075
+		animalSpider03Queen, .075
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcArachnidsAllGroupGS100']/text()" delim="\n" op="add" >
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini
+		animalSpider01
+		animalSpider02
+		animalSpider03
+		animalSpider01Feral, .5
+		animalSpider02Feral, .5
+		animalSpider03Feral, .5
+		animalSpider01Radiated, .25
+		animalSpider02Radiated, .25
+		animalSpider03Radiated, .25
+		animalSpider01Queen, .1
+		animalSpider02Queen, .1
+		animalSpider03Queen, .1
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcArachnidsAllGroupGS200']/text()" delim="\n" op="add" >
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini
+		animalSpider01
+		animalSpider02
+		animalSpider03
+		animalSpider01Feral, .7
+		animalSpider02Feral, .7
+		animalSpider03Feral, .7
+		animalSpider01Radiated, .35
+		animalSpider02Radiated, .35
+		animalSpider03Radiated, .35
+		animalSpider01Queen, .15
+		animalSpider02Queen, .15
+		animalSpider03Queen, .15
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcArachnidsAllGroupGS400']/text()" delim="\n" op="add" >
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini
+		animalSpider01
+		animalSpider02
+		animalSpider03
+		animalSpider01Feral, .7
+		animalSpider02Feral, .7
+		animalSpider03Feral, .7
+		animalSpider01Radiated, .5
+		animalSpider02Radiated, .5
+		animalSpider03Radiated, .5
+		animalSpider01Queen, .25
+		animalSpider02Queen, .25
+		animalSpider03Queen, .25
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcArachnidsAllGroupGS800']/text()" delim="\n" op="add" >
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini
+		animalSpider01
+		animalSpider02
+		animalSpider03
+		animalSpider01Feral, .7
+		animalSpider02Feral, .7
+		animalSpider03Feral, .7
+		animalSpider01Radiated, .5
+		animalSpider02Radiated, .5
+		animalSpider03Radiated, .5
+		animalSpider01Queen, .25
+		animalSpider02Queen, .25
+		animalSpider03Queen, .25
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcArachnidsBossGroupGS01']/text()" delim="\n" op="add" >
+		animalSpider01Radiated
+		animalSpider02Radiated
+		animalSpider03Radiated
+		animalSpider01Queen, .75
+		animalSpider02Queen, .75
+		animalSpider03Queen, .75
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcArachnidsBossGroupGS50']/text()" delim="\n" op="add" >
+		animalSpider01Radiated
+		animalSpider02Radiated
+		animalSpider03Radiated
+		animalSpider01Queen, .75
+		animalSpider02Queen, .75
+		animalSpider03Queen, .75
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcArachnidsBossGroupGS100']/text()" delim="\n" op="add" >
+		animalSpider01Radiated
+		animalSpider02Radiated
+		animalSpider03Radiated
+		animalSpider01Queen, .75
+		animalSpider02Queen, .75
+		animalSpider03Queen, .75
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcArachnidsBossGroupGS200']/text()" delim="\n" op="add" >
+		animalSpider01Radiated
+		animalSpider02Radiated
+		animalSpider03Radiated
+		animalSpider01Queen, .75
+		animalSpider02Queen, .75
+		animalSpider03Queen, .75
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcArachnidsBossGroupGS400']/text()" delim="\n" op="add" >
+		animalSpider01Radiated
+		animalSpider02Radiated
+		animalSpider03Radiated
+		animalSpider01Queen, .75
+		animalSpider02Queen, .75
+		animalSpider03Queen, .75
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[@name='npcArachnidsBossGroupGS800']/text()" delim="\n" op="add" >
+		animalSpider01Radiated
+		animalSpider02Radiated
+		animalSpider03Radiated
+		animalSpider01Queen, .75
+		animalSpider02Queen, .75
+		animalSpider03Queen, .75
+	</csv>
+
+	<!-- *** CUSTOM SLEEPER VOLUMES FOR CUSTOM POIS -->
+	<!-- Colony Expansion Spider Pack Custom Sleeper Volume Group -->
+	<append xpath="/entitygroups">
+		<entitygroup name="SpiderPack">
+		animalSpider01
+		animalSpider02
+		animalSpider03
+		</entitygroup>
+		<entitygroup name="SpiderPack_Mini">
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini
+		</entitygroup>
+		<entitygroup name="SpiderPack_Feral">
+		animalSpider01Feral
+		animalSpider02Feral
+		animalSpider03Feral
+		</entitygroup>
+		<entitygroup name="SpiderPack_Radiated">
+		animalSpider01Radiated
+		animalSpider02Radiated
+		animalSpider03Radiated
+		</entitygroup>
+		<entitygroup name="SpiderPack_EasyMix">
+		animalSpider01
+		animalSpider02
+		animalSpider03		
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini			
+		</entitygroup>
+		<entitygroup name="SpiderPack_Mix">
+		animalSpider01
+		animalSpider02
+		animalSpider03
+		animalSpider01Feral
+		animalSpider02Feral
+		animalSpider03Feral		
+		animalSpider01Mini
+		animalSpider02Mini
+		animalSpider03Mini		
+		</entitygroup>
+		<entitygroup name="SpiderPack_HardMix">
+		animalSpider01Feral
+		animalSpider02Feral
+		animalSpider03Feral		
+		animalSpider01Radiated
+		animalSpider02Radiated
+		animalSpider03Radiated		
+		</entitygroup>
+		<entitygroup name="SpiderPack_Queen">
+		animalSpider01Queen
+		animalSpider02Queen
+		animalSpider03Queen
+		</entitygroup>
+		
+	</append>
+	
+</configs>

@@ -1,0 +1,4 @@
+Key,english
+buffElementShelteredDesc,"You are sheltered from the elements."
+buffElementShelteredTooltip,"You are sheltered from the elements."
+buffElementShelteredName,"Sheltered"

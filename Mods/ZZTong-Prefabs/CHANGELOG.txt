@@ -1,0 +1,290 @@
+CHANGE LOG / RELEASE NOTES: (Newest to Oldest)
+
+V1.1.023 (ZZ023)
+* Bug fixes: floating blocks, tile tags, bridge gutters.
+* Zombie volume adjustments in zztong_tfp_apartment_adobe_01.
+* Added rwg_tile_rural_cap_zztong_02 and rwg_tile_rural_cap_zztong_03.
+* Added rwg_tile_rural_corner_zztong_03, rwg_tile_rural_corner_zztong_04,
+    and rwg_tile_rural_corner_zztong_05.
+* Added rwg_tile_rural_t_zztong_02, rwg_tile_rural_t_zztong_03,
+    and rwg_tile_rural_t_zztong_04.
+* Slimmed down number of XS POIs on rwg_tile_rural_t_zztong_01
+    and rwg_tile_rural_cap_zztong_01.
+* Added zztong_cabin_01, zztong_cabin_02, zztong_landscaper_01, zztong_library_01.
+* Added zztong_outback_adventure_01, zztong_fire_academy_01.
+* Added zztong_trailer_03, zztong_gas_station_01, zztong_store_xs_17, zztong_store_xs_18.
+* Added zztong_rural_filler_01, zztong_rural_filler_02, zztong_rural_filler_03, zztong_rural_filler_04.
+* zztong_wind_turbine_02 has collapsed under the weight of being too good of a base.
+* Removed mine fields from Tiles because they don't match TFPs approach and because
+    they remain invisible for too long as you approach them on a vehicle.
+
+V1.0.022 (ZZ022)
+* Converted to Version 1.0. (Shocking, I know, right?!)
+* Bug fixes. Block changes. Texture changes. Door changes. More bug fixes.
+* More POIs support Infested Quests.
+* Added rwg_tile_downtown_intersection_zztong_02,
+    rwg_tile_downtown_intersection_zztong_03, and
+    rwg_tile_downtown_intersection_zztong_04.
+* Added rwg_tile_commercial_cap_zztong_01, rwg_tile_commercial_t_zztong_01.
+* Changes to rwgmixer.xml config to align with TFP direction and new features.
+* Added zztong_tfp_house_old_spanish_01 for grins. (Yeh, it is modified.)
+
+A21.2.021 (ZZ021)
+* DuplicateRepeatDistances on Houses reduced to 1000 to combat empty lots.
+* New Hidden Decorations and POIs thanks to ideas from the Rebirth community:
+    buried_treasure_01 (Deco), buried_treasure_02 (POI)
+* Retired the old, huge, ugly, wasteful Office_Bldg_03.
+* Added a new Office_Bldg_03, lighter, nastier, nicer looking.
+* Added watering_hole_01, watering_hole_02, house_22.
+* Bug fixes to house_17, kzmb, brownstones, and warehouse_02.
+* Removed AllowedBiome and AllowedTownship tags and various Biome tags.
+
+A21.2.020 (ZZ020)
+* Fixed installation instructions.
+* Fixed biomes.xml issues with decorations.
+
+A21.2.019 (ZZ019)
+* Added rwg_tile_gateway_straight_zztong_08.
+* Added rwg_tile_gateway_intersection_zztong_01.
+* Added rwg_tile_gateway_intersection_zztong_02.
+* Added rwg_tile_gateway_intersection_zztong_03.
+* Added bartertown_bobx, bartertown_hughx, bartertown_jenx,
+    bartertown_joelx, bartertown_rektx.
+* Added pump_substation_01, solar_farm_02.
+* Changed the DifficultyTier for all Tiles to 0 to assist modders.
+* Removed QuestTags from things that shouldn't have quest tags.
+
+A21.2.018 (ZZ018)
+* Bug fixes
+* Added restaurant_03, warehouse_04, store_s_03, store_s_04, store_xs_16,
+    store_s_05, gyroport_01, tfp_docks_01, tfp_docks_05, lot_vacant_03,
+    lot_vacant_04, lot_vacant_05, lot_vacant_06, storage_02, trailer_02,
+    trailer_park_04.
+* Added rwg_tile_gateway_straight_zztong_07, rwg_tile_gateway_t_zztong_02,
+    rwg_tile_countryresidential_corner_zztong_01,
+    rwg_tile_countryresidential_corner_02, rwg_tile_countryresidential_t_01.
+* More infestation quests.
+
+A21.1.017 (ZZ017)
+* Updated Teragon configuration file to match newest format.
+* Adjustments to POIs based on user feedback.
+* Revised rwg_tile_downtown_intersection_zztong_01 to improve performance.
+    Adjustments made to the four intersection POIs to match.
+* Used DuplicateRepeatDistance to moderate the placement of house and
+    wilderness POIs. I'm not trying to take over the world. Honest!
+* Smoothed the terrain on many Tiles.
+* Moved Quest (qt_zztong) to another modlet. This kind of thing has started
+    to look like scope creep and is better off elsewhere.
+
+A21.1.016 (ZZ016)
+* Added tfp_apartment_adobe_01, tfp_prison_01, tfp_school_k6_01, and
+    tfp_settlement_01 because some folks were feeling nostalgic.
+    Okay, yes, I was feeling nostalgic too.
+* Added restaurant_02 -- Waffle House was suggested by Max_Dong and I'm a fan
+    of the restaurant, so yeh... there it is.
+* Added rwg_tile_gateway_straight_zztong_04 with a variety of bridge parts.
+* Added rwg_tile_gateway_straight_zztong_05.
+* Added rwg_tile_gateway_straight_zztong_06.
+* Have begun to add Infestation Quests to POIs.
+* Am dabbling with the use of Triggers, but am mindful of the great many user
+    complaints about the use of this feature in A21 vanilla POIs with regard
+    to zombies appearing out of thin air and the affects on stealth. As a
+    stealth player myself, I do appreciate being able to disarm an ambush if I
+    play well.
+* Removed settlement modifications from rwgmixer.xml with respect to what
+    districts are used to wrap towns and cities. In retrospect, those options
+    are probably better off in a map/RWG focused modlet. Now this modlet only
+    contains configuration that support the placement of the modlet's POIs.
+* In response to player feedback, the placement of dogs on Tiles and in Tier 1
+    POIs has been revisited and those dogs have mostly been either muzzled or
+    removed. In the cases where they stayed, there was generally a reason why
+    they were there, but I did lower the chance of the dog appearing. If you
+    choose to wander through a higher tier POI as a shortcut then you can still
+    encounter the beasties.
+* Added Trader variants for those who want to play without trader POIs.
+    This is NOT configured by default so if you want to play this way, see the
+    README file for instructions.
+
+A21.0.015 (ZZ015):
+* Updated to A21 Blocks.
+* Migrated all custom blocks to the "Custom Blocks Pack" modlet.
+    This modlet now depends upon that modlet. You need to install them both.
+* Worked to eliminate custom Parts that only had one block. The strategy going
+    forward is to use Parts for collections of blocks.
+* Broke the README file into README and CHANGELOG.
+* Added a Documentation folder to hold misc TXT files.
+* Broke up the kludge that was the A20 Gateway Tile resulting in new POIs:
+    adot_01, containers_01, car_show_01, fieldday_01, ranger_hq_01, scout_lodge_01,
+    storage_01, roadside_rest_01, trailer_park_03, truck_park_01, truck_stop_01,
+    gateway_filler_01, gateway_filler_02, gateway_filler_03.
+* Added wind_turbine_02 as a standard POI marker size for non-wilderness.
+* Added rwg_tile_gateway_straight_zztong_01, rwg_tile_gateway_straight_zztong_02,
+    and rwg_tile_gateway_straight_zztong_03.
+* Added skyscraper_01 and tfp_skyscraper_02 to the commercial district to take
+    some heat off of the downtown district. (They can now be in either.)
+    This also addresses player desires for more Tier 5 POIs on maps.
+* Removed all Destroyed POIs from the modlet. You can find them in the
+    CompoPack where they may appear in the CP's destroyed city.
+* Reviewed all Parts and sent many to my Archive in favor of making and using
+    Placeholder blocks from this point on. I'll largely move away from Parts
+    that consist of 1 block.
+* Added a variety of "Notes" to the loot which add local color to the game.
+    Among them there are four coded fragments that can be assembled and sold.
+* Added a "Bruce's Treasure" quest to the game for no particular reason.
+
+A20.7-ZZ014 : 
+Added rwg_tile_rural_corner_zztong_02, rwg_tile_residential_straight_zztong_02,
+rwg_tile_residential_t_zztong_02, rwg_tile_countryresidential_cap_01,
+rwg_tile_countryresidential_straight_01, rwg_tile_commercial_intersection_01.
+Added store_xs_11, store_xs_12, store_xs_13, store_xs_14, and store_xs_15.
+Added balloon_safari_01, house_18, house_19, house_20, house_21.
+Added intersection_04, oil_pump_jack_01, rebirth_01, red_rocket_01, sheriff_01.
+Added warehouse_02, warehouse_03.
+Loot updates for drive_thru_01, house_01, house_03, law_offices_01, masonry_01,
+lumber_yard_01, pharmacy_01_destroyed, propane_01, store_s_01, store_xs_03,
+store_xs_05, store_xs_06, store_xs_07, store_xs_08, store_xs_09, store_xs_10,
+and strip_mall_01.
+Revisions to car_wash_01, office_building_02, office_building_03, and
+office_building_03_destroyed.
+Bug fixes for various residential tiles. (Sidewalk issues)
+Bug fixes for many POIs related to removing non-POI versions of blocks,
+cleaning up texture issues, loot issues, and lots of reasons.
+Bug fix for part_cookpot. Whoops. That wasn't supposed to be a bomb.
+Added POI names to the Localization.txt file in preparation for A21.
+Added some more custom blocks and helpers to provide more crate options.
+Removed the subway system from the Intersection Tile and all related POIs
+because it was leading people down a path to fail missions and because Arizona
+isn't a place with subways.
+
+A20.6-ZZ013 : 
+Added terrain stamps. This is a first-time thing for the modlet.
+Added support for Teragon. This is also a first-time thing for the modlet.
+Added rwg_tile_residential_cap to finish off the set.
+Added delos_oldwest_01 POI to the oldwest town. Yes, Westworld! Androids!
+Added some filler POIs: crater_01, based off a TFP crater.
+Added 10 more biome decorations, largely for the wasteland.
+Made POIs look a little more beat up. (I'm still not on TFP's level.)
+Put quest markers on top of deco blocks to work around buried marker issue.
+Adjusted many POIs to match Zombie density goals. (See DIFFICULTY.txt)
+Lowered the following to Tier 0: field_chickens_01, field_fish_01,
+field_mushroom_01, garage_01, mass_grave_01, mass_grave_02.
+Lowered the following to Tier 2: ems_01 and Zeds were thinned out.
+Lowered the following to Tier 3: office_building_01. Boy-o-boy there were too
+many Zeds crammed into that building trying to hit that higher tier.
+
+A20.6-ZZ012 :
+Added rwg_tile_residential_corner_zztong_01 to allow more house footprints.
+Added rwg_tile_residential_intersection_zztong_01 to allow for more houses.
+Added rwg_tile_residential_straight_zztong_01 and it really is straight.
+Added rwg_tile_residential_t_zztong_01 to allow for more house footprints.
+Added house_06, house_07, house_08, house_09, house_10, house_11, house_12.
+Added house_013, house_14, house_15, house_16, house_17.
+Added remnant_house_02, apartment_03.
+Added five new desert cactus cluster decorations.
+Tagged dog_park_01 and vacant_lot_01 to also place in residential district.
+Tagged house_01 and remnant_house_01 to place in residential district.
+Tagged tfp_house_new_04 to place in residential district instead of rural.
+Updated apartment_01, apartment_01_destroyed, apartment_02_destroyed, ems_01.
+Updated skyscraper_01's antenna. Fixed bugs in farm_04, masonry_01.
+Added more Parts to the pack.
+Renamed Decorations and POIs to be all lowercase.
+Added a Thank You message to the loading screen. I depended on a translation
+service for all the non-English languages and my fingers are crossed that I
+did not insult a large portion of Humanity.
+
+A20.6-ZZ011 :
+Adjusted version number style in ModInfo.xml. (No letters? Really?)
+Added store_s_01 for countrytown.
+Added store_s_02 for countrytown.
+Added house_05 for residential.
+Added slabhouse_01 to go with a Reddit request.
+Added house_04 because I wanted to make an A-Frame house.
+Gave KZMB Radio a better antenna tower.
+Added minefield markers to Strip_Mall_01 as suggested by players.
+Added a couple of Z's to Office_Building_02 based on feedback.
+Added lot_vacant_01 and lot_vacant_02.
+Added 11 Rubble and 2 Grave Decor to Desert, Forest, and Snow.
+Added 3 Mystery decorations to the Desert for grins and boggles.
+Adjusted Gas Can loot from Propane_01.
+Added some swampland tags to four POIs to integrate with MPL's Swamp Tiles.
+Fixed floating debris in rwg_tile_rural_intersection_zztong_01.
+Fixed missing railing in Farm_04 and other minor adjustments.
+Fixed bad driveway placement in Farm_08.
+Fixed missing quest marker in NTT_HQ_01.
+
+A20.6-ZZ010 :
+Converted 13 field parts into rural filler and three quests.
+Added Car_Wash_01, Trailer_01, and Trailer_Park_02. Added four rural Tiles.
+Added Political_Party_HQ_01.
+Added some custom blocks and loot lists: 100% XML.
+Converted Warehouse_01 to use custom crate blocks.
+Renamed "Shamway HQ" to "Beatrice Foods" in zztong_TFP_Skyscraper_02" and
+converted the POI to use custom crate blocks.
+The Apartment_02 landlord has finally painted the place. Yeeesh!
+Fixed a bug in Ranch_01 part list. Fixed a bug in Farm_08. Fixed three
+Storm Cellar Parts that had some weird layer of stone inserted in them.
+Water Tower Parts now have water. What a novel concept.
+
+A20.5-ZZ009 :
+Added Dog_Park_01 rural filler. (Beware of the Dog)
+Added NTT_Hub_01 and NTT_HQ_01.
+Added Survivor_Base_Ruin_01 which has special purpose (see ABOUT.txt).
+Added a Gateway Tile and a bunch of Parts to allow for lots of possabilities.
+Added some decorations that look like ruined horde bases.
+Re-rebalanced loot in Tier 5's because I really screwed those up.
+Re-rebalanced loot in Masonry_01 and Cement_Plant_01. Still too much cement.
+Removed fetch quests from Tiers 3, 4, and 5. Apparently they're too easy.
+Applied numerous bug fixes spotted by the CP's eagle-eyed testers.
+
+A20.5-ZZ008 :
+Fixed numerous bugs and rebalanced loot. Added
+rwg_tile_downtown_intersection_zztong_01 and Intersection_01, Intersection_02
+and Intersection_03 to go with it. Added Ranch_01 and Vault_K9_01.
+Added all my custom Parts because parts are cool, parts are wonderful.
+Spinkled Parts into many existing POIs for some subtle variety.
+A couple of POIs changed tiers. Added decorations for the Wasteland.
+
+Introduced this modlet to GitHub for my own sanity and peace of mind.
+This should have no effect on modlet distribution, but may open up options for
+those who work on other projects, plus it gives me a nice backup location.
+I do NOT recommend consumers of this modlet pull from the head of main branch.
+
+Introduced this modlet to the GPLv3 license. See LICENSE.TXT and the
+LICENSE-NOTES.txt files for details. It should not represent a significant
+change for those of you who repackage, or curate, this modlet's content.
+
+A20.1-ZZ007 :
+Added Farm_01, Farm_02, Farm_03, Farm_04, Farm_05, Farm_06
+Farm_07, Farm_08, Garage_01, Stormwater_Detention_Pond_01, Biowaste_Dump_01,
+Electrical_Substation_01, Cement_Plant_01. Retrieved skyscraper_02 from A19
+and brought it forward as TFP_Skyscraper_02. Promoted Mass_Grave_01 and
+Mass_Grave_02 back to being POIs. Fixed minor problems in EMS_01, Bar_Pool_01,
+House_01, House_02 and TFP_Cemetary_01. Added rwg_tile_rural_straight_zztong_01.
+
+A20.EXP-ZZ006 : A20 Experimental Support. All POIs converted to A20.
+
+A19.6-ZZ005 :
+Added POIs: Store_XS_09, Store_XS_10, Skyscraper_01,
+Skyscraper_01_destroyed, Warehouse_01, Cave_01 and KZTV_01.
+Added Decoration: Tent_01, Tent_02, Tent_03, Tent_04, and Tent_05.
+
+A19.6-ZZ004 :
+Fixed a problem with TFP_Cemetary.
+
+A19.6-ZZ003 :
+Many block conversions to support the new version. I shamelessly
+piggy-back on the work of Stallionsden for the CompoPack. Many thanks to him
+for shepparding me through this process. Added TFP_Army_Barracks_01,
+TFP_Cemetery_01, TFP_Ranger_Station_01, TFP_House_New_04, Presidio_Museum_01,
+Store_XS_01, Store_XS_02, Store_XS_03, Store_XS_04, Store_XS_05, Store_XS_06, 
+Store_XS_07, and Store_XS_08.
+
+A19.5-ZZ002 :
+Fixed the Cabin_Fort_01 so that it wouldn't collapse into an
+empty lot. (Yikes!) Fixed Filename Typo (Farmers Market), Fixed
+ShowQuestClearCount settings. New POIs: Destroyed Variants from ZZ001,
+House_03, StripMall_01, StripMall_02, Restaurant_01, Remnant_House_01,
+and Storm_Cellar_01. Added Decorations: Hunters_Trap_01 and Hunters_Trap_02.
+Converted Mass_Grave_01 and Mass_Grave_02 to Decorations.
+
+A19.5-ZZ001 : Initial Release

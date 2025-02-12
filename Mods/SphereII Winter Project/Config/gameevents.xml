@@ -1,0 +1,13 @@
+<configs>
+    <append xpath="//action_sequence[@name='challenge_group_reward_basics']">
+        <action class="Delay">
+            <property name="time" value="2" />
+        </action>
+
+        <action class="AddQuest">
+            <property name="phase" value="1" />
+            <property name="quest" value="quest_StartingEquipment" />
+        </action>
+
+    </append>
+</configs>

@@ -1,0 +1,46 @@
+{
+  "files": [],
+  "packages": [
+    {
+      "name": "Microsoft.VisualStudio.Telemetry",
+      "SPDXID": "SPDXRef-RootPackage",
+      "downloadLocation": "NOASSERTION",
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      },
+      "filesAnalyzed": true,
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "1.0.0",
+      "supplier": "Organization: Microsoft",
+      "hasFiles": []
+    }
+  ],
+  "externalDocumentRefs": [],
+  "relationships": [
+    {
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-RootPackage",
+      "spdxElementId": "SPDXRef-DOCUMENT"
+    }
+  ],
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "Microsoft.VisualStudio.Telemetry 1.0.0",
+  "documentNamespace": "https://sbom.microsoft/1:34sbAVZth0--DQCSE2iE2Q:kMXbC2KgP0yw9pOD9nhl7g/11667:9776646/Microsoft.VisualStudio.Telemetry:1.0.0:-V8AAj9YaUWuqjxO1L5P3w",
+  "creationInfo": {
+    "created": "2024-06-24T20:55:18Z",
+    "creators": [
+      "Organization: Microsoft",
+      "Tool: Microsoft.SBOMTool-0.2.7"
+    ]
+  },
+  "documentDescribes": [
+    "SPDXRef-RootPackage"
+  ]
+}

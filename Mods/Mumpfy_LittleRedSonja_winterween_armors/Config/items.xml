@@ -1,0 +1,424 @@
+<MumpfyAndLittleRedSonja>
+
+	<!-- Male Winter Armor -->
+
+	<append xpath="/items">	
+	
+		<item name="armorWinterHelmet_ww_male">
+			<property name="Extends" value="armorMediumMaster" param1="CustomIcon"/>
+			<property name="DescriptionKey" value="armorWinterHelmetDesc"/>
+			<property name="DisplayType" value="armorRogueHelmet"/>
+			<property name="ArmorGroup" value="groupWinter"/>
+			<property name="Tags" value="head,armor,armorHead,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill,armorWinterBonus"/>
+			<property name="EquipSlot" value="Head"/>
+			<property name="SoundPickup" value="headwear_cloth_grab"/>
+			<property name="SoundPlace" value="headwear_cloth_place"/>
+			
+			<property name="CustomIcon" value="ww_armor_male_hat"/> 
+
+			<effect_group name="WinterHelmet">
+				<passive_effect name="ModSlots" operation="base_set" value="1,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="13,17.3" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="14,18" tier="1,6" tags="electrical,cold"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="4,8" tier="1,6" tags="heat"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="mediumArmorDeg"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="25"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
+				
+				<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+				<display_value name="dStaminaChangeOT" value="-.56"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/>
+				<display_value name="dNoiseMultiplier" value=".1"/>
+			</effect_group>
+			
+			<effect_group>
+				<passive_effect name="ScavengingTime" operation="perc_add" value="-.02,-.04,-.06,-.08,-.1,-.2" tier="1,2,3,4,5,6"/>
+				<passive_effect name="LootStage" operation="perc_add" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+				<display_value name="dLootStage" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+			</effect_group>
+
+			<property class="SDCS">
+				<property name="Prefab" value="#@modfolder:Resources/ww_armors.unity3d?ww_armor_male"/>
+				<property name="TransformName" value="head"/>
+				<property name="CullDistFPV" value="0"/>
+				<property name="HairMaskType" value="Hat"/>
+			</property>
+		</item>
+	
+		<item name="armorWinterOutfit_ww_male"> 
+			<property name="Extends" value="armorMediumMaster" param1="CustomIcon"/>
+			<property name="DescriptionKey" value="armorWinterOutfitDesc"/>
+			<property name="DisplayType" value="armorPreacherOutfit"/>
+			<property name="ArmorGroup" value="groupWinter"/>
+			<property name="Tags" value="upperbody,chest,armor,armorChest,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill,armorWinterBonus"/>
+			<property name="EquipSlot" value="Chest"/>
+			<property name="SoundPickup" value="outfit_leather_grab"/>
+			<property name="SoundPlace" value="outfit_leather_place"/>
+			
+			<property name="CustomIcon" value="ww_armor_male"/> 
+
+			<effect_group name="WinterOutfit">
+				<passive_effect name="ModSlots" operation="base_set" value="1,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="13,17.3" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="14,18" tier="1,6" tags="electrical,cold"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="4,8" tier="1,6" tags="heat"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="mediumArmorDeg"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="25"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
+				
+				<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+				<display_value name="dStaminaChangeOT" value="-.56"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/>
+				<display_value name="dNoiseMultiplier" value=".1"/>
+				
+				<display_value name="dDamageResist" value=".02,.04,.06,.08,.1,.15" tier="1,2,3,4,5,6"/>
+			</effect_group>
+
+			<effect_group>
+				<requirement name="EntityTagCompare" target="other" tags="zombie,nightmare"/>
+					<passive_effect name="PhysicalDamageResist" operation="perc_add" value=".02,.04,.06,.08,.1,.15" tier="1,2,3,4,5,6"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipChanged" action="SetTransformActive" active="true" transform_path="bodyTP">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfEquipChanged" action="SetTransformActive" active="false" transform_path="bodyTP">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+			</effect_group>
+
+			<property class="SDCS">
+				<property name="Prefab" value="#@modfolder:Resources/ww_armors.unity3d?ww_armor_male"/>
+				<property name="TransformName" value="body"/>
+				<property name="Excludes" value="body"/>
+			</property>
+		</item>
+
+		<item name="armorWinterGloves_ww_male">
+			<property name="Extends" value="armorMediumMaster" param1="CustomIcon"/>
+			<property name="DescriptionKey" value="armorWinterGlovesDesc"/>
+			<property name="DisplayType" value="armorCommandoGloves"/>
+			<property name="ArmorGroup" value="groupWinter"/>
+			<property name="Tags" value="upperbody,hands,armor,armorHands,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill,armorWinterBonus"/>
+			<property name="EquipSlot" value="Hands"/>
+			<property name="SoundPickup" value="gloves_leather_grab"/>
+			<property name="SoundPlace" value="gloves_leather_place"/>
+			
+			<property name="CustomIcon" value="ww_armor_male_gloves"/> 
+
+			<effect_group name="WinterGloves">
+				<passive_effect name="ModSlots" operation="base_set" value="1,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="13,17.3" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="14,18" tier="1,6" tags="electrical,cold"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="4,8" tier="1,6" tags="heat"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="mediumArmorDeg"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="25"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
+				
+				<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+				<display_value name="dStaminaChangeOT" value="-.56"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/>
+				<display_value name="dNoiseMultiplier" value=".1"/>
+
+				<display_value name="dEntityDamage" value=".1,.2,.3,.4,.5,.6" tier="1,2,3,4,5,6"/>
+			</effect_group>
+
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="ranged"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".1,.2,.3,.4,.5,.6" tier="1,2,3,4,5,6"/>
+			</effect_group>
+
+			<property class="SDCS">
+				<property name="Prefab" value="#@modfolder:Resources/ww_armors.unity3d?ww_armor_male"/>
+				<property name="TransformName" value="hands"/>
+				<property name="Excludes" value="hands"/>
+			</property>
+		</item>
+
+		<item name="armorWinterBoots_ww_male">
+			<property name="Extends" value="armorMediumMaster" param1="CustomIcon"/>
+			<property name="DescriptionKey" value="armorWinterBootsDesc"/>
+			<property name="DisplayType" value="armorCommandoBoots"/>
+			<property name="ArmorGroup" value="groupWinter"/>
+			<property name="Tags" value="lowerbody,feet,armor,armorFeet,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill,armorWinterBonus"/>
+			<property name="EquipSlot" value="Feet"/>
+			<property name="SoundPickup" value="footwear_leather_grab"/>
+			<property name="SoundPlace" value="footwear_leather_place"/>
+			
+			<property name="CustomIcon" value="ww_armor_male_boots"/> 
+
+			<effect_group name="WinterBoots">
+				<passive_effect name="ModSlots" operation="base_set" value="1,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="13,17.3" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="14,18" tier="1,6" tags="electrical,cold"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="4,8" tier="1,6" tags="heat"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="mediumArmorDeg"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="25"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
+				
+				<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+				<display_value name="dStaminaChangeOT" value="-.56"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/>
+				<display_value name="dNoiseMultiplier" value=".1"/>
+			</effect_group>
+
+			<effect_group>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+				<display_value name="dRunSpeed" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+			</effect_group>
+
+			<property class="SDCS">
+				<property name="Prefab" value="#@modfolder:Resources/ww_armors.unity3d?ww_armor_male"/>
+				<property name="TransformName" value="feet"/>
+				<property name="Excludes" value="feet"/>
+			</property>
+		</item>
+
+	<!-- Female Winter Armor -->
+
+		<item name="armorWinterHelmet_ww_female">
+			<property name="Extends" value="armorMediumMaster" param1="CustomIcon"/>
+			<property name="DescriptionKey" value="armorWinterHelmetDesc"/>
+			<property name="DisplayType" value="armorRogueHelmet"/>
+			<property name="ArmorGroup" value="groupWinter"/>
+			<property name="Tags" value="head,armor,armorHead,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill,armorWinterBonus"/>
+			<property name="EquipSlot" value="Head"/>
+			<property name="SoundPickup" value="headwear_cloth_grab"/>
+			<property name="SoundPlace" value="headwear_cloth_place"/>
+			
+			<property name="CustomIcon" value="ww_armor_female_hat"/> 
+
+			<effect_group name="WinterHelmet">
+				<passive_effect name="ModSlots" operation="base_set" value="1,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="13,17.3" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="14,18" tier="1,6" tags="electrical,cold"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="4,8" tier="1,6" tags="heat"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="mediumArmorDeg"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="25"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
+				
+				<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+				<display_value name="dStaminaChangeOT" value="-.56"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/>
+				<display_value name="dNoiseMultiplier" value=".1"/>
+			</effect_group>
+			
+			<effect_group>
+				<passive_effect name="ScavengingTime" operation="perc_add" value="-.02,-.04,-.06,-.08,-.1,-.2" tier="1,2,3,4,5,6"/>
+				<passive_effect name="LootStage" operation="perc_add" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+				<display_value name="dLootStage" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+			</effect_group>
+
+			<property class="SDCS">
+				<property name="Prefab" value="#@modfolder:Resources/ww_armors.unity3d?ww_armor_female"/>
+				<property name="TransformName" value="head"/>
+				<property name="CullDistFPV" value="0"/>
+				<property name="HairMaskType" value="Hat"/>
+			</property>
+		</item>
+
+		<item name="armorWinterOutfit_ww_female"> 
+			<property name="Extends" value="armorMediumMaster" param1="CustomIcon"/>
+			<property name="DescriptionKey" value="armorWinterOutfitDesc"/>
+			<property name="DisplayType" value="armorPreacherOutfit"/>
+			<property name="ArmorGroup" value="groupWinter"/>
+			<property name="Tags" value="upperbody,chest,armor,armorChest,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill,armorWinterBonus"/>
+			<property name="EquipSlot" value="Chest"/>
+			<property name="SoundPickup" value="outfit_leather_grab"/>
+			<property name="SoundPlace" value="outfit_leather_place"/>
+			
+			<property name="CustomIcon" value="ww_armor_female"/> 
+
+			<effect_group name="WinterOutfit">
+				<passive_effect name="ModSlots" operation="base_set" value="1,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="13,17.3" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="14,18" tier="1,6" tags="electrical,cold"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="4,8" tier="1,6" tags="heat"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="mediumArmorDeg"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="25"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
+				
+				<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+				<display_value name="dStaminaChangeOT" value="-.56"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/>
+				<display_value name="dNoiseMultiplier" value=".1"/>
+				
+				<display_value name="dDamageResist" value=".02,.04,.06,.08,.1,.15" tier="1,2,3,4,5,6"/>
+			</effect_group>
+
+			<effect_group>
+				<requirement name="EntityTagCompare" target="other" tags="zombie,nightmare"/>
+					<passive_effect name="PhysicalDamageResist" operation="perc_add" value=".02,.04,.06,.08,.1,.15" tier="1,2,3,4,5,6"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipChanged" action="SetTransformActive" active="true" transform_path="bodyTP">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfEquipChanged" action="SetTransformActive" active="false" transform_path="bodyTP">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+			</effect_group>
+
+			<property class="SDCS">
+				<property name="Prefab" value="#@modfolder:Resources/ww_armors.unity3d?ww_armor_female"/>
+				<property name="TransformName" value="body"/>
+				<property name="Excludes" value="body"/>
+			</property>
+		</item>
+
+		<item name="armorWinterGloves_ww_female">
+			<property name="Extends" value="armorMediumMaster" param1="CustomIcon"/>
+			<property name="DescriptionKey" value="armorWinterGlovesDesc"/>
+			<property name="DisplayType" value="armorCommandoGloves"/>
+			<property name="ArmorGroup" value="groupWinter"/>
+			<property name="Tags" value="upperbody,hands,armor,armorHands,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill,armorWinterBonus"/>
+			<property name="EquipSlot" value="Hands"/>
+			<property name="SoundPickup" value="gloves_leather_grab"/>
+			<property name="SoundPlace" value="gloves_leather_place"/>
+			
+			<property name="CustomIcon" value="ww_armor_female_gloves"/> 
+
+			<effect_group name="WinterGloves">
+				<passive_effect name="ModSlots" operation="base_set" value="1,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="13,17.3" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="14,18" tier="1,6" tags="electrical,cold"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="4,8" tier="1,6" tags="heat"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="mediumArmorDeg"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="25"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
+				
+				<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+				<display_value name="dStaminaChangeOT" value="-.56"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/>
+				<display_value name="dNoiseMultiplier" value=".1"/>
+
+				<display_value name="dEntityDamage" value=".1,.2,.3,.4,.5,.6" tier="1,2,3,4,5,6"/>
+			</effect_group>
+
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="ranged"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".1,.2,.3,.4,.5,.6" tier="1,2,3,4,5,6"/>
+			</effect_group>
+
+			<property class="SDCS">
+				<property name="Prefab" value="#@modfolder:Resources/ww_armors.unity3d?ww_armor_female"/>
+				<property name="TransformName" value="hands"/>
+				<property name="Excludes" value="hands"/>
+			</property>
+		</item>
+
+		<item name="armorWinterBoots_ww_female">
+			<property name="Extends" value="armorMediumMaster" param1="CustomIcon"/>
+			<property name="DescriptionKey" value="armorWinterBootsDesc"/>
+			<property name="DisplayType" value="armorCommandoBoots"/>
+			<property name="ArmorGroup" value="groupWinter"/>
+			<property name="Tags" value="lowerbody,feet,armor,armorFeet,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill,armorWinterBonus"/>
+			<property name="EquipSlot" value="Feet"/>
+			<property name="SoundPickup" value="footwear_leather_grab"/>
+			<property name="SoundPlace" value="footwear_leather_place"/>
+			
+			<property name="CustomIcon" value="ww_armor_male_boots"/> 
+
+			<effect_group name="WinterBoots">
+				<passive_effect name="ModSlots" operation="base_set" value="1,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="13,17.3" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="14,18" tier="1,6" tags="electrical,cold"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="4,8" tier="1,6" tags="heat"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,600" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="mediumArmorDeg"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="25"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
+				
+				<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+				<display_value name="dStaminaChangeOT" value="-.56"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/>
+				<display_value name="dNoiseMultiplier" value=".1"/>
+			</effect_group>
+
+			<effect_group>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+				<display_value name="dRunSpeed" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+			</effect_group>
+
+			<property class="SDCS">
+				<property name="Prefab" value="#@modfolder:Resources/ww_armors.unity3d?ww_armor_female"/>
+				<property name="TransformName" value="feet"/>
+				<property name="Excludes" value="feet"/>
+			</property>
+		</item>
+
+		
+		<item name="armorWinterArmor">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="ww_armor_male_hat"/>
+			<property name="DescriptionKey" value="armorWinterArmorDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="Group" value="Resources"/>
+			<property name="UnlockedBy" value="craftingArmor"/>
+		</item>
+
+	</append>
+	
+</MumpfyAndLittleRedSonja>

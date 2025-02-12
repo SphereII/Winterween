@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<xml>
+	<Name value="mumLoadingScreens" />
+	<DisplayName value="mumLoadingScreens" />
+	<Description value="Swaps out the standard loading screens." />
+	<Author value="Mumpfy" />
+	<Version value="1.2.27.1" />
+	<Website value="" />
+</xml>

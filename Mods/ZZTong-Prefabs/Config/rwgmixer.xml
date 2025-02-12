@@ -1,0 +1,183 @@
+﻿<rwgmixer>
+    <!-- **************************************************************
+        These are Tiles that should be considered unique.
+        A maxdensity of 120 means 12 million vertices of POI budget.
+    ****************************************************************-->
+
+    <!-- **************************************************************
+        A mundane tile that adds 25x25 commercial POI support.
+        It is okay to have a number of these. It only appears here
+        because Commercial maxdensity has been an issue...
+    ****************************************************************-->
+
+	<append xpath="/rwgmixer">
+        <streettile name="rwg_tile_commercial_cap_zztong_01">
+            <property name="mintiles" value="1"/>
+            <property name="maxtiles" value="4"/>
+            <property name="maxdensity" value="250"/>
+        </streettile>
+
+        <streettile name="rwg_tile_commercial_intersection_zztong_01">
+            <property name="mintiles" value="1"/>
+            <property name="maxtiles" value="4"/>
+            <property name="maxdensity" value="250"/>
+        </streettile>
+
+        <streettile name="rwg_tile_commercial_t_zztong_01">
+            <property name="mintiles" value="1"/>
+            <property name="maxtiles" value="4"/>
+            <property name="maxdensity" value="250"/>
+        </streettile>
+	</append>
+
+    <!-- **************************************************************
+        These downtown tiles support a set of heavy-weight (vertices)
+        and high tier POIs so we don't want to have a lot of them in
+        the game for fear of tanking downtown performance.
+    ****************************************************************-->
+
+	<append xpath="/rwgmixer">
+        <streettile name="rwg_tile_downtown_intersection_zztong_01">
+            <property name="mintiles" value="1"/>
+            <property name="maxtiles" value="1"/>
+            <property name="maxdensity" value="150"/>
+        </streettile>
+
+        <streettile name="rwg_tile_downtown_intersection_zztong_02">
+            <property name="mintiles" value="1"/>
+            <property name="maxtiles" value="1"/>
+            <property name="maxdensity" value="150"/>
+        </streettile>
+
+        <streettile name="rwg_tile_downtown_intersection_zztong_03">
+            <property name="mintiles" value="1"/>
+            <property name="maxtiles" value="1"/>
+            <property name="maxdensity" value="150"/>
+        </streettile>
+
+        <streettile name="rwg_tile_downtown_intersection_zztong_04">
+            <property name="mintiles" value="1"/>
+            <property name="maxtiles" value="1"/>
+            <property name="maxdensity" value="150"/>
+        </streettile>
+	</append>
+
+    <!-- **************************************************************
+        These Tiles do not offer any places for a Trader, so they
+        should only appear once max, otherwise small maps might
+        not get all of their traders.
+    ****************************************************************-->
+
+	<append xpath="/rwgmixer">
+        <streettile name="rwg_tile_gateway_intersection_zztong_01">
+            <property name="mintiles" value="0"/>
+            <property name="maxtiles" value="1"/>
+        </streettile>
+
+        <streettile name="rwg_tile_gateway_straight_zztong_01">
+            <property name="mintiles" value="0"/>
+            <property name="maxtiles" value="1"/>
+        </streettile>
+
+        <streettile name="rwg_tile_gateway_straight_zztong_02">
+            <property name="mintiles" value="0"/>
+            <property name="maxtiles" value="1"/>
+        </streettile>
+	</append>
+
+    <!-- **************************************************************
+        This is the bartertown tile. It is a distictive landmark so
+        we don't want a bunch of them on the map. Also included are
+        the bartertown fallen traders to make them match up with TFP's
+        biome restricted traders. Min_Count, Max_Count, and Bias are
+        unlikely to be relevant since the supporting Tile is limited.
+    ****************************************************************-->
+
+	<append xpath="/rwgmixer">
+        <streettile name="rwg_tile_gateway_intersection_zztong_03">
+            <property name="mintiles" value="0"/>
+            <property name="maxtiles" value="1"/>
+        </streettile>
+
+        <prefab_spawn_adjust partial_name="zztong_bartertown_rektx" biomeTags="forest" bias="0" min_count="0" max_count="1"/>
+        <prefab_spawn_adjust partial_name="zztong_bartertown_jenx" biomeTags="burntforest" bias="0" min_count="0" max_count="1"/>
+        <prefab_spawn_adjust partial_name="zztong_bartertown_bobx" biomeTags="desert" bias="0" min_count="0" max_count="1"/>
+        <prefab_spawn_adjust partial_name="zztong_bartertown_hughx" biomeTags="snow" bias="0" min_count="0" max_count="1"/>
+        <prefab_spawn_adjust partial_name="zztong_bartertown_joelx" biomeTags="wasteland" bias="0" min_count="0" max_count="1"/>
+	</append>
+
+    <!-- **************************************************************
+        This Tile supports a Tunnel through a mountain. It is a
+        distictive landmark so you probably don't want many of them.
+        There are only three variations of the tunnel. It is also
+        a Tile that doesn't support a Trader, so it needs to be
+        limited to once appearance for small maps.
+    ****************************************************************-->
+
+	<append xpath="/rwgmixer">
+        <streettile name="rwg_tile_gateway_straight_zztong_03">
+            <property name="mintiles" value="0"/>
+            <property name="maxtiles" value="1"/>
+        </streettile>
+	</append>
+
+    <!-- **************************************************************
+        This Tile supports a Reservoir. It is a distictive landmark
+        so you probably don't want many of them. There are only two
+        variations of the docks. It does not support a Trader so
+        it should only appear once.
+    ****************************************************************-->
+
+	<append xpath="/rwgmixer">
+        <streettile name="rwg_tile_gateway_t_zztong_02">
+            <property name="mintiles" value="0"/>
+            <property name="maxtiles" value="1"/>
+        </streettile>
+	</append>
+
+    <!-- **************************************************************
+        This Tile has a natural bridge which is a distinctive landmark
+        so the number is limited.
+    ****************************************************************-->
+
+	<append xpath="/rwgmixer">
+        <streettile name="rwg_tile_rural_corner_zztong_04">
+            <property name="mintiles" value="1"/>
+            <property name="maxtiles" value="2"/>
+        </streettile>
+	</append>
+
+    <!-- **************************************************************
+        Various biome-restricted POIs for thematic reasons.
+    ****************************************************************-->
+
+	<append xpath="/rwgmixer">
+        <prefab_spawn_adjust partial_name="zztong_balloon_safari_01" biomeTags="desert"/>
+        <prefab_spawn_adjust partial_name="zztong_cave_01" biomeTags="forest,burntforest,desert"/>
+        <prefab_spawn_adjust partial_name="zztong_farmers_market_01" biomeTags="forest"/>
+        <prefab_spawn_adjust partial_name="zztong_field_aloe_01" biomeTags="desert"/>
+        <prefab_spawn_adjust partial_name="zztong_field_blueberry_01" biomeTags="snow"/>
+        <prefab_spawn_adjust partial_name="zztong_field_coffee_01" biomeTags="forest"/>
+        <prefab_spawn_adjust partial_name="zztong_field_corn_01" biomeTags="forest"/>
+        <prefab_spawn_adjust partial_name="zztong_field_cotton_01" biomeTags="forest"/>
+        <prefab_spawn_adjust partial_name="zztong_field_hop_01" biomeTags="forest"/>
+        <prefab_spawn_adjust partial_name="zztong_field_potato_01" biomeTags="forest"/>
+        <prefab_spawn_adjust partial_name="zztong_field_pumpkin_01" biomeTags="forest"/>
+        <prefab_spawn_adjust partial_name="zztong_field_yucca_01" biomeTags="desert"/>
+        <prefab_spawn_adjust partial_name="zztong_gyroport_01" biomeTags="desert"/>
+        <prefab_spawn_adjust partial_name="zztong_motocross_01" biomeTags="forest"/>
+        <prefab_spawn_adjust partial_name="zztong_survivor_base_ruin_01" biomeTags="snow,wasteland"/>
+	</append>
+
+    <!-- **************************************************************
+        This should make sure a POI under development ends up all over
+        the map. This setting is harmless outside of my development
+        environment, so don't worry if you find it active as no POIs
+        should be tagged this way.
+    ****************************************************************-->
+
+	<append xpath="/rwgmixer">
+        <prefab_spawn_adjust tags="zztest" bias="20" min_count="5"/>
+	</append>
+
+</rwgmixer>

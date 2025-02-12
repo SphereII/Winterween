@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+
+  <remove xpath="doc/tips" />
+  <insertAfter xpath="/doc/backgrounds" >
+    <tips>
+      <tip key="loadingTipMainHUD" />
+      <tip key="loadingTipMainHUD_02" />
+      <tip key="loadingTipMainHUD_03" />
+      <tip key="loadingTipMainHUD_04" />
+      <tip key="loadingTipMainHUD_05" />
+      <tip key="loadingTipMainHUD_06" />
+      <tip key="loadingTipMainHUD_07" />
+      <tip key="loadingTipMainHUD_08" />
+      <tip key="loadingTipMainHUD_09" />
+      <tip key="loadingTipMainHUD_10" />
+
+    </tips>
+  </insertAfter>
+
+</doc>

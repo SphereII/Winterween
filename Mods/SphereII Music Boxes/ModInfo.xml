@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+    <DisplayName value="SphereII Music Boxes" />
+	<Name value="sphereii-music-boxes_sphereii" />
+    <Description value="Add in new music and video players into the game." />
+    <Author value="sphereii" />
+    <Version value="20.6.1.1" />
+    <Website value="" />
+</xml>

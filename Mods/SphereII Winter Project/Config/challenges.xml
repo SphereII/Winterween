@@ -1,0 +1,10 @@
+<configs>
+    <remove xpath="//challenge[@name='gatherResources']" />
+    <remove xpath="//challenge[@name='craftStoneAxe']" />
+    <remove xpath="//challenge[@name='gatherResourcesStoneAxe']" />
+    <remove xpath="//challenge[@name='craftClothes']" />
+    <remove xpath="//challenge[@name='wearClothes']" />
+    <remove xpath="//challenge[@name='craftWoodClub']" />
+    <remove xpath="//challenge[@name='craftBow']" />
+    <remove xpath="//challenge[@name='craftArrows']" />
+</configs>

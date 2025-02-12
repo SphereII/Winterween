@@ -1,0 +1,16 @@
+<MumpfyAndLittleRedSonja>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorMedium']">
+	
+		<item name="armorWinterHelmet_ww_male" quality="1,5"/>
+		<item name="armorWinterOutfit_ww_male" quality="1,5"/>
+		<item name="armorWinterGloves_ww_male" quality="1,5"/>
+		<item name="armorWinterBoots_ww_male" quality="1,5"/>
+		<item name="armorWinterHelmet_ww_female" quality="1,5"/>
+		<item name="armorWinterOutfit_ww_female" quality="1,5"/>
+		<item name="armorWinterGloves_ww_female" quality="1,5"/>
+		<item name="armorWinterBoots_ww_female" quality="1,5"/>
+			
+	</append>		
+			
+</MumpfyAndLittleRedSonja>

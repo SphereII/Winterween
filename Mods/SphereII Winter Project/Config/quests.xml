@@ -1,0 +1,33 @@
+﻿<configs>
+    <append xpath="/quests">
+        <quest id="quest_StartingEquipment">
+            <property name="group_name_key" value="quest_WhiteRiverCitizen"/>
+            <property name="name_key" value="quest_WhiteRiverCitizen1"/>
+            <property name="subtitle_key" value="quest_WhiteRiverCitizen1_subtitle"/>
+            <property name="description_key" value="quest_WhiteRiverCitizen1_description"/>
+            <property name="icon" value="ui_game_symbol_map_trader"/>
+            <property name="category_key" value="quest"/>
+            <property name="difficulty" value="medium"/>
+            <property name="shareable" value="false"/>
+
+            <conditional evaluator="client">
+                <if cond="(time_minutes() % 2) == 0">
+                    <reward type="Item" id="armorWinterGloves_ww_male" value="1"/>
+                    <reward type="Item" id="armorWinterOutfit_ww_male" value="1"/>
+                    <reward type="Item" id="armorWinterBoots_ww_male" value="1"/>
+                </if>
+                <else>                
+                    <reward type="Item" id="armorWinterGloves_ww_female" value="1"/>
+                    <reward type="Item" id="armorWinterOutfit_ww_female" value="1"/>
+                    <reward type="Item" id="armorWinterBoots_ww_female" value="1"/>
+                </else>
+            </conditional>
+            <reward type="Item" id="gunBowT1WoodenBow" value="1"/>
+            <reward type="Item" id="resourceLockPick" value="5"/>
+            <reward type="Item" id="ammoArrowIron" value="20"/>
+            <reward type="Item" id="gunShotgunT1DoubleBarrel" value="1" />
+            <reward type="Item" id="ammoShotgunShell" value="2" />
+        </quest>
+    </append>
+
+</configs>

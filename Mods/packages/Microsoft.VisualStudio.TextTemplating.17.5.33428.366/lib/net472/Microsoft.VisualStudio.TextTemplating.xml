@@ -1,0 +1,2364 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.VisualStudio.TextTemplating</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.AssemblyRecord">
+            <summary>
+            Class to manage an assembly and when it was last referenced.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.AssemblyRecord.Assembly">
+            <summary>
+            The assembly for the record
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.AssemblyRecord.LastUse">
+            <summary>
+            Date the assembly was last referenced
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.AssemblyCache">
+            <summary>
+            Class to manage a cache of compiled assemblies in the execution AppDomain.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.AssemblyCache.assemblies">
+            <summary>
+            Set of cached assemblies
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.AssemblyCache.lastUse">
+            <summary>
+            Last time cache was used.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.AssemblyCache.Find(System.String)">
+            <summary>
+            Find an assembly containing the code of the given class in the cache
+            </summary>
+            <param name="fullClassName"></param>
+            <returns>An assembly containing the code of the given class or null</returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.AssemblyCacheMonitor">
+            <summary>
+            Class to monitor the state of the assembly cache
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.AssemblyCacheMonitor.GetStaleAssembliesCount(System.TimeSpan)">
+            <summary>
+            Returns how many assemblies the cache thinks are stale
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.AssemblyResolver">
+            <summary>
+            Class to resolve assembly references in the T4 execution AppDomain
+            </summary>
+            <remarks>
+            This is modeled as a separate class purely because the event seems to need its implemented class to be marked Serializable.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.AssemblyResolver.AssemblyResolve(System.Object,System.ResolveEventArgs)">
+            <summary>
+            Resolve assembly references in the T4 execution app domain
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.CodeDom.CodeDomHelpers">
+            <summary>
+            Helper class with extension methods to aide in creating CodeDOM trees.
+            </summary>
+            <remarks>
+            These extension methods allow a much terser and more expression-like syntax for constructing CodeDOM trees.
+            </remarks>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.CodeDom.CodeDomHelpers.nullEx">
+            <summary>
+            Simple static for the null expression
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.CodeDom.CodeDomHelpers.Call(System.Type,System.String,System.CodeDom.CodeExpression[])">
+            <summary>
+            Call a static method as an expression
+            </summary>
+            <param name="type"></param>
+            <param name="methodName"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.CodeDom.CodeDomHelpers.CallS(System.Type,System.String,System.CodeDom.CodeExpression[])">
+            <summary>
+            Call a static method as a statement
+            </summary>
+            <param name="type"></param>
+            <param name="methodName"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.CodeDom.CodeDomHelpers.Call(System.String,System.String,System.CodeDom.CodeExpression[])">
+            <summary>
+            Call a method on an object as an expression
+            </summary>
+            <param name="callSite"></param>
+            <param name="methodName"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.CodeDom.CodeDomHelpers.CallS(System.String,System.String,System.CodeDom.CodeExpression[])">
+            <summary>
+            Call a method on an object as a statement
+            </summary>
+            <param name="callSite"></param>
+            <param name="methodName"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.CodeDom.CodeDomHelpers.Call(System.String,System.CodeDom.CodeExpression[])">
+            <summary>
+            Call a method on this class as an expression
+            </summary>
+            <param name="methodName"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.CodeDom.CodeDomHelpers.CallS(System.String,System.CodeDom.CodeExpression[])">
+            <summary>
+            Call a method on this class as a statement
+            </summary>
+            <param name="methodName"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.CodeDom.CodeDomHelpers.CreateMethod(System.Type,System.String,System.String,System.CodeDom.MemberAttributes,System.CodeDom.CodeObject[])">
+            <summary>
+            Make a basic method
+            </summary>
+            <param name="returnType"></param>
+            <param name="name"></param>
+            <param name="summaryComment"></param>
+            <param name="attributes"></param>
+            <param name="statements"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.CodeDom.CodeDomHelpers.IfVariableNullThenInstantiateType(System.CodeDom.CodeFieldReferenceExpression,System.Type)">
+            <summary>
+            Create the code for if (a==null) a = new Foo();
+            </summary>
+            <param name="variableRef"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.CodeDom.CodeDomHelpers.CreatePropertyInfoDeclaration(System.String,System.CodeDom.CodeExpression,System.String)">
+            <summary>
+            Make a variable declaration for a PropertyInfo initialized with a GetProperty call on a target's type.
+            <remarks>
+            Creates code similar to: PropertyInfo name = target.GetType().GetProperty(propertyName);
+            </remarks>
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.CodeDom.CodeDomHelpers.CreatePropertyInfoValueDeclaration(System.String,System.CodeDom.CodeExpression,System.CodeDom.CodeExpression,System.CodeDom.CodeExpression[])">
+            <summary>
+            Make a variable declaration for an object initialized via a call to PropertyInfo.GetValue via a given instance
+            <remarks>
+            Creates code similar to: object name = propertyInfo.GetValue(instance, null|new object[] {parameters});
+            </remarks>
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.CodeDom.CodeAttributeDeclarationComparer">
+            <summary>
+            Class to compare a pair of CodeAttributeDeclarations
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.CodeDom.CodeAttributeArgumentComparer">
+            <summary>
+            Class to compare a pair of CodeAttributeArguments using their string representations
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor">
+            <summary>
+            Base class for a concrete DirectiveProcessor
+            </summary>
+            <remarks>
+            A singleton instance of any of these classes that is
+            required will be held by the Engine.
+            This class implements a state machine with
+            the Get... methods only valid after a Start...Finish pair.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Errors">
+            <summary>
+            Error collection for DirectiveProcessor to add Errors/Warnings to.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.Initialize(Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost)">
+            <summary>
+            Initialize the processor instance
+            </summary>
+            <param name="host"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.IsDirectiveSupported(System.String)">
+            <summary>
+            Does this DirectiveProcessor support the given directive
+            </summary>
+            <remarks>
+            This call is not connected to the state machine
+            </remarks>
+            <param name="directiveName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.StartProcessingRun(System.CodeDom.Compiler.CodeDomProvider,System.String,System.CodeDom.Compiler.CompilerErrorCollection)">
+            <summary>
+            Begin a round of directive processing
+            </summary>
+            <param name="languageProvider"></param>
+            <param name="templateContents">the contents of the template being processed</param>\
+            <param name="errors">collection to report processing errors in</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.ProcessDirective(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Process a directive from a template file
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.FinishProcessingRun">
+            <summary>
+            Finish a round of directive processing
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.GetClassCodeForProcessingRun">
+            <summary>
+            Get the code to contribute to the generated
+            template processing class as a consequence of the most recent run.
+            </summary>
+            <returns>The code that this DirectiveProcessor contributes to the generated TextTemplating class</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.GetPreInitializationCodeForProcessingRun">
+            <summary>
+            Get the code to contribute to the body of the initialize method of the generated
+            template processing class as a consequence of the most recent run.
+            This code will run before the base class' Initialize method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.GetPostInitializationCodeForProcessingRun">
+            <summary>
+            Get the code to contribute to the body of the initialize method of the generated
+            template processing class as a consequence of the most recent run.
+            This code will run after the base class' Initialize method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.GetReferencesForProcessingRun">
+            <summary>
+            Get any references to pass to the compiler
+            as a consequence of the most recent run.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.GetImportsForProcessingRun">
+            <summary>
+            Get any namespaces to import as a consequence of
+            the most recent run.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor.GetTemplateClassCustomAttributes">
+            <summary>
+            Get any custom attributes to place on the template class.
+            </summary>
+            <returns>A collection of custom attributes that can be null or empty.</returns>
+            <remarks>
+            The default implementation is to produce no attributes.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.DirectiveProcessorException">
+            <summary>
+            Exception class for Directive Processors
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessorException.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessorException.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="message">Exception message text.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessorException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="message">Exception message text.</param>
+            <param name="inner">Inner exception.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.DirectiveProcessorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serialization constructor.
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.IRecognizeHostSpecific">
+            <summary>
+            (Optional) interface that DirectiveProcessors can implement if they care about the value of the HostSpecific flag when they are generating code.
+            </summary>
+            <remarks>
+            Will be called immediately after Initialize
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.IRecognizeHostSpecific.SetProcessingRunIsHostSpecific(System.Boolean)">
+            <summary>
+            Inform the directive processor whether the run is host-specific.
+            </summary>
+            <remarks>
+            Will be called after RequiresProcessingRunIsHostSpecific has been run
+            on all directive processors to inform the processor what the final host-specifc decision is
+            </remarks>
+            <param name="hostSpecific"></param>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.IRecognizeHostSpecific.RequiresProcessingRunIsHostSpecific">
+            <summary>
+            Allow a directive processor to specify that it needs the run to be host-specific.
+            </summary>
+            <remarks>
+            If any directive processor in the run sets this to be true then the engine will make the entire run host-specific.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.EncodingHelper">
+            <summary>
+            Helper class to get the encoding of a file from its BOM
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.EncodingHelper.GetEncoding(System.String)">
+            <summary>
+            Helper method to get the encoding of a file from its BOM
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.Engine">
+            <summary>
+            Text templating engine
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.Engine.hasher">
+            <summary>
+            Hashing algorithm to create cache keys for fingerprints of templates.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.Engine.CacheAssembliesOptionString">
+            <summary>
+            CacheAssemblies option string
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.Engine.TemplateFileParameterName">
+            <summary>
+            TemplateFile option string
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.Engine.TransformAllHostOption">
+            <summary>
+            isTransformAll option string
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.#ctor">
+            <summary>
+            Constructs a new text templating engine instance.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.Finalize">
+            <summary>
+            Finalizer for text templating engine.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.Dispose(System.Boolean)">
+            <summary>
+            Override to customize disposing of the derived text templating engine.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.Dispose">
+            <summary>
+            Dispose the text templating engine.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ProcessTemplate(System.String,Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost)">
+            <summary>
+            Processes a template
+            </summary>
+            <param name="content">The contents of the template file to be processed</param>
+            <param name="host">The ITextTemplatingEngineHost that will host this engine</param>
+            <returns>The output from the processed template</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.PreprocessTemplate(System.String,Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost,System.String,System.String,System.String@,System.String[]@)">
+            <summary>
+            Process the contents of a templated file running inline code to produce a class that represents the template.
+            </summary>
+            <param name="content">The content of the templated file</param>
+            <param name="host">The hosting environment using this engine</param>
+            <param name="className">The name of the class to produce</param>
+            <param name="classNamespace">The namespace of the class to produce</param>
+            <param name="language">The language that the template's control code was written in</param>
+            <param name="references">The set of references required by the template</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ProcessTemplateImplementation(Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,System.String,Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost,System.String,System.String,Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope)">
+            <summary>
+            Do the main processing of the template that is shared between preprocessing and regular processing
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.InitializeSessionWithHostData(Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost,Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession)">
+            <summary>
+            Set up the given session with data gleaned from callback to the host.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.PrepareTransformationRun(System.String,Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost,Microsoft.VisualStudio.TextTemplating.IDebugTransformationRunFactory)">
+            <summary>
+            Prepare an IDebugTransformationRun object to run the template.
+            </summary>
+            <param name="content">The content of the templated file</param>
+            <param name="host">The hosting environment using this engine</param>
+            <param name="runFactory">The hosting environment for the transformation run</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ParseAndConstructGeneratorCode(Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,System.String,Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost,System.String,System.String,Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope)">
+            <summary>
+            Parse the template code and construct the generator code from it
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.LogError(Microsoft.VisualStudio.TextTemplating.Block,System.String,System.Boolean)">
+            <summary>
+            Utility function for logging an error
+            </summary>
+            <param name="block"></param>
+            <param name="errorText"></param>
+            <param name="isWarning"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.LogError(System.String,System.Int32,System.Int32,System.String,System.Boolean)">
+            <summary>
+            Utility function for logging an error
+            </summary>
+            <param name="fileName"></param>
+            <param name="line"></param>
+            <param name="column"></param>
+            <param name="errorText"></param>
+            <param name="isWarning"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ProcessDirectives(System.Collections.Generic.List{Microsoft.VisualStudio.TextTemplating.Block},Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost,Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope,System.CodeDom.CodeAttributeDeclarationCollection@)">
+            <summary>
+            Processes the directives in the template
+            </summary>
+            <param name="blocks">The blocks that the template was parsed into</param>
+            <param name="host">host</param>
+            <param name="session">TemplateProcessingSession to store data for this session</param>
+            <param name="scope">A telemetry scope</param>
+            <param name="templateClassCustomAttributes">Collection of attributes to decorate the template class with.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.AddInitializeMethod(Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,System.Text.StringBuilder,System.Text.StringBuilder,System.Text.StringBuilder)">
+            <summary>
+            Add an override to the Initialize method to contribute preInit or postInit code
+            </summary>
+            <param name="session"></param>
+            <param name="directivesBuilder"></param>
+            <param name="preInitBuilder"></param>
+            <param name="postInitBuilder"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ProvideBaseClassOverrideAttribute(Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession)">
+            <summary>
+            Provide an attribute specifying whether optional methods from the base class should be overridden or virtual
+            </summary>
+            <param name="session"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.Engine.VisitedFiles">
+            <summary>
+            Special visited set to encapsulate the recording of file inclusions for the "once" feature of the include directive
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.VisitedFiles.Visit(System.String)">
+            <summary>
+            Record a "visit" to an include file. Return whether the file has already been visited
+            </summary>
+            <param name="fileLocation">Absolute path to the include file in canonical form</param>
+            <returns>true if previously visited, or false if first visit</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ProcessCustomDirectives(Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost,Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TextTemplating.Directive})">
+            <summary>
+            Process all directives handled by either extension directive processors or non built-in directives that ship with the engine.
+            </summary>
+            <remarks>
+            The difference between built-in directives and custom but shipped directives is that true built-in directives are allowed to mess with the processing logic.
+            Custom shipped directives have the same restrictions as end-user extension directives.  This is subtle but helps with keeping testing down as we know when they fire in the cycle.
+            The difference should not be apparent to end users however.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.GetLocalCustomDirectiveProcessor(Microsoft.VisualStudio.TextTemplating.Directive)">
+            <summary>
+            Get the type for any directive that is implemented in this assembly.
+            </summary>
+            <remarks>
+            Amend the directive object to have an appropriate processor name.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.IsBuiltInDirective(Microsoft.VisualStudio.TextTemplating.Directive)">
+            <summary>
+            Says whether a given directive is built-in (handled by the engine) or should
+            be handled by a custom directive processor
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ProcessIncludeDirective(Microsoft.VisualStudio.TextTemplating.Directive,Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost,Microsoft.VisualStudio.TextTemplating.Engine.VisitedFiles,Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope)">
+            <summary>
+            Process an include directive by asking the host to read the included file, and
+            parsing the contents into blocks.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ProcessAssemblyDirective(Microsoft.VisualStudio.TextTemplating.Directive,Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession)">
+            <summary>
+            Process the assembly directive by adding the assembly reference to the list of
+            assembly references maintained by the TemplateProcessingSession
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ProcessImportDirective(Microsoft.VisualStudio.TextTemplating.Directive,Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession)">
+            <summary>
+            Process an import directive by adding the namespace to the list of namespaces
+            maintained by the TemplateProcessingSession
+            </summary>
+            <param name="directive"></param>
+            <param name="session"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ProcessTemplateDirective(Microsoft.VisualStudio.TextTemplating.Directive,Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope)">
+            <summary>
+            Process the template directive
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ProcessOutputDirective(Microsoft.VisualStudio.TextTemplating.Directive,Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost,Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope)">
+            <summary>
+            Process the output directive to get the extension of the output file
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ConstructGeneratorCode(Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost,System.Collections.Generic.List{Microsoft.VisualStudio.TextTemplating.Block},Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,System.Boolean,System.String,System.String,System.CodeDom.CodeAttributeDeclarationCollection,Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope)">
+            <summary>
+            Constructs code for the generated transformation class using the CodeDomProvider
+            for the template language.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.SetTypeVisibility(Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,System.CodeDom.CodeTypeDeclaration)">
+            <summary>
+            Set the visibility of the type to public or internal
+            </summary>
+            <param name="session">The session to take the public/internal data from</param>
+            <param name="typeToChange">The type to amend</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ConstructTransformTextMethod(Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TextTemplating.Block},System.Boolean,System.CodeDom.CodeTypeDeclaration)">
+            <summary>
+            Construct the TransformText method
+            </summary>
+            <param name="session"></param>
+            <param name="blocks"></param>
+            <param name="insertLineNumbers"></param>
+            <param name="generatorType"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.AddAutoGeneratedComment(System.CodeDom.CodeNamespace)">
+            <summary>
+            Add a comment to the class in the standard format to specify that it is autogenerated.
+            </summary>
+            <param name="codeNamespace"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.AddGeneratedCodeAttribute(System.CodeDom.CodeTypeDeclaration)">
+            <summary>
+            Add a generated code marker attribute to the given class declaration
+            </summary>
+            <param name="generatorType"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ConstructBaseClassOptions(Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,System.CodeDom.CodeTypeDeclaration,System.String,System.CodeDom.CodeTypeDeclaration@)">
+            <summary>
+            Set up the base class for the template
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.CreateUniqueNamespaceName(Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,System.String,Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost,System.Collections.Generic.List{Microsoft.VisualStudio.TextTemplating.Block})">
+            <summary>
+            Create a new namespace name to ensure the generated class has a unique identity
+            </summary>
+            <param name="session"></param>
+            <param name="baseNamespaceName"></param>
+            <param name="host"></param>
+            <param name="blocks"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.GenerateMemberForBlock(Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,Microsoft.VisualStudio.TextTemplating.Block,System.CodeDom.CodeTypeDeclaration,System.Boolean,System.CodeDom.Compiler.CodeGeneratorOptions,System.Boolean)">
+            <summary>
+            Create a snippet member for a given block
+            </summary>
+            <param name="session"></param>
+            <param name="block"></param>
+            <param name="generatorType"></param>
+            <param name="insertLineNumbers"></param>
+            <param name="options"></param>
+            <param name="firstClassFeatureFound"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.GetToStringHelperReference(Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession)">
+            <summary>
+            Calculate the reference property or static class that embodies the ToStringHelper
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ConstructStatementsForGeneratorMethod(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TextTemplating.Block},Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,System.Boolean)">
+            <summary>
+            Construct CodeDom statements for the TransformText method override on the generated
+            transformation class
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.CompileAndPrepareRun(System.String,Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost,Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,Microsoft.VisualStudio.TextTemplating.IDebugTransformationRunFactory,Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope)">
+            <summary>
+            Compiles the transformation code and prepares in for running in the runFactory
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.ResolveAssemblyReferences(Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost,Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession)">
+            <summary>
+            Allow the host to process all assembly references in the session
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.CollateSessionTypes(Microsoft.VisualStudio.TextTemplating.ITextTemplatingSession)">
+            <summary>
+            Get the type of the session and any types within it's dictionary that are not in standard assemblies
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.NonStandardType(System.Type)">
+            <summary>
+            Is the given type a type whose assembly will already be loaded into the transformation AppDomain?
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.AddTypeMemberWithLinePragma(Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,System.CodeDom.CodeTypeDeclaration,Microsoft.VisualStudio.TextTemplating.Block,System.CodeDom.CodeSnippetTypeMember)">
+            <summary>
+            Add a typemember code snippet to a type with the correct line pragma decorating it.
+            </summary>
+            <param name="session"></param>
+            <param name="generatorType"></param>
+            <param name="block"></param>
+            <param name="member"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.AddStatementWithLinePragma(Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,System.CodeDom.CodeStatementCollection,Microsoft.VisualStudio.TextTemplating.Block,System.CodeDom.CodeStatement)">
+            <summary>
+            Add a statement code snippet to a list of statements with the correct line pragma decorating it.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Engine.AddStatementWithLinePragma(Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,System.CodeDom.CodeStatementCollection,System.Int32,System.String,System.CodeDom.CodeStatement)">
+            <summary>
+            Add a statement code snippet to a list of statements with the correct line pragma decorating it.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.HostSpecific">
+            <summary>
+            Whether or not the template is host-specific
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.NonDebugRunFactory">
+            <summary>
+            Simple run host to be used when not debugging.
+            The use of it allows both debug and non debug runs to share the same code.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.NonDebugRunFactory.host">
+            <summary>
+            The engine host
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.NonDebugRunFactory.#ctor(Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost)">
+            <summary>
+            We store the host to request an AppDomain later
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.NonDebugRunFactory.CreateTransformationRun(System.Type,System.String,System.ResolveEventHandler)">
+            <summary>
+            Create an instance of TransformationRunner in the transformDomain
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor">
+            <summary>
+            Directive processor to route simple serializable parameters from callers or the host to the template.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.DirectiveName">
+            <summary>
+            Name of the directive provided by this processor ("parameter").
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.ProcessorName">
+            <summary>
+            The friendly name of this processor ("ParameterDirectiveProcessor").
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.hostSpecific">
+            <summary>
+            Whether the current processing run is host-specific
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.languageCodeDomProvider">
+            <summary>
+            Provider for the template's language
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.postInitializationBuffer">
+            <summary>
+            Buffer that collates all of the code that instances of this directive processor need to run after base class initialization during a processing run
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.codeBuffer">
+            <summary>
+            Buffer that collates all of the code that instances of this directive processor contribute during a processing run
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.FinishProcessingRun">
+            <summary>
+            Nothing to do as we complete our run.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.GetClassCodeForProcessingRun">
+            <summary>
+            Gets generated class code.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.GetPostInitializationCodeForProcessingRun">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.GetPreInitializationCodeForProcessingRun">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.GetReferencesForProcessingRun">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.GetImportsForProcessingRun">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.IsDirectiveSupported(System.String)">
+            <summary>
+            Denote which properties are supported.
+            </summary>
+            <remarks>
+            Only the "parameter" directive is supported.
+            </remarks>
+            <param name="directiveName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.ProcessDirective(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.GeneratePostInitCode(System.String,System.String,System.CodeDom.CodeMemberField)">
+            <summary>
+            Create the code for the Initialize method after its call to base.Initialize
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.GenerateClassCode(System.String,System.String,System.CodeDom.CodeMemberField@)">
+            <summary>
+            Create the code added as members to the transform class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.StartProcessingRun(System.CodeDom.Compiler.CodeDomProvider,System.String,System.CodeDom.Compiler.CompilerErrorCollection)">
+            <summary>
+            Starts processing run.
+            </summary>
+            <param name="languageProvider">Target language provider.</param>
+            <param name="templateContents">The contents of the template being processed</param>
+            <param name="errors">collection to report processing errors in</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.Microsoft#VisualStudio#TextTemplating#IRecognizeHostSpecific#SetProcessingRunIsHostSpecific(System.Boolean)">
+            <summary>
+            Accept the host-specific value of the current processing run from the engine
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.ParameterDirectiveProcessor.RequiresProcessingRunIsHostSpecific">
+            <summary>
+            This processor does not require a host-specific template.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.AssemblyLoadError">
+            <summary>
+              Looks up a localized string similar to There was a problem loading the assembly '{0}'.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.AutoGenCommentLine1">
+            <summary>
+              Looks up a localized string similar to This code was generated by a tool..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.AutoGenCommentLine2">
+            <summary>
+              Looks up a localized string similar to Runtime Version: {0}.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.AutoGenCommentLine3">
+            <summary>
+              Looks up a localized string similar to Changes to this file may cause incorrect behavior and will be lost if.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.AutoGenCommentLine4">
+            <summary>
+              Looks up a localized string similar to the code is regenerated..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.BaseClassNotFound">
+            <summary>
+              Looks up a localized string similar to Failed to load base class '{0}' from which Transformation class inherits..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.BlankIncludeFile">
+            <summary>
+              Looks up a localized string similar to Loading the include file '{0}' returned a null or empty string. The transformation will not be run. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.CannotInitializeProcessor">
+            <summary>
+              Looks up a localized string similar to There was a problem creating and initializing the processor for a directive named '{1}'. The type of the processor is {0}. The transformation will not be run. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.CannotResolveRequiresParameter">
+            <summary>
+              Looks up a localized string similar to Unable to resolve a value for the requires parameter '{0}' for directive '{1}'..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.CompilerErrorPrepend">
+            <summary>
+              Looks up a localized string similar to Compiling transformation: .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.CompilerErrors">
+            <summary>
+              Looks up a localized string similar to An exception was thrown while trying to compile the transformation code..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.CompilerVersionNotSupported">
+            <summary>
+              Looks up a localized string similar to The {0} 2.0 and {0} 3.5 compilers are no longer supported. Templates will always be compiled with the version 4 compiler instead of '{1}' as specified..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.DirectiveMissingArgument">
+            <summary>
+              Looks up a localized string similar to '{0}' directive did not provide required argument '{1}'..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.DirectiveNotSupported">
+            <summary>
+              Looks up a localized string similar to The directive '{0}' is not supported..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.DuplicateDirectiveParameter">
+            <summary>
+              Looks up a localized string similar to The parameter '{0}' already exists in the directive. The duplicate parameter will be ignored..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.EncodingIntegerFailed">
+            <summary>
+              Looks up a localized string similar to Encoding.GetEncoding(int) failed for '{0}'..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.EncodingStringFailed">
+            <summary>
+              Looks up a localized string similar to Encoding.GetEncoding(string) failed for '{0}'..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ErrorGeneratingTranformationClass">
+            <summary>
+              Looks up a localized string similar to There was an error generating the transformation class. The process cannot continue. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ErrorInitializingTransformationObject">
+            <summary>
+              Looks up a localized string similar to Errors were generated when initializing the transformation object. The transformation will not be run. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ErrorLoadingIncludeFile">
+            <summary>
+              Looks up a localized string similar to There was an error loading the include file '{0}'. The transformation will not be run..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ErrorOutput">
+            <summary>
+              Looks up a localized string similar to ErrorGeneratingOutput.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.Exception">
+             <summary>
+               Looks up a localized string similar to  The following Exception was thrown:
+            {0}.
+             </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ExceptionGettingProcessorOutput">
+            <summary>
+              Looks up a localized string similar to An Exception was thrown while trying to get the output from the processor named '{0}'. The transformation will not be run..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ExceptionGettingReferencesFromDP">
+            <summary>
+              Looks up a localized string similar to An Exception was thrown while trying to get the namespace imports and assembly references for processing the run from a directive processor named '{0}'. The transformation will not be run..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ExceptionGettingStandardReferences">
+            <summary>
+              Looks up a localized string similar to An exception was thrown by the host when trying to get the StandardImports and StandardAssemblyReferences. The transformation will not be run..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ExceptionInstantiatingTransformationObject">
+            <summary>
+              Looks up a localized string similar to Could not instantiate a TextTransformation object from the compiled assembly..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ExceptionProcessingDirective">
+            <summary>
+              Looks up a localized string similar to An Exception was thrown while processing a directive named '{0}'. The transformation will not be run. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ExceptionProcessingTemplate">
+            <summary>
+              Looks up a localized string similar to An Exception was thrown while processing the template. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ExceptionResolvingAssembly">
+            <summary>
+              Looks up a localized string similar to The host threw an exception while trying to resolve the assembly reference '{0}'. The transformation will not be run..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ExceptionRunningTransformText">
+            <summary>
+              Looks up a localized string similar to An exception was thrown while running the TransformText() method. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ExceptionSettingExtension">
+            <summary>
+              Looks up a localized string similar to An exception was thrown by the host while trying to set the extension..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ExceptionSettingHost">
+            <summary>
+              Looks up a localized string similar to An exception was thrown while trying to set the 'Host' property on the {0}. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ExceptionSettingSession">
+            <summary>
+              Looks up a localized string similar to An exception was thrown while trying to set the 'Session' property on the {0}. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ExceptionWhileRunningCode">
+            <summary>
+              Looks up a localized string similar to An Exception was thrown while running the transformation code. The process cannot continue. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ExpressionBlockNull">
+            <summary>
+              Looks up a localized string similar to An expression block evaluated as Null.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.FileNotFoundExceptionProcessingDirective">
+            <summary>
+              Looks up a localized string similar to The file {0} was not found whilst processing a directive named '{1}'. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.GetClassCodeCallError">
+            <summary>
+              Looks up a localized string similar to Class code can only be retrieved after FinishProcessingRun() is called.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.GetImportsCallError">
+            <summary>
+              Looks up a localized string similar to Imports can only be retrieved after FinishProcessingRun() is called.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.GetReferencesCallError">
+            <summary>
+              Looks up a localized string similar to References can only be retrieved after FinishProcessingRun() is called.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.HostPropertyNotFound">
+            <summary>
+              Looks up a localized string similar to A 'Host' property was not found despite the template directive setting hostspecific='truefrombase'. Check that the base class '{0}' has a 'Host' property..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.IncorrectDPType">
+            <summary>
+              Looks up a localized string similar to The type '{0}' of the directive processor named '{1}' does not implement Microsoft.VisualStudio.TextTemplating.IDirectiveProcessor. The transformation will not be run..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.InvalidBaseClass">
+            <summary>
+              Looks up a localized string similar to An invalid base class was specified for the Transformation class. The base class must implement the same members as Microsoft.VisualStudio.TextTemplating.TextTransformation..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.InvalidCompilerOption">
+            <summary>
+              Looks up a localized string similar to The compiler option is invalid: '{0}'..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.InvalidCulture">
+            <summary>
+              Looks up a localized string similar to An invalid culture was specified in the 'template' directive. The culture must be in the "xx-XX" format. The invariant culture will be used..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.InvalidDebugParam">
+            <summary>
+              Looks up a localized string similar to An invalid debug value '{0}' was specified in the template directive. The debug value must be either "true" or "false". The default of "false" will be used..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.InvalidDirectiveArgumentFormat">
+            <summary>
+              Looks up a localized string similar to Directive arguments should be of form 'name=value': {0}..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.InvalidHostSpecificParam">
+            <summary>
+              Looks up a localized string similar to An invalid HostSpecific value '{0}' was specified in the template directive. The HostSpecific value must be either "true", "false" or "truefrombase". The default of "false" will be used..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.InvalidLanguage">
+            <summary>
+              Looks up a localized string similar to An invalid language '{0}' was specified in the 'template' directive. The language must be either "C#" or "VB". The default value of "C#" will be used..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.InvalidLinePragmasParam">
+            <summary>
+              Looks up a localized string similar to An invalid linePragmas value '{0}' was specified in the template directive. The value must be either "true" or "false". The default of "true" will be used..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.InvalidNeutralCulture">
+            <summary>
+              Looks up a localized string similar to A neutral culture was specified in the 'template' directive. A specific culture must be provided. The invariant culture will be used..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.InvalidVisibility">
+            <summary>
+              Looks up a localized string similar to An invalid visibility '{0}' was specified in the 'template' directive. The visibility must be either 'internal' or 'public'. The default value of 'public' will be used..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.MissingBaseClass">
+            <summary>
+              Looks up a localized string similar to A template that specifies hostspecific='truefrombase' must also specify a base template with the 'inherits' parameter to the template directive..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.MultipleOutputDirectives">
+            <summary>
+              Looks up a localized string similar to Multiple output directives were found in the template. All but the first one will be ignored..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.MultipleTemplateDirectives">
+            <summary>
+              Looks up a localized string similar to Multiple template directives were found in the template. All but the first one will be ignored. Multiple parameters to the template directive should be specified within one template directive..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.NoAppDomain">
+            <summary>
+              Looks up a localized string similar to There was a problem getting an AppDomain to run the transformation from the host. The process cannot continue. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.NoProcessorForDirective">
+            <summary>
+              Looks up a localized string similar to No processor was specified for a directive named '{0}'. The transformation will not be run..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.NoProcessorTypeForDirective">
+            <summary>
+              Looks up a localized string similar to A processor named '{0}' could not be found for the directive named '{1}'. The transformation will not be run. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.NotEnoughDirectiveParameters">
+            <summary>
+              Looks up a localized string similar to A required parameter '{0}' for the directive '{1}' was not found. The directive will be ignored. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ParameterDirectiveTypeMismatch">
+            <summary>
+              Looks up a localized string similar to The type '{1}' of the parameter '{0}' did not match the type of the data passed to the template..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ProcessDirectiveCallError">
+            <summary>
+              Looks up a localized string similar to ProcessDirective() was called before StartProcessingRun(). Directive processing can only start after StartProcessingRun() is called. .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.ProcessorNotSupportDirective">
+            <summary>
+              Looks up a localized string similar to The processor named '{0}' does not support the directive named '{1}'. The transformation will not be run..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.RecursiveInclude">
+            <summary>
+              Looks up a localized string similar to The include directive for file '{0}' causes an infinite loop. The directive will not be processed..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.SessionHostMarshalError">
+            <summary>
+              Looks up a localized string similar to Marshaling Session or Host object to secondary AppDomain failed. Check that Host and all types in Session dictionary are Serializable or derive from MarshalByReferenceObject..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.SetOutputEncodingFailed">
+            <summary>
+              Looks up a localized string similar to The host threw an exception from SetOutputEncoding()..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.StartProcessingCallError">
+            <summary>
+              Looks up a localized string similar to StartProcessingRun() was called after directive processing was already started..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.TransformationErrorPrepend">
+            <summary>
+              Looks up a localized string similar to Running transformation: .
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.UnexpectedTag">
+            <summary>
+              Looks up a localized string similar to An unexpected start or end tag was found within a block. Make sure that you did not mis-type a start or end tag, and that you do not have any nested blocks in the template..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.UnsupportedArgumentValue">
+            <summary>
+              Looks up a localized string similar to Attempt to specify unsupported {1} value '{0}' for directive {2}.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.WrongBlockSequence">
+            <summary>
+              Looks up a localized string similar to A {0} cannot appear after the first class feature in the template. Only boilerplate, expressions and other class features are allowed after the first class feature block..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.WrongDirectiveFormat">
+            <summary>
+              Looks up a localized string similar to A directive was specified in the wrong format. The transformation will not be run. Please specify the directive in the format &lt;#@ name [parameterName="parameterValue"]*  #&gt;.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Properties.Resources.WrongFinalBlockType">
+            <summary>
+              Looks up a localized string similar to A template containing a class feature must end with a class feature..
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor">
+            <summary>
+            Base class for a directive processor that follows the requires, provides pattern.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.codeBuffer">
+            <summary>
+            Buffer that collates all of the code that instances of this directive processor contribute during a processing run
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.preInitializationBuffer">
+            <summary>
+            Buffer that collates all of the code that instances of this directive processor need to run before base class initialization during a processing run
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.postInitializationBuffer">
+            <summary>
+            Buffer that collates all of the code that instances of this directive processor need to run after base class initialization during a processing run
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.Host">
+            <summary>
+            Gets associated text templating host.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.Initialize(Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost)">
+            <summary>
+            Initializes the processors.
+            </summary>
+            <param name="host"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.StartProcessingRun(System.CodeDom.Compiler.CodeDomProvider,System.String,System.CodeDom.Compiler.CompilerErrorCollection)">
+            <summary>
+            Starts processing run.
+            </summary>
+            <param name="languageProvider">Target language provider.</param>
+            <param name="templateContents">The contents of the template being processed</param>
+            <param name="errors">colelction to report processing errors in</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProvideUniqueId(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Provide a token to uniquely identify this instance of a directive processor
+            </summary>
+            <remarks>
+            By default, allow an ID parameter to be used on the directive.
+            Frequently, directive processors would choose to use one of their Provides parameters
+            </remarks>
+            <returns>A unique id for this directive instance</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProcessDirective(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Processes a single directive.
+            </summary>
+            <param name="directiveName">Directive name.</param>
+            <param name="arguments">Directive arguments.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.FinishProcessingRun">
+            <summary>
+            Finishes template processing.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetClassCodeForProcessingRun">
+            <summary>
+            Gets generated class code.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPreInitializationCodeForProcessingRun">
+            <summary>
+            Get the code to contribute to the body of the initialize method of the generated
+            template processing class as a consequence of the most recent run.
+            This code will run before the base class' Initialize method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetPostInitializationCodeForProcessingRun">
+            <summary>
+            Get the code to contribute to the body of the initialize method of the generated
+            template processing class as a consequence of the most recent run.
+            This code will run after the base class' Initialize method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetImportsForProcessingRun">
+            <summary>
+            Gets list of importt.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GetReferencesForProcessingRun">
+            <summary>
+            Gets list of references.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.FriendlyName">
+            <summary>
+            The friendly name of this processor
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.PostProcessArguments(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Method for derived classes to make any modifications to the dictionaries that they require
+            </summary>
+            <param name="directiveName"></param>
+            <param name="requiresArguments"></param>
+            <param name="providesArguments"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GenerateTransformCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Method for derived classes to generate the code they wish to add to the TextTransformation generated class.
+            </summary>
+            <param name="directiveName"></param>
+            <param name="codeBuffer"></param>
+            <param name="languageProvider"></param>
+            <param name="requiresArguments"></param>
+            <param name="providesArguments"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GeneratePreInitializationCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Method for derived classes to contribute additively to initialization code for the TextTransformation generated class.
+            </summary>
+            <remarks>
+            Additive code is useful where there are multiple directive processor instances each needing to have some instance-specific initialization.
+            As GenerateTransformCode can add methods, matching initialization code is often required to call those methods.
+            This code will be added before the call to the base class.
+            </remarks>
+            <param name="directiveName"></param>
+            <param name="codeBuffer"></param>
+            <param name="languageProvider"></param>
+            <param name="requiresArguments"></param>
+            <param name="providesArguments"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.GeneratePostInitializationCode(System.String,System.Text.StringBuilder,System.CodeDom.Compiler.CodeDomProvider,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Method for derived classes to contribute additively to initialization code for the TextTransformation generated class.
+            </summary>
+            <remarks>
+            Additive code is useful where there are multiple directive processor instances each needing to have some instance-specific initialization.
+            As GenerateTransformCode can add methods, matching initialization code is often required to call those methods.
+            This code will be added after the call to the base class.
+            </remarks>
+            <param name="directiveName"></param>
+            <param name="codeBuffer"></param>
+            <param name="languageProvider"></param>
+            <param name="requiresArguments"></param>
+            <param name="providesArguments"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.InitializeRequiresDictionary(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Method for derived classes to specify the requires arguments they need for each directive by putting <see langword="null" /> in the matching dictionary slot.
+            </summary>
+            <param name="directiveName"></param>
+            <param name="requiresDictionary"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.InitializeProvidesDictionary(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Method for derived classes to specify the provides parameters they will supply for each directive by putting the default name in the matching dictionary slot.
+            </summary>
+            <param name="directiveName"></param>
+            <param name="providesDictionary"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProcessArgument(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Boolean)">
+            <summary>
+            Process an argument string consisting of parameter name value pairs formatted as below:
+            name[=[']value[']][;name[=[']value[']]]
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ProcessIdArgument(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Return the id of the directive if it has one
+            </summary>
+            <returns>the id or string.Empty</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor.ParseArgument(System.String)">
+            <summary>
+            Parse a standardized argument string into a dictionary of argument name, value pairs
+            </summary>
+            <remarks>Values are optional, pairs are semicolon separated</remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.CompilerBridge.Create(Microsoft.VisualStudio.TextTemplating.SupportedLanguage,System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.String)">
+            <summary>
+            Create a new <see cref="T:Microsoft.VisualStudio.TextTemplating.CompilerBridge" /> for the given <see cref="T:Microsoft.VisualStudio.TextTemplating.SupportedLanguage" />.
+            </summary>
+            <param name="language">Language of the <paramref name="source" /></param>
+            <param name="source">To be compiled</param>
+            <param name="debug">Include debugging symbols and output</param>
+            <param name="references">Any specified assembly references (must be resolved to full paths).</param>
+            <param name="cmdLineArguments">Any extra command line arguments to pass to the compilers</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.CompilerBridge.CreateNewEmptyCompilation">
+            <summary>
+            Create a new language specific <see cref="T:Microsoft.CodeAnalysis.Compilation" />.
+            </summary>
+            <remarks>
+            Should <em>not</em> concern itself with references, syntax tree or compilation options
+            as these will be set by the caller.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.CompilerBridge.ParseSyntaxTree(System.String,Microsoft.CodeAnalysis.ParseOptions)">
+            <summary>
+            Create a language specific <see cref="T:Microsoft.CodeAnalysis.SyntaxTree" /> from the given source.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.CompilerBridge.Compile">
+            <summary>
+            Compile a new Compilation using this <see cref="T:Microsoft.VisualStudio.TextTemplating.CompilerBridge" />.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.ShadowCopyMonitor">
+            <summary>
+            Class to monitor the state of shadow copied assemblies for use by hosts
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.ShadowCopyMonitor.AreShadowCopiesObsolete">
+            <summary>
+            Are any of the shadow-copied assemblies obsolete with respect to their on-disk files.
+            </summary>
+            <returns>Whether any assemblies are obsolete</returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.ShadowTimes">
+            <summary>
+            Helper class to manage a record of the last write dates of reference assemblies that are shadow-copied in the templating appdomain.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.ShadowTimes.times">
+            <summary>
+            Set of shadow-copying times by assembly's full location
+            </summary>
+            <remarks>Typically unlikely that the dictionary will be accessed on multiple threads so use concurrency level of one.</remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ShadowTimes.Insert(System.String,System.DateTime)">
+            <summary>
+            Record the modification time of an assembly to be shadow-copied
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.ShadowTimes.AreShadowCopiesObsolete">
+            <summary>
+            Are any of the shadow-copied assemblies obsolete with respect to their on-disk files.
+            </summary>
+            <returns>Whether any assemblies are obsolete</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TemplateParser.ParseTemplateIntoBlocks(System.String,System.String,System.CodeDom.Compiler.CompilerErrorCollection)">
+            <summary>
+            Parse a template file into blocks. Each block is of type boilerplate, directive, 
+            statement, classfeature or expression. Also puts position information (line/column 
+            number) for the block into each block. 
+            </summary>
+            <param name="content">Template content.</param>
+            <param name="fileName"></param>
+            <param name="errors">Error collection to report errors to.</param>
+            <returns>Name of template file.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TemplateParser.CheckBlockSequence(System.Collections.Generic.IList{Microsoft.VisualStudio.TextTemplating.Block},System.CodeDom.Compiler.CompilerErrorCollection)">
+            <summary>
+            Check to make sure that the blocks are in correct sequence i.e.
+            * no statements after the first classfeature block, and
+            * if the template contains a class block then it ends with a class block.
+            If not, log errors. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TemplateParser.ParseDirectiveBlock(Microsoft.VisualStudio.TextTemplating.Block,System.CodeDom.Compiler.CompilerErrorCollection)">
+            <summary>
+            Parse a directive block for the directive name and param-value pairs
+            </summary>
+            <param name="block"></param>
+            <param name="errors"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TemplateParser.ValidateDirectiveString(Microsoft.VisualStudio.TextTemplating.Block)">
+            <summary>
+            Validates a directive string and makes sure it is in the right format
+            </summary>
+            <returns>Whether the directive block is valid</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TemplateParser.InsertPositionInformation(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TextTemplating.Block})">
+            <summary>
+            Insert position information (line and column number) into a block
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TemplateParser.StripExtraNewlines(System.Collections.Generic.List{Microsoft.VisualStudio.TextTemplating.Block})">
+            <summary>
+            Remove unwanted newlines from the blocks.
+            Also removes any boilerplate blocks that are empty (or that contained only new lines)
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TemplateParser.WarnAboutUnexpectedTags(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TextTemplating.Block},System.CodeDom.Compiler.CompilerErrorCollection)">
+            <summary>
+            Adds warnings to the error collection if unexpected unescaped start/end tags are found within the template
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.TemplateParser.escapeReplacingEvaluator">
+            <summary>
+            A MatchEvaluator for replacing escape characters. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TemplateParser.StripEscapeCharacters(System.Collections.Generic.IList{Microsoft.VisualStudio.TextTemplating.Block})">
+            <summary>
+            Strips escape characters from the block text. 
+            </summary>
+            <param name="blocks"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TemplateParser.StripDirectiveEscapeCharacters(System.String)">
+            <summary>
+            Strips escape characters before " in the directive strings
+            </summary>
+            <param name="valueString"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.BlockType">
+            <summary>
+            Represents the type of each block in the template file
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.Block">
+            <summary>
+            Represents a block in the template file
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Block.Type">
+            <summary>
+            The type of the block
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Block.Text">
+            <summary>
+            The text contained within the block, not
+            including the opening and closing tags
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Block.StartLineNumber">
+            <summary>
+            The line number on which the block text starts
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Block.StartColumnNumber">
+            <summary>
+            The column number on which the block text starts
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Block.EndLineNumber">
+            <summary>
+            The line number on which the block text ends
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Block.EndColumnNumber">
+            <summary>
+            The column number on which the block text ends
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Block.FileName">
+            <summary>
+            The file name that this block comes from (in the case that
+            it comes from an included file). Empty string if the
+            block doesn't come from an include file.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Block.#ctor(Microsoft.VisualStudio.TextTemplating.BlockType,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="type"></param>
+            <param name="text"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Block.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.Directive">
+            <summary>
+            Represents a directive in the template file
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Directive.DirectiveName">
+            <summary>
+            The name of the directive
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Directive.Parameters">
+            <summary>
+            Parameter-Value pairs for the directive
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Directive.Block">
+            <summary>
+            The directive block that this directive came from
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.Directive.DirectiveProcessorName">
+            <summary>
+            The name of the processor for this directive if it is a custom one
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Directive.SetDirectiveProcessorName(System.String)">
+            <summary>
+            Make the setter for this property very explicit as it is not a normal operation.
+            </summary>
+            <param name="processorName"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.Directive.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.VisualStudio.TextTemplating.Block)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="directiveName"></param>
+            <param name="parameters"></param>
+            <param name="block"></param>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession">
+            <summary>
+            Class to carry the data associated with generation from one templated file 
+            </summary>
+            <remarks>
+            Note - this is not the same as the ITextTransformationSession which represents an end user's batched session of multiple transforms.
+            The lifetime of this class is one call to ProcessTemplate or PreprocessTemplate.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.Preprocess">
+            <summary>
+            Whether this session is for precompilation or regular transformation
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.AssemblyDirectives">
+            <summary>
+            List of full names of assemblies that need to be referenced
+            when compiling/running the transformation code
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.ImportDirectives">
+            <summary>
+            List of namespaces to be imported in the transformation code
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.ClassFullName">
+            <summary>
+            The full name of the class that will be created to do the generation
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.BaseClassName">
+            <summary>
+            The base class for the generated transformation class
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.Language">
+            <summary>
+            The language that the template is written in. Defaults
+            to CSharp
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.LanguageOptions">
+            <summary>
+            Options set for the language of the template.
+            </summary>
+            <remarks>
+            These options are passed directly to the CodeDOM provider
+            </remarks>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.CodeDomProvider">
+            <summary>
+            The CodeDomProvider used to build up the CodeDom tree of the code
+            for the transformation class. This is constructed based on the 
+            Language property.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.Debug">
+            <summary>
+            Whether the transformation code is compiled in debug-mode.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.HostSpecific">
+            <summary>
+            Whether the template is host-specific or not.
+            </summary>
+            <remarks>
+            If it is host-specific, 
+            then a 'Host' property will be generated in the transformation code.
+            If it is TrueFromBase then the 'Host' property will be assumed to be defined in the base class.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.IsHostSpecific">
+            <summary>
+            Is the templete host speciifc either directly or from its base class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.ProcessedOutputDirective">
+            <summary>
+            Whether or not we have already processed an output directive for this template file
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.ProcessedTemplateDirective">
+            <summary>
+            Whether or not we have already processed a template directive for this template file
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.FormatProvider">
+            <summary>
+            The FormatProvider to be used to convert expressions to strings. This is
+            a CultureInfo object constructed from the culture specified in the template
+            directive
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.IncludeStack">
+            <summary>
+            The stack of files included
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.TemplateContents">
+            <summary>
+            The contents of the template being processed
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.TemplateFile">
+            <summary>
+            The path of the outermost template being processed
+            </summary>
+            <remarks>
+            May be null for non file-based hosts.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.CacheAssemblies">
+            <summary>
+            Whether to cache assemblies for this session.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.CompilerOptions">
+            <summary>
+            Options to send to the compiler for the template control block code
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.UserTransformationSession">
+            <summary>
+            Client-provided session object to flow through to the runtime AppDomain.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.IsPublic">
+            <summary>
+            Whether the generated class is public or internal.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession.LinePragmas">
+            <summary>
+            Whether the generated class contains line pragmas to redirect errors and the debugger to the template.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.SupportedLanguage">
+            <summary>
+            The languages that are supported in the template file
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession">
+            <summary>
+            Trivial implementation of text transformation session interface
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession.#ctor">
+            <summary>
+            Basic constructor that creates a unique Id.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession.#ctor(System.Guid)">
+            <summary>
+            Constructor to allow a specific Id to be used
+            </summary>
+            <remarks>
+            Potential use for other serialization schemes
+            </remarks>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession.Id">
+            <summary>
+            The identity of the session
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession.Equals(Microsoft.VisualStudio.TextTemplating.ITextTemplatingSession)">
+            <summary>
+            Compares this <see cref="T:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession" /> with another <see cref="T:Microsoft.VisualStudio.TextTemplating.ITextTemplatingSession" />
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession.Equals(System.Guid)">
+            <summary>
+            Compares the <see cref="P:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession.Id" /> of this <see cref="T:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession" /> with another <see cref="T:Microsoft.VisualStudio.TextTemplating.ITextTemplatingSession" />
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession.Equals(System.Object)">
+            <summary>
+            Compares this <see cref="T:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession" /> with another object
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession.GetHashCode">
+            <summary>
+            Use the hash of the Id as it's hash code.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serialization constructor
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serialize the object
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.TextTransformation">
+            <summary>
+            Base class for generated text transformations
+            </summary>
+            <remarks>
+            Any class specified in an inherits directive must match this class in a duck-typing style.
+            
+            Note that this class therefore specifies an implicit contract with the transformation object.
+            The object doesn't have to derive from any specific type or interface, but it must have
+            a) A void Initialize() method.
+            b) A string TransformText() method
+            c) An Errors property that's duck-compatible with CompilerErrorCollection
+            d) A GeneratonEnvironment property that's duck-compatible with StringBuilder.
+            e) A void Write(string) method 
+            
+            Using any further features of T4 such as expression blocks will require the class to have further methods, such as ToStringHelper, but
+            those will produce regular compiler errors at transform time that the base class author can address.
+            
+            These few methods together form a subset of the TextTransformation default base class' API.
+            
+            If you change this pseudo-contract to add more requirements, you should consider this a breaking change.
+            It's OK, however, to change the contract to have fewer requirements.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TextTransformation.GenerationEnvironment">
+            <summary>
+            The string builder that generation-time code is using to assemble generated output
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TextTransformation.Errors">
+            <summary>
+            The error collection for the generation process
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TextTransformation.indentLengths">
+            <summary>
+            A list of the lengths of each indent that was added with PushIndent
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TextTransformation.CurrentIndent">
+            <summary>
+            Gets the current indent we use when adding lines to the output
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TextTransformation.Session">
+            <summary>
+            Current transformation session
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.TransformText">
+            <summary>
+            Generate the output text of the transformation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.Initialize">
+            <summary>
+            Initialize the templating class
+            </summary>
+            <remarks>
+            Derived classes are allowed to return errors from initialization 
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.Finalize">
+            <summary>
+            Finaizlier.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.Dispose">
+            <summary>
+            Disposes the state of this object.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.Dispose(System.Boolean)">
+            <summary>
+            Dispose implementation.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.Write(System.String)">
+            <summary>
+            Write text directly into the generated output
+            </summary>
+            <param name="textToAppend"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.WriteLine(System.String)">
+            <summary>
+            Write text directly into the generated output
+            </summary>
+            <param name="textToAppend"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.Write(System.String,System.Object[])">
+            <summary>
+            Write formatted text directly into the generated output
+            </summary>
+            <param name="format"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.WriteLine(System.String,System.Object[])">
+            <summary>
+            Write formatted text directly into the generated output
+            </summary>
+            <param name="format"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.Error(System.String)">
+            <summary>
+            Raise an error
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.Warning(System.String)">
+            <summary>
+            Raise a warning
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.PushIndent(System.String)">
+            <summary>
+            Increase the indent
+            </summary>
+            <param name="indent">indent string</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.PopIndent">
+            <summary>
+            Remove the last indent that was added with PushIndent
+            </summary>
+            <returns>The removed indent string</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.ClearIndent">
+            <summary>
+            Remove any indentation
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TextTransformation.ProvideBaseClassMembers">
+            <summary>
+            Get a set of CodeDOM members that match the real members on this class
+            </summary>
+            <remarks>
+            If you add a member to this class, consider adding it to the list returned by this method.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.ToStringHelper">
+            <summary>
+            Utility class to produce culture-oriented representation of an object as a string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.ToStringHelper.FormatProvider">
+            <summary>
+            Gets or sets format provider to be used by ToStringWithCulture method.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ToStringHelper.ToStringWithCulture(System.Object)">
+            <summary>
+            This is called from the compile/run appdomain to convert objects within an expression block
+            to a string
+            </summary>
+            <param name="objectToConvert">The object to convert to a string</param>
+            <returns>The object converted to a string using the template's culture</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ToStringHelper.ProvideHelpers(System.Globalization.CultureInfo)">
+            <summary>
+            Get a set of CodeDOM members that provides the same functionality as this class as a property exposing a nested class.
+            </summary>
+            <param name="formatProvider">The default value of the format provider to use</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.ToStringHelper.ProvideNestedClass(System.Globalization.CultureInfo,System.CodeDom.CodeTypeMemberCollection)">
+            <summary>
+            Provide a nested class to handle converting to string in a culture-sensitive manner
+            </summary>
+            <param name="formatProvider"></param>
+            <param name="members"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.TextTemplating.TransformationRunner">
+            <summary>
+            Class that is instantiated in the secondary app-domain and is responsible for
+            compiling and running the transformation code. It has to be a MarshalByRefObject
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.TransformationRunner.shadowCopyPaths">
+            <summary>
+            Set of paths that are shadow copied for this appdomain.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.TransformationRunner.shadowCopySync">
+            <summary>
+            Marker object to allow sync on the shadowCopyPaths set. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.TransformationRunner.session">
+            <summary>
+            The session we're currently in.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.TransformationRunner.assembly">
+            <summary>
+            The compiled template.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.TransformationRunner.host">
+            <summary>
+            The host.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.TextTemplating.TransformationRunner.Errors">
+            <summary>
+            A collection of the errors that are raised 
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.InitializeLifetimeService">
+            <summary>
+            This allows our object to live forever without it dying after 5 minutes of inactivity.
+            Since it's contained in a temporary AppDomain, this shouldn't cause any issues.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.LogError(System.String,System.Boolean)">
+            <summary>
+            Utility method for logging an error/warning
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.LogError(System.String,System.Boolean,System.String,System.Int32,System.Int32)">
+            <summary>
+            Utility method for logging an error/warning
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.ClearErrors">
+            <summary>
+            Since the errors collection is not marshalled by reference, we need to provide a method for
+            the engine to call to clear them after it has reported preparation errors to the host.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.TextTemplating.TransformationRunner.linePattern">
+            <summary>
+            Cached expression built from resources from the environment assembly.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.GetEnvironmentResource(System.Resources.ResourceManager,System.String,System.String)">
+            <summary>
+            Cache a resource from the manager or cache the fallback string if there's a problem.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.TryParseStackTrace(System.String,System.Int32@,System.String@)">
+            <summary>
+            Utility method for parsing a line number from an exception stacktrace
+            </summary>
+            <remarks>
+            This code is fragile at runtime to changes in StackTrace formatting from mscorlib, but falls back gracefully, so we can tolerate the coupling.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.PreLoadAssemblies(System.String[])">
+            <summary>
+            Load the set of assemblies that we will need into the AppDomain
+            </summary>
+            <param name="assemblies"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.PrepareTransformation(Microsoft.VisualStudio.TextTemplating.TemplateProcessingSession,System.String,Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost)">
+            <summary>
+            This is the method called from the other AppDomain to compile and prepare the transformation code for running
+            </summary>
+            <remarks>
+            Note that this method uses an implicit contract with the transformation object.
+            See the DocComment on TextTransformation for details before changing the dynamic calls from this method.
+            </remarks>
+            <returns>True if the transformation run has been properly prepared.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.PerformTransformation">
+            <summary>
+            This is the method called from the other AppDomain to run the transformation
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.LocateAssembly(System.Boolean,System.String,System.String,System.String,System.Boolean,Microsoft.VisualStudio.TextTemplating.SupportedLanguage,System.Collections.Generic.IEnumerable{System.String},System.String)">
+            <summary>
+            Find or compile an assembly with the correct code for the given source
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.EnsureShadowCopyPaths(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Ensures that the given paths are being shadow copied.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.CreateTextTransformation(System.String,Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost,System.Reflection.Assembly,Microsoft.VisualStudio.TextTemplating.ITextTemplatingSession,System.String)">
+            <summary>
+            Instantiates an object of the generated transformation class from the compiled assembly. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.GetMostDerivedProperty(System.Type,System.String)">
+            <summary>
+            Get the named property as close to the most-derived class as possible.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.Compile(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean,Microsoft.VisualStudio.TextTemplating.SupportedLanguage,System.String)">
+            <summary>
+            Compiles the source into an assembly using the given CodeDomProvider and the assembly references
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.TextTemplating.TransformationRunner.AttemptAssemblyLoad(System.String)">
+            <summary>
+            Try to load an assembly by path
+            </summary>
+            <returns>null if no assembly found</returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.T4TelemetryEvent">
+            <summary>
+            Represents a T4 telemetry event identifier.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.ArchitectureTools.Telemetry.T4TelemetryEvent.TransformAll">
+            <summary>
+            Identifier for the T4 transform-all telemetry event
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.T4TelemetryProperty">
+            <summary>
+            Represents a T4 telemetry property identifier.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.ArchitectureTools.Telemetry.T4TelemetryProperty.TransformAllProperty">
+            <summary>
+            Identifier for the T4 transformall telemetry property
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint">
+            <summary>
+            Additional data for a telemetry event.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint.Identity">
+            <summary>
+            The event identifier.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint.Value">
+            <summary>
+            The data value.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint.#ctor(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,System.Object)">
+            <summary>
+            Constructs a new data point for a telemetry event
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPointCollection">
+            <summary>
+            Represents a collection of <see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint" /> values for telemetry events.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPointCollection.#ctor">
+            <summary>
+            Creates a <see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPointCollection" />.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPointCollection.#ctor(System.Int32)">
+            <summary>
+            Creates a <see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPointCollection" /> with the specified initial <paramref name="capacity" />.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPointCollection.Add(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,System.Object)">
+            <summary>
+            Adds a new <see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint" /> for the specified <paramref name="identifier" /> and <paramref name="value" />.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPointCollection.AddCollectionToDictionary(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint},System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Set collection items in dictionary
+            </summary>
+            <param name="dictionary">Dictionary to store items</param>
+            <param name="collection">Collection of DataPoints to set</param>
+        </member>
+        <member name="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryEvent">
+            <summary>
+            Represents a telemetry event.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryEvent.SharedProperties">
+            <summary>
+            Properties shared between a scope's start and end event.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryEvent.Duration">
+            <summary>
+            Gets duration of a scope for an end event. Returns null for other types.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryEvent.SetProperty(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,System.Object,System.Boolean,System.Boolean)">
+            <summary>
+            Sets a property for the event.
+            </summary>
+            <param name="propertyIdentifier">Name of property.</param>
+            <param name="propertyValue">Value of property.</param>
+            <param name="shared">True if property should be shared with nested events</param>
+            <param name="pii">True if property has personally identifiable information.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryEvent.SetProperties(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint},System.Boolean)">
+            <summary>
+            Sets properties for the event.
+            </summary>
+            <param name="properties">DataPoints to write.</param>
+            <param name="shared">True if should share properties with children</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryEvent.Correlate(Microsoft.VisualStudio.Telemetry.TelemetryEventCorrelation[])">
+            <summary>
+            Correlate this event with other events via <see cref="T:Microsoft.VisualStudio.Telemetry.TelemetryEventCorrelation" />.
+            </summary>
+            <param name="correlations"></param>
+        </member>
+        <member name="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryRecorder">
+            <summary>
+            Represents a telementry event recorder.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryRecorder.StartUserTask(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint},Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope)">
+            <summary>
+            Start tracking a user task by posting a <see cref="T:Microsoft.VisualStudio.Telemetry.UserTaskEvent" /> at the beginning of the user task, and then returns a <see cref="T:Microsoft.VisualStudio.Telemetry.TelemetryScope`1" /> object.
+            When the user task finishes, call <see cref="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.Dispose" /> to post another <see cref="T:Microsoft.VisualStudio.Telemetry.UserTaskEvent" /> for the end point.
+            Because the same event name is used by both start and end events, please don't use Start or End in event name.
+            </summary>
+            <param name="telemetryIdentifier"><see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier" /></param>
+            <param name="properties">Optional start event properties</param>
+            <param name="parentScope">Optional <see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope" /></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryRecorder.StartOperation(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint},Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope)">
+            <summary>
+            Start tracking an operation by posting an <see cref="T:Microsoft.VisualStudio.Telemetry.OperationEvent" /> at the beginning of the operation, and then returns a <see cref="T:Microsoft.VisualStudio.Telemetry.TelemetryScope`1" /> object.
+            When the operation finishes, call <see cref="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.Dispose" /> to post another <see cref="T:Microsoft.VisualStudio.Telemetry.OperationEvent" /> for the end point.
+            Because the same event name is used by both start and end events, please don't use Start or End in event name.
+            </summary>
+            <param name="telemetryIdentifier"><see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier" /></param>
+            <param name="properties">Optional start event properties</param>
+            <param name="parentScope">Optional <see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope" /></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryRecorder.RecordEvent(Microsoft.VisualStudio.Telemetry.TelemetryEvent)">
+            <summary>
+            Records the specified <paramref name="telemetryEvent" />.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope">
+            <summary>
+            Represents a telemetry scope.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope.Correlation">
+            <summary>
+            Correlation information for nested scopes.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope.EndEvent">
+            <summary>
+            The end event for this scope.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope.Result">
+            <summary>
+            The result for thois scope.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope.Parent">
+            <summary>
+            The immediate parent scope.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope.Root">
+            <summary>
+            The root parent scope.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryService.StartUserTask(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <summary>
+            Start tracking user task by posting a <see cref="T:Microsoft.VisualStudio.Telemetry.UserTaskEvent" /> at the beginning of user task work, and then return a <see cref="T:Microsoft.VisualStudio.Telemetry.TelemetryScope`1" /> object.
+            When the user task finishes, call method <see cref="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.Dispose" /> to post another <see cref="T:Microsoft.VisualStudio.Telemetry.UserTaskEvent" /> for end point.
+            Because the same event name is used by both start and end events, please don't use Start or End in event name.
+            </summary>
+            <param name="telemetryIdentifier"><see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier" /></param>
+            <param name="properties">Optional start event properties</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryService.StartOperation(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <summary>
+            Start tracking user task by posting a <see cref="T:Microsoft.VisualStudio.Telemetry.OperationEvent" /> at the beginning of user task work, and then return a <see cref="T:Microsoft.VisualStudio.Telemetry.TelemetryScope`1" /> object.
+            When the user task finishes, call method <see cref="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.Dispose" /> to post another <see cref="T:Microsoft.VisualStudio.Telemetry.OperationEvent" /> for end point.
+            Because the same event name is used by both start and end events, please don't use Start or End in event name.
+            </summary>
+            <param name="telemetryIdentifier"><see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier" /></param>
+            <param name="properties">Optional start event properties</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryService.PostUserTask(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,Microsoft.VisualStudio.Telemetry.TelemetryResult,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <summary>
+            Post a single user task event
+            </summary>
+            <param name="telemetryIdentifier"><see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier" /></param>
+            <param name="result">The <see cref="T:Microsoft.VisualStudio.Telemetry.TelemetryResult" /> of the event</param>
+            <param name="properties">Optional event properties</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryService.PostOperation(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,Microsoft.VisualStudio.Telemetry.TelemetryResult,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <summary>
+            Post a single operation event
+            </summary>
+            <param name="telemetryIdentifier"><see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier" /></param>
+            <param name="result">The <see cref="T:Microsoft.VisualStudio.Telemetry.TelemetryResult" /> of the event</param>
+            <param name="properties">Optional event properties</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryService.PostFault(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,System.String,System.Exception,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <summary>
+            Reports a single fault event
+            </summary>
+            <param name="telemetryIdentifier"><see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier" /></param>
+            <param name="description">Description of fault</param>
+            <param name="exception">Exception object.</param>
+            <param name="properties">Optional properties of fault</param>
+        </member>
+        <member name="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier">
+            <summary>
+            A telemetry identifier consisting of prefix and name used for events and properties.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier.#ctor(System.String,System.String)">
+            <summary>
+            Creates a new telemetry identifier.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier.Value">
+            <summary>
+            The string value of the telemetry identifier consisting of prefix and name.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier.ToString">
+            <summary>
+            The <see cref="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier.Value" /> of the telemetry identifier.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase">
+            <summary>
+            An abstract base implementation of an <see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope" />.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.#ctor(Microsoft.VisualStudio.Telemetry.OperationEvent,Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryRecorder,Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryService,Microsoft.VisualStudio.ArchitectureTools.Telemetry.ITelemetryScope)">
+            <summary>
+            Creates a <see cref="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase" />.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.Correlation">
+            <inheritdoc />
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.EndEvent">
+            <inheritdoc />
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.Result">
+            <inheritdoc />
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.Parent">
+            <inheritdoc />
+        </member>
+        <member name="P:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.Root">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.StartUserTask(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.StartOperation(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.PostUserTask(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,Microsoft.VisualStudio.Telemetry.TelemetryResult,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.PostOperation(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,Microsoft.VisualStudio.Telemetry.TelemetryResult,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.PostFault(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,System.String,System.Exception,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryScopeBase.Dispose(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.VisualStudio.ArchitectureTools.Telemetry.VSTelemetryService">
+            <summary>
+            Telemetry service for Visual Studio
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.VSTelemetryService.#ctor">
+            <summary>
+            Creates a new telemetry service for Visual Studio
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.VSTelemetryService.StartOperation(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.VSTelemetryService.StartUserTask(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.VSTelemetryService.PostOperation(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,Microsoft.VisualStudio.Telemetry.TelemetryResult,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.VSTelemetryService.PostUserTask(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,Microsoft.VisualStudio.Telemetry.TelemetryResult,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.VSTelemetryService.PostFault(Microsoft.VisualStudio.ArchitectureTools.Telemetry.TelemetryIdentifier,System.String,System.Exception,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.ArchitectureTools.Telemetry.DataPoint})">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.VSTelemetryService.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.VisualStudio.ArchitectureTools.Telemetry.VSTelemetryService.Dispose(System.Boolean)">
+            <inheritdoc />
+        </member>
+    </members>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><DigestValue>jR9qgtfVEr1gZn+6LOgRQvJTlL6499j/YKbp1tiqTVI=</DigestValue></Reference></SignedInfo><SignatureValue>5gi9DTMF8kBkza3r3zstVfm1ks2NSjM168w2wfTqpFv0Jg3koeRQVvVRowkD0SiOD14gUET6xAN91qT9BZHzXu00AcPkxnp61VVDQLDZ7cVcVAL/Tj608TF/tFHYu15ynmQcUPj6LZyWo/8YMxQCG0t9OG74nplxsjWn2JmI67tFM/XN5H+YQx8+trSrSOVpFT0PvtzxUpm1BIasP6uBQWQa+Bnfr1j4Xo/u7CsulRXewBnf5zMnp23KIipnCD6tW/xOuN9jemcJDkMqSoLQ1kgzlvDXBcSD0byqExSkYvuDPop9GvWHNB4k2Zvhgy56hWiGNF98u9xppy0gNS8LIg==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>6yM7GOtjJiq83q4Ju1HJ7vg7kh3YM0WVQiBovQmpRa4cLYivtxSA85TmG7P88x8Liwt4Yq+ecFYB6GguJYkMEOtMFckdexGT2uAUNvAuQEZcan7Xadx/Ea11m1cr0GlJwUFWTO91w8hldaFD2RhxlrYHarQVHetFY5xTyAkn/KZxYoreob0sR+SFViNIjp36nV2KD1lLVVDJlaltcgV9DbW0JUhyFOoZT76Pf7qir5IxVBQNi2wvQFkGyZh/tbjNJeJw0inwqnHL3SOZd84xJPclElJodSEIQxZ/uUi9iZpwhdI2RGeH+RxO8pAz/qIgN0Pn4SgrHoPtGhB4vg0T2Q==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>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</X509Certificate><X509Certificate>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</X509Certificate><X509Certificate>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</X509Certificate></X509Data></KeyInfo><Object Id="ts-countersig"><X509Data><X509Certificate>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</X509Certificate><X509Certificate>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</X509Certificate></X509Data><CounterSignature ts-format="cms-timestamp-message" xmlns="http://schemas.microsoft.com/xmldsig/timestamp/2003">MIAGCSqGSIb3DQEHAqCAMIIW1QIBAzEPMA0GCWCGSAFlAwQCAQUAMIIBUQYLKoZIhvcNAQkQAQSgggFABIIBPDCCATgCAQEGCisGAQQBhFkKAwEwMTANBglghkgBZQMEAgEFAAQgOw3u6EKJbPL8J4C+egn3d9i3ZE2P2jivh7fUnT5rWagCBmPuKb3tlxgTMjAyMzAyMjgyMjUwMDUuOTgzWjAEgAIB9KCB0KSBzTCByjELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjElMCMGA1UECxMcTWljcm9zb2Z0IEFtZXJpY2EgT3BlcmF0aW9uczEmMCQGA1UECxMdVGhhbGVzIFRTUyBFU046RDZCRC1FM0U3LTE2ODUxJTAjBgNVBAMTHE1pY3Jvc29mdCBUaW1lLVN0YW1wIFNlcnZpY2WgghFXMIIHDDCCBPSgAwIBAgITMwAAAcf7AKBKW/In3AABAAABxzANBgkqhkiG9w0BAQsFADB8MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSYwJAYDVQQDEx1NaWNyb3NvZnQgVGltZS1TdGFtcCBQQ0EgMjAxMDAeFw0yMjExMDQxOTAxMzVaFw0yNDAyMDIxOTAxMzVaMIHKMQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSUwIwYDVQQLExxNaWNyb3NvZnQgQW1lcmljYSBPcGVyYXRpb25zMSYwJAYDVQQLEx1UaGFsZXMgVFNTIEVTTjpENkJELUUzRTctMTY4NTElMCMGA1UEAxMcTWljcm9zb2Z0IFRpbWUtU3RhbXAgU2VydmljZTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAK9C3FbZ2rTRTAa0E7RvT/CEgD8shpsTX4RM2jlZbdPPKQVBQCGrJjf3jooxOlHGn93Nm1Zzf9NoodLJkqmJJuT92cFO2VttNm+nDwyY13K4yY9Kn57nHAbRN1lNL2fAokA+6qysXhfGATXEvj1bb7KoXeWFugMIVqoY8NZmLi3rReW+mj4n/90c5cqht0le0D4kiXp3bO4BuN+UbMtRyeF56s7TiUeNSNI9xENOSTBeUDUYu5E+r100/jB1Y9uxVUO23n/1PthAGxY9l9gDlm74JWGmJzN5vyPzlgx1IBsPCiHbA4d1tXrrJxdg+6HpxoLWobPktRuVKJX+REoP/Wft/K4UMC4KJGOZOqfJOWq2FrbM3SSuiYiEZfONx++JO/kKpU9i2wED6vIr0L9IHXJVtmibp9Sq1vr+dkd7wBwjrW1Jsbw9XjRh6hqi2oLZavVBVyl7l56lyaq7gmJn8HRTA9FD+ootZRXXii/Oz3Y3QMMgolXAhKC57w88r4zY8bZE3c+keMhdTf1+D0kB+BZYLJcgSF4IGkpT7bz7sQLbmnPyE4+JNCEUoRomCwTNg8OqHrCzqMXtOzlDzvql1znCTFR4RNDJYYZ8XzdgdSVhT1sEOqKFoqgDkA6s3A8fu/bIcQNQsdCu9HjgaZTKINu4GKC6Qb+50c+LR6qE8rwNAgMBAAGjggE2MIIBMjAdBgNVHQ4EFgQUBVDS3Rw+wQBf1VP1/3hBy4lEkiAwHwYDVR0jBBgwFoAUn6cVXQBeYl2D9OXSZacbUzUZ6XIwXwYDVR0fBFgwVjBUoFKgUIZOaHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3BraW9wcy9jcmwvTWljcm9zb2Z0JTIwVGltZS1TdGFtcCUyMFBDQSUyMDIwMTAoMSkuY3JsMGwGCCsGAQUFBwEBBGAwXjBcBggrBgEFBQcwAoZQaHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3BraW9wcy9jZXJ0cy9NaWNyb3NvZnQlMjBUaW1lLVN0YW1wJTIwUENBJTIwMjAxMCgxKS5jcnQwDAYDVR0TAQH/BAIwADATBgNVHSUEDDAKBggrBgEFBQcDCDANBgkqhkiG9w0BAQsFAAOCAgEA0MuXPKID9MvMQLC1XGtO8FstZk/p6mIABZ89ve9pDTviiewBOH/klW7zp5Hnrjj6t8XPuk0vINxbiimBMGKr50R8V+fLY5bHGbGXip7u3xjVJaTU/WzkBR1gC1EbqF6fEyx4cY9zxKvY8xWAT9mDTC6Je9KI2Naqc3t5zDCX6Xbq3QQaWji5SZkTUy4cXfkSRiUG2NVwHMeqfxYoMKgWrEg1MaftMhTxAQfbgRNyiCwLaun3MxqeBDHqJ+mJpMghgLVzCgxUEIHT/yE3u1YIQFWz01ZT94WNXRYHPrfGCtqGxUhVSrJZAEgEwx7pQjIbflqyLLpHJRFD/Q2jJqau0tESzgzInCOj7aqhjoXZ2kZbQNHfln/tLT7fUlFbazycju1jDym8pAkV85hytOs69JJ9WIlGDVwrDoGhxeSJjtmcEOeFBNSOeY41HZXco8v1DyYMUZvTcl3ju2nWK/CvH+kNpzxdL1qhRu3sMGgJeQpSnq87IX4QfM7o1UdHdUWu2dNZZ12IVrj6lWWshZeyR6+ouoboaVOgUOv1YGNHAYpLF+JjTPiEmPNU9UWLe31gEzbv85IyDXM4qc234OUvt3wgKPIFQevugOS9LwYN/XbBSE7+jFibkPGWcu38JRQWROHeSBW0bnWpDcChncixjNqLWjau8Jt5Lu8eNVBgJpAwggdxMIIFWaADAgECAhMzAAAAFcXna54Cm0mZAAAAAAAVMA0GCSqGSIb3DQEBCwUAMIGIMQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMTIwMAYDVQQDEylNaWNyb3NvZnQgUm9vdCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkgMjAxMDAeFw0yMTA5MzAxODIyMjVaFw0zMDA5MzAxODMyMjVaMHwxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xJjAkBgNVBAMTHU1pY3Jvc29mdCBUaW1lLVN0YW1wIFBDQSAyMDEwMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA5OGmTOe0ciELeaLL1yR5vQ7VgtP97pwHB9KpbE51yMo1V/YBf2xK4OK9uT4XYDP/XE/HZveVU3Fa4n5KWv64NmeFRiMMtY0Tz3cywBAY6GB9alKDRLemjkZrBxTzxXb1hlDcwUTIcVxRMTegCjhuje3XD9gmU3w5YQJ6xKr9cmmvHaus9ja+NSZk2pg7uhp7M62AW36MEBydUv626GIl3GoPz130/o5Tz9bshVZN7928jaTjkY+yOSxRnOlwaQ3KNi1wjjHINSi947SHJMPgyY9+tVSP3PoFVZhtaDuaRr3tpK56KTesy+uDRedGbsoy1cCGMFxPLOJiss254o2I5JasAUq7vnGpF1tnYN74kpEeHT39IM9zfUGaRnXNxF803RKJ1v2lIH1+/NmeRd+2ci/bfV+AutuqfjbsNkz2K26oElHovwUDo9Fzpk03dJQcNIIP8BDyt0cY7afomXw/TNuvXsLz1dhzPUNOwTM5TI4CvEJoLhDqhFFG4tG9ahhaYQFzymeiXtcodgLiMxhy16cg8ML6EgrXY28MyTZki1ugpoMhXV8wdJGUlNi5UPkLiWHzNgY1GIRH29wb0f2y1BzFa/ZcUlFdEtsluq9QBXpsxREdcu+N+VLEhReTwDwV2xo3xwgVGD94q0W29R6HXtqPnhZyacaue7e3PmriLq0CAwEAAaOCAd0wggHZMBIGCSsGAQQBgjcVAQQFAgMBAAEwIwYJKwYBBAGCNxUCBBYEFCqnUv5kxJq+gpE8RjUpzxD/LwTuMB0GA1UdDgQWBBSfpxVdAF5iXYP05dJlpxtTNRnpcjBcBgNVHSAEVTBTMFEGDCsGAQQBgjdMg30BATBBMD8GCCsGAQUFBwIBFjNodHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20vcGtpb3BzL0RvY3MvUmVwb3NpdG9yeS5odG0wEwYDVR0lBAwwCgYIKwYBBQUHAwgwGQYJKwYBBAGCNxQCBAweCgBTAHUAYgBDAEEwCwYDVR0PBAQDAgGGMA8GA1UdEwEB/wQFMAMBAf8wHwYDVR0jBBgwFoAU1fZWy4/oolxiaNE9lJBb186aGMQwVgYDVR0fBE8wTTBLoEmgR4ZFaHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraS9jcmwvcHJvZHVjdHMvTWljUm9vQ2VyQXV0XzIwMTAtMDYtMjMuY3JsMFoGCCsGAQUFBwEBBE4wTDBKBggrBgEFBQcwAoY+aHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3BraS9jZXJ0cy9NaWNSb29DZXJBdXRfMjAxMC0wNi0yMy5jcnQwDQYJKoZIhvcNAQELBQADggIBAJ1VffwqreEsH2cBMSRb4Z5yS/ypb+pcFLY+TkdkeLEGk5c9MTO1OdfCcTY/2mRsfNB1OW27DzHkwo/7bNGhlBgi7ulmZzpTTd2YurYeeNg2LpypglYAA7AFvonoaeC6Ce5732pvvinLbtg/SHUB2RjebYIM9W0jVOR4U3UkV7ndn/OOPcbzaN9l9qRWqveVtihVJ9AkvUCgvxm2EhIRXT0n4ECWOKz3+SmJw7wXsFSFQrP8DJ6LGYnn8AtqgcKBGUIZUnWKNsIdw2FzLixre24/LAl4FOmRsqlb30mjdAy87JGA0j3mSj5mO0+7hvoyGtmW9I/2kQH2zsZ0/fZMcm8Qq3UwxTSwethQ/gpY3UA8x1RtnWN0SCyxTkctwRQEcb9k+SS+c23Kjgm9swFXSVRk2XPXfx5bRAGOWhmRaw2fpCjcZxkoJLo4S5pu+yFUa2pFEUep8beuyOiJXk+d0tBMdrVXVAmxaQFEfnyhYWxz/gq77EFmPWn9y8FBSX5+k77L+DvktxW/tM4+pTFRhLy/AsGConsXHRWJjXD+57XQKBqJC4822rpM+Zv/Cuk0+CQ1ZyvgDbjmjJnW4SLq8CdCPSWU5nR0W2rRnj7tfqAxM328y+l7vzhwRNGQ8cirOoo6CGJ/2XBjU02N7oJtpQUQwXEGahC0HVUzWLOhcGbyoYICzjCCAjcCAQEwgfihgdCkgc0wgcoxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xJTAjBgNVBAsTHE1pY3Jvc29mdCBBbWVyaWNhIE9wZXJhdGlvbnMxJjAkBgNVBAsTHVRoYWxlcyBUU1MgRVNOOkQ2QkQtRTNFNy0xNjg1MSUwIwYDVQQDExxNaWNyb3NvZnQgVGltZS1TdGFtcCBTZXJ2aWNloiMKAQEwBwYFKw4DAhoDFQDiAEj9CUm7+Udt8MXIkIrx8nJGKKCBgzCBgKR+MHwxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xJjAkBgNVBAMTHU1pY3Jvc29mdCBUaW1lLVN0YW1wIFBDQSAyMDEwMA0GCSqGSIb3DQEBBQUAAgUA56h5VDAiGA8yMDIzMDIyODIxMDAwNFoYDzIwMjMwMzAxMjEwMDA0WjB3MD0GCisGAQQBhFkKBAExLzAtMAoCBQDnqHlUAgEAMAoCAQACAgT3AgH/MAcCAQACAhCCMAoCBQDnqcrUAgEAMDYGCisGAQQBhFkKBAIxKDAmMAwGCisGAQQBhFkKAwKgCjAIAgEAAgMHoSChCjAIAgEAAgMBhqAwDQYJKoZIhvcNAQEFBQADgYEAF3/SDiYXRFVQDusoLnUmuTPPwK1X1xMHQJGQriXwwBRzeQDJMnkox76/gwC3cmwgEkcCFvRl1KdnxZ3zmYQEyNgCcNSTXxZxax0+4GRV5jlgH/Qww2PG6OKxUQrLy0dOu+KTeYpWmltNNA4ZMfxiWs5/4/h/3QNEA00PDEP+uSIxggQNMIIECQIBATCBkzB8MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSYwJAYDVQQDEx1NaWNyb3NvZnQgVGltZS1TdGFtcCBQQ0EgMjAxMAITMwAAAcf7AKBKW/In3AABAAABxzANBglghkgBZQMEAgEFAKCCAUowGgYJKoZIhvcNAQkDMQ0GCyqGSIb3DQEJEAEEMC8GCSqGSIb3DQEJBDEiBCBEyRcFgNUTNLYVmczKmNbm7ktzF1XFG+hBggyGe+yMszCB+gYLKoZIhvcNAQkQAi8xgeowgecwgeQwgb0EIEfn5dviUrJFCznlWC23jIJOx3SG0RJgLI8LXMujCZLJMIGYMIGApH4wfDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEmMCQGA1UEAxMdTWljcm9zb2Z0IFRpbWUtU3RhbXAgUENBIDIwMTACEzMAAAHH+wCgSlvyJ9wAAQAAAccwIgQgy1fji1Hd0xS2fl6pU3WRMBv+yyXNq2AYoyeiyGVa+zgwDQYJKoZIhvcNAQELBQAEggIALSVjwv2QY7yROW4UHRGOc8LTzlaYPDGSAJiI5sQpuqrxd2y+LfUtY9lfOQlaOSsle2eJFBIRW7u/Yz+5VJi1/KdXBfe9aIzTQislSNf3qyjMC7TyuS9pjVYl8ESxC3WLvu5XLpupOiqlHQZ8RXPzh0hOw2s/6QCAK9YpTQ5gznxti+5Dh8NPYfoiRalruEQrP5Psx24EkXfPZ5EGc2GweFRz79XFWQOynulwVhZK8/np65e8imeW4f+rwwMQb5Nqz46nSngrECEXCFBeU90RY1GfJYKpSIXGFEZwjvwYkhqrAynUHJjwe72NdrZHINYfaGqujbNImpPImvIu+lWntY8NkWyHYe00gpGrDHGiSVAPJlCJHEo2Rzmec4LHlCHGDZJOVy2N6cPDsWZxQuPSnUniImsZQc/xDclNoSzHSgM4RODfOe8sQkGoMBrIBKzHJ9fC7iulabj0RS7SwJ9N7KYESNDwLUVEmAD4j54ih3I4MkVAfBVnQb3YqZW35BdO8FQloTH6N4JyKvUkLkz+lhT9BzCEXIQTLPKXuMDGN3rzRcU9vsJAhCh+XGaCst9sfkBa5l+F5GoWjd2at077yj13C2R7WsjxUDm6WdBTRNk92Y7KwNnq0rOfULOSLYSoJSl+6e+nvrETrr6B8SVK64O0A6iTnB9x0V/UoGvZ5fwAAAAA</CounterSignature></Object></Signature></doc>

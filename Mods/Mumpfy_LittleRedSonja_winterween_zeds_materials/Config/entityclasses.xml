@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<configs>
+
+   
+<!-- ARLENE -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieArlene']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_COLD,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_FROZEN,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_SNOW HIGH,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_SNOW LOW"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieArleneFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_COLD,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_FROZEN,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_SNOW HIGH,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_SNOW LOW"/>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieArleneRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Arlene_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Arlene_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Arlene_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_Rad"/>
+		</effect_group>
+	</append>
+	
+	
+<!-- BIG MOMMA -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieFemaleFat']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_COLD,#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_FROZEN,#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_SNOW HIGH,#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_SNOW LOW"/>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieFemaleFatFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_COLD,#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_FROZEN,#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_SNOW HIGH,#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_SNOW LOW"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieFemaleFatRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_BigMomma_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_BigMomma_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_BigMomma_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_Rad"/>
+		</effect_group>
+	</append>
+	
+	
+<!-- BIKER -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieBiker']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Biker_COLD,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Biker_FROZEN,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Biker_SNOW HIGH,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Biker_SNOW LOW"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieBikerFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Biker_COLD,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Biker_FROZEN,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Biker_SNOW HIGH,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Biker_SNOW LOW"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieBikerRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Biker_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Biker_Rad"/>
+		</effect_group>
+	</append>
+	
+	
+	
+<!-- BOE -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieBoe']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_COLD,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_FROZEN,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_SNOW HIGH,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_SNOW LOW"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieBoeFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_COLD,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_FROZEN,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_SNOW HIGH,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_SNOW LOW"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieBoeRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Boe_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Boe_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Boe_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_Rad"/>
+		</effect_group>
+	</append>
+	
+	
+<!-- BURNT -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieBurnt']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Burnt_Zombie_COLD,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Burnt_Zombie_FROZEN,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Burnt_Zombie_SNOW HIGH,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Burnt_Zombie_SNOW LOW"/>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieBurntFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Burnt_Zombie_COLD,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Burnt_Zombie_FROZEN,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Burnt_Zombie_SNOW HIGH,#@modfolder:Resources/ww_zeds_1.unity3d?HD_Burnt_Zombie_SNOW LOW"/>
+	</append>
+	
+	<append xpath="entity_classes/entity_class[@name='zombieBurntRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Burnt_Zombie_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Burnt_Zombie_Rad"/>
+		</effect_group>
+	</append>
+	
+	
+	<append xpath="entity_classes/entity_class[@name='zombieBurntRadiated']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Burnt_Zombie_Rad"/>
+	</append>
+	
+	
+<!-- PARTY GIRL -->
+
+	<append xpath="entity_classes/entity_class[@name='zombiePartyGirl']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_COLD,#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_FROZEN,#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_SNOW HIGH,#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_SNOW LOW"/>
+	</append>	
+
+	<append xpath="entity_classes/entity_class[@name='zombiePartyGirlFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_COLD,#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_FROZEN,#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_SNOW HIGH,#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_SNOW LOW"/>
+	</append>	
+	
+	<append xpath="entity_classes/entity_class[@name='zombiePartyGirlRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Cocktail_Waitress_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Cocktail_Waitress_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Cocktail_Waitress_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_Rad"/>
+		</effect_group>
+	</append>
+	
+<!-- COP -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieFatCop']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Cop_COLD,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Cop_FROZEN,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Cop_SNOW HIGH,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Cop_SNOW LOW"/>
+	</append>	
+
+	<append xpath="entity_classes/entity_class[@name='zombieFatCopFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Cop_COLD,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Cop_FROZEN,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Cop_SNOW HIGH,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Cop_SNOW LOW"/>
+	</append>		
+	
+	<append xpath="entity_classes/entity_class[@name='zombieFatCopRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Cop_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Cop_Rad"/>
+		</effect_group>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieFatCopRadiated']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Cop_Rad"/>
+	</append>
+	
+	
+<!-- CRAWLER -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieSteveCrawler']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Crawler_COLD,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Crawler_FROZEN,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Crawler_SNOW HIGH,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Crawler_SNOW LOW"/>
+	</append>	
+
+	<append xpath="entity_classes/entity_class[@name='zombieSteveCrawlerFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Crawler_COLD,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Crawler_FROZEN,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Crawler_SNOW HIGH,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Crawler_SNOW LOW"/>
+	</append>	
+	
+	
+<!-- DARLENE -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieDarlene']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_COLD,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_FROZEN,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_SNOW HIGH,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_SNOW LOW"/>
+	</append>	
+	
+	<append xpath="entity_classes/entity_class[@name='zombieDarleneFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_COLD,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_FROZEN,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_SNOW HIGH,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_SNOW LOW"/>
+	</append>	
+	
+	<append xpath="entity_classes/entity_class[@name='zombieDarleneRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Darlene_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Darlene_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Darlene_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_Rad"/>
+		</effect_group>
+	</append>
+	
+	
+<!-- DEMOLITION -->
+
+
+	<append xpath="entity_classes/entity_class[@name='zombieDemolition']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Demo" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Demo_COLD"/>
+	</effect_group>
+	</append>
+	
+	
+	
+<!-- HAWAIIAN -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieFatHawaiian']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie COLD,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie FROZEN,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie SNOW HIGH,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie SNOW LOW"/>
+	</append>	
+		
+	<append xpath="entity_classes/entity_class[@name='zombieFatHawaiianFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie COLD,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie FROZEN,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie SNOW HIGH,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie SNOW LOW"/>
+	</append>	
+	
+	<append xpath="entity_classes/entity_class[@name='zombieFatHawaiianRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated4" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated5" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		</effect_group>
+	</append>
+	
+		
+<!-- BOWLER -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieBowler']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie COLD,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie FROZEN,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie SNOW HIGH,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie SNOW LOW"/>
+	</append>	
+		
+	<append xpath="entity_classes/entity_class[@name='zombieBowlerFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie COLD,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie FROZEN,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie SNOW HIGH,#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie SNOW LOW"/>
+	</append>		
+	
+	<append xpath="entity_classes/entity_class[@name='zombieBowlerRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated4" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated5" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+
+
+		</effect_group>
+	</append>
+	
+<!-- HAZMAT -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieMaleHazmat']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_COLD,#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_FROZEN,#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_SNOW HIGH,#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_SNOW LOW"/>
+	</append>		
+	
+	<append xpath="entity_classes/entity_class[@name='zombieMaleHazmatFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_COLD,#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_FROZEN,#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_SNOW HIGH,#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_SNOW LOW"/>
+	</append>		
+	
+	<append xpath="entity_classes/entity_class[@name='zombieMaleHazmatRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hazmat_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hazmat_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hazmat_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_Rad"/>
+		</effect_group>
+	</append>
+	
+	
+<!-- JOE -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieJoe']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_COLD,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_FROZEN,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_SNOW HIGH,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_SNOW LOW"/>
+	</append>			
+	
+	<append xpath="entity_classes/entity_class[@name='zombieJoeFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_COLD,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_FROZEN,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_SNOW HIGH,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_SNOW LOW"/>
+	</append>			
+		
+	<append xpath="entity_classes/entity_class[@name='zombieJoeRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Joe_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Joe_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Joe_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_Rad"/>
+		</effect_group>
+	</append>
+	
+			
+<!-- LAB -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieLab']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Lab_COLD,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Lab_FROZEN,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Lab_SNOW HIGH,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Lab_SNOW LOW"/>
+	</append>			
+		
+	<append xpath="entity_classes/entity_class[@name='zombieLabFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Lab_COLD,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Lab_FROZEN,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Lab_SNOW HIGH,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Lab_SNOW LOW"/>
+	</append>			
+		
+	<append xpath="entity_classes/entity_class[@name='zombieLabRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Lab_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Lab_Rad"/>
+		</effect_group>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieLabRadiated']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Lab_Rad"/>
+	</append>		
+		
+		
+			
+<!-- LUMBERJACK -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieLumberjack']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_LumberjackZ_COLD,#@modfolder:Resources/ww_zeds_3.unity3d?HD_LumberjackZ_FROZEN,#@modfolder:Resources/ww_zeds_3.unity3d?HD_LumberjackZ_SNOW HIGH,#@modfolder:Resources/ww_zeds_3.unity3d?HD_LumberjackZ_SNOW LOW"/>
+	</append>		
+
+
+	<append xpath="entity_classes/entity_class[@name='zombieLumberjackFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_LumberjackZ_COLD,#@modfolder:Resources/ww_zeds_3.unity3d?HD_LumberjackZ_FROZEN,#@modfolder:Resources/ww_zeds_3.unity3d?HD_LumberjackZ_SNOW HIGH,#@modfolder:Resources/ww_zeds_3.unity3d?HD_LumberjackZ_SNOW LOW"/>
+	</append>			
+	
+	
+	<append xpath="entity_classes/entity_class[@name='zombieLumberjackRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_LumberjackZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_LumberjackZ_Rad"/>
+		</effect_group>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieLumberjackRadiated']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_LumberjackZ_Rad"/>
+	</append>		
+		
+			
+	
+<!-- MARLENE -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieMarlene']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_COLD,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_FROZEN,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_SNOW HIGH,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_SNOW LOW"/>
+	</append>		
+	
+	
+	<append xpath="entity_classes/entity_class[@name='zombieMarleneFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_COLD,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_FROZEN,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_SNOW HIGH,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_SNOW LOW"/>
+	</append>		
+
+	<append xpath="entity_classes/entity_class[@name='zombieMarleneRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Marlene_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Marlene_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Marlene_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_Rad"/>
+		</effect_group>
+	</append>
+		
+		
+<!-- JANITOR -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieJanitor']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_COLD,#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_FROZEN,#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_SNOW HIGH,#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_SNOW LOW"/>
+	</append>		
+	
+	<append xpath="entity_classes/entity_class[@name='zombieJanitorFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_COLD,#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_FROZEN,#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_SNOW HIGH,#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_SNOW LOW"/>
+	</append>		
+	
+	<append xpath="entity_classes/entity_class[@name='zombieJanitorRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Mechanic_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Mechanic_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Mechanic_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_Rad"/>
+		</effect_group>
+	</append>
+		
+				
+<!-- INMATE -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieInmate']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_COLD,#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_FROZEN,#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_SNOW HIGH,#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_SNOW LOW"/>
+	</append>		
+	
+	<append xpath="entity_classes/entity_class[@name='zombieInmateFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_COLD,#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_FROZEN,#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_SNOW HIGH,#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_SNOW LOW"/>
+	</append>		
+	
+	<append xpath="entity_classes/entity_class[@name='zombieInmateRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Mechanic_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_Rad"/>
+		</effect_group>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieInmateRadiated']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_Rad"/>
+	</append>			
+	
+<!-- MOE -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieMoe']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_COLD,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_FROZEN,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_BSNOW HIGH,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_SNOW LOW"/>
+	</append>		
+				
+	<append xpath="entity_classes/entity_class[@name='zombieMoeFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_COLD,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_FROZEN,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_BSNOW HIGH,#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_SNOW LOW"/>
+	</append>		
+						
+	<append xpath="entity_classes/entity_class[@name='zombieMoeRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Moe_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Moe_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Moe_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_Rad"/>
+		</effect_group>
+	</append>		
+	
+	
+<!-- NURSE -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieNurse']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_COLD,#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_FROZEN,#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_SNOW HIGH,#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_SNOW LOW"/>
+	</append>			
+		
+	<append xpath="entity_classes/entity_class[@name='zombieNurseFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_COLD,#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_FROZEN,#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_SNOW HIGH,#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_SNOW LOW"/>
+	</append>			
+
+	<append xpath="entity_classes/entity_class[@name='zombieNurseRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_NurseZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_NurseZ_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_NurseZ_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_Rad"/>
+		</effect_group>
+	</append>				
+				
+				
+<!-- RADZ -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieMutated']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_4.unity3d?HD_RadZ_COLD,#@modfolder:Resources/ww_zeds_4.unity3d?HD_RadZ_FROZEN,#@modfolder:Resources/ww_zeds_4.unity3d?HD_RadZ_SNOW HIGH,#@modfolder:Resources/ww_zeds_4.unity3d?HD_RadZ_SNOW LOW"/>
+	</append>			
+		
+	<append xpath="entity_classes/entity_class[@name='zombieMutatedFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_4.unity3d?HD_RadZ_COLD,#@modfolder:Resources/ww_zeds_4.unity3d?HD_RadZ_FROZEN,#@modfolder:Resources/ww_zeds_4.unity3d?HD_RadZ_SNOW HIGH,#@modfolder:Resources/ww_zeds_4.unity3d?HD_RadZ_SNOW LOW"/>
+	</append>			
+				
+				
+	<append xpath="entity_classes/entity_class[@name='zombieMutatedRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_RadZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_RadZ_Rad"/>
+		</effect_group>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieMutatedRadiated']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_4.unity3d?HD_RadZ_Rad"/>
+	</append>			
+				
+				
+				
+<!-- SCREAMER -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieScreamer']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_4.unity3d?HD_Screamer_COLD,#@modfolder:Resources/ww_zeds_4.unity3d?HD_Screamer_FROZEN,#@modfolder:Resources/ww_zeds_4.unity3d?HD_Screamer_SNOW HIGH,#@modfolder:Resources/ww_zeds_4.unity3d?HD_Screamer_SNOW LOW"/>
+	</append>			
+	
+	<append xpath="entity_classes/entity_class[@name='zombieScreamerFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_4.unity3d?HD_Screamer_COLD,#@modfolder:Resources/ww_zeds_4.unity3d?HD_Screamer_FROZEN,#@modfolder:Resources/ww_zeds_4.unity3d?HD_Screamer_SNOW HIGH,#@modfolder:Resources/ww_zeds_4.unity3d?HD_Screamer_SNOW LOW"/>
+	</append>			
+	
+		
+	<append xpath="entity_classes/entity_class[@name='zombieScreamerRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Screamer_Radiated" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_Screamer_Rad"/>
+		</effect_group>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieScreamerRadiated']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_4.unity3d?HD_Screamer_Rad"/>
+	</append>			
+	
+	
+		
+<!-- SOLDIER -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieSoldier']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_4.unity3d?HD_Soldier_COLD,#@modfolder:Resources/ww_zeds_4.unity3d?HD_Soldier_FROZEN,#@modfolder:Resources/ww_zeds_4.unity3d?HD_Soldier_SNOW HIGH,#@modfolder:Resources/ww_zeds_4.unity3d?HD_Soldier_SNOW LOW"/>
+	</append>			
+		
+	<append xpath="entity_classes/entity_class[@name='zombieSoldierFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_4.unity3d?HD_Soldier_COLD,#@modfolder:Resources/ww_zeds_4.unity3d?HD_Soldier_FROZEN,#@modfolder:Resources/ww_zeds_4.unity3d?HD_Soldier_SNOW HIGH,#@modfolder:Resources/ww_zeds_4.unity3d?HD_Soldier_SNOW LOW"/>
+	</append>			
+		
+		
+	<append xpath="entity_classes/entity_class[@name='zombieSoldierRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Soldier_Radiated" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_Soldier_Rad"/>
+		</effect_group>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieSoldierRadiated']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_4.unity3d?HD_Soldier_Rad"/>
+	</append>			
+						
+				
+		
+<!-- STEVE -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieSteve']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_COLD,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_FROZEN,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_SNOW HIGH,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_SNOW LOW"/>
+	</append>			
+		
+	<append xpath="entity_classes/entity_class[@name='zombieSteveFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_COLD,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_FROZEN,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_SNOW HIGH,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_SNOW LOW"/>
+	</append>					
+
+	<append xpath="entity_classes/entity_class[@name='zombieSteveRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Steve_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Steve_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Steve_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Steve_Radiated4" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Steve_Radiated5" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
+
+		</effect_group>
+	</append>				
+				
+				
+<!-- SUIT -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieBusinessMan']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_COLD,#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_FROZEN,#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_SNOW HIGH,#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_SNOW LOW"/>
+	</append>	
+
+	<append xpath="entity_classes/entity_class[@name='zombieBusinessManFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_COLD,#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_FROZEN,#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_SNOW HIGH,#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_SNOW LOW"/>
+	</append>	
+
+	<append xpath="entity_classes/entity_class[@name='zombieBusinessManRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_SuitZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_SuitZ_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_SuitZ_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_Rad"/>
+		</effect_group>
+	</append>			
+	
+<!-- THUG -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieSkateboarder']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_COLD,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_FROZEN,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_SNOW HIGH,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_SNOW LOW"/>
+	</append>
+
+
+	<append xpath="entity_classes/entity_class[@name='zombieSkateboarderFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_COLD,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_FROZEN,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_SNOW HIGH,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_SNOW LOW"/>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieSkateboarderRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Thug_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Thug_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Thug_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_Rad"/>
+		</effect_group>
+	</append>		
+	
+	
+<!-- TOM CLARK -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieTomClark']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_COLD,#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_FROZEN,#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_SNOW HIGH,#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_SNOW LOW"/>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieTomClarkFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_COLD,#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_FROZEN,#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_SNOW HIGH,#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_SNOW LOW"/>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieTomClarkRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_TomClark_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_TomClark_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_TomClark_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_Rad"/>
+		</effect_group>
+	</append>	
+
+<!-- WIGHT -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieWightFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Wight_COLD,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Wight_FROZEN,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Wight_SNOW HIGH,#@modfolder:Resources/ww_zeds_5.unity3d?HD_Wight_SNOW LOW"/>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieWightRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Wight_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Wight_Rad"/>
+		</effect_group>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieWightRadiated']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Wight_Rad"/>
+	</append>			
+					
+		
+<!-- SPIDER -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieSpider']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Spider_COLD,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Spider_FROZEN,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Spider_SNOW HIGH,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Spider_SNOW LOW"/>
+	</append>			
+		
+	<append xpath="entity_classes/entity_class[@name='zombieSpiderFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Spider_COLD,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Spider_FROZEN,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Spider_SNOW HIGH,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Spider_SNOW LOW"/>
+	</append>			
+		
+	<append xpath="entity_classes/entity_class[@name='zombieSpiderRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Spider_Radiated" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Spider_Rad"/>
+		</effect_group>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieSpiderRadiated']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Spider_Rad"/>
+	</append>			
+				
+				
+<!-- WORKER -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieUtilityWorker']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_COLD,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_FROZEN,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_SNOW HIGH,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_BSNOW LOW"/>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieUtilityWorkerFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_COLD,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_FROZEN,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_SNOW HIGH,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_BSNOW LOW"/>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieUtilityWorkerRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_WorkerZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_WorkerZ_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_WorkerZ_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_Rad"/>
+		</effect_group>
+	</append>	
+	
+	
+<!-- YO -->
+
+	<append xpath="entity_classes/entity_class[@name='zombieYo']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_COLD,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_FROZENr,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_SNOW HIGH,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_SNOW LOW"/>
+	</append>
+
+	<append xpath="entity_classes/entity_class[@name='zombieYoFeral']">
+		<property name="AltMats" value="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_COLD,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_FROZENr,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_SNOW HIGH,#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_SNOW LOW"/>
+	</append>
+
+
+	<append xpath="entity_classes/entity_class[@name='zombieYoRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_YoRadiated" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_YoRadiated2" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_YoRadiated3" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_Rad"/>
+		</effect_group>
+	</append>	
+	
+
+
+<!-- zombie bear -->
+
+	<append xpath="entity_classes/entity_class[@name='animalZombieBear']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="animalBearZombie" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?zombie_bear"/>
+	</effect_group>
+	</append>
+	
+<!-- zombie dog -->
+
+	<append xpath="entity_classes/entity_class[@name='animalZombieDog']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="zombiedog" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?zombiedog_frozen"/>
+	</effect_group>
+	</append>	
+	
+	
+<!-- zombie dire wolf -->
+
+	<append xpath="entity_classes/entity_class[@name='animalDireWolf']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="DireWolf" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?direwolf_frozen 1"/>
+	</effect_group>
+	</append>		
+
+
+<!-- zombie vulture -->
+
+	<append xpath="entity_classes/entity_class[@name='animalZombieVulture']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="animalBirdVulture" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?zombie_vulture"/>
+	</effect_group>
+	</append>		
+
+	<append xpath="entity_classes/entity_class[@name='animalZombieVultureRadiated']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="animalBirdVulture" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?zombie_vulture"/>
+	</effect_group>
+	</append>		
+
+	<append xpath="entity_classes/entity_class[@name='animalBossGrace']">
+		<effect_group name="ReplaceMaterial">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="GRACE" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?grace"/>
+	</effect_group>
+	</append>		
+
+</configs>
+
+
+
+
+
+
+
+
+
+
+
+

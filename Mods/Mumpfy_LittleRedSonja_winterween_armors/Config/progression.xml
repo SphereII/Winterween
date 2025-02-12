@@ -1,0 +1,10 @@
+<MumpfyAndLittleRedSonja>
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/display_entry[@name_key='armorT3']/unlock_entry/@item">,armorWinterArmor</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/display_entry[@name_key='armorT3']/unlock_entry/@recipes">,armorWinterOutfit_ww_male,armorWinterGloves_ww_male,armorWinterBoots_ww_male,armorWinterHelmet_ww_male,armorWinterOutfit_ww_female,armorWinterGloves_ww_female,armorWinterBoots_ww_female,armorWinterHelmet_ww_female</append>
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/effect_group/passive_effect[@level='11,100']/@tags">,armorWinterOutfit_ww_male,armorWinterGloves_ww_male,armorWinterBoots_ww_male,armorWinterHelmet_ww_male,armorWinterOutfit_ww_female,armorWinterGloves_ww_female,armorWinterBoots_ww_female,armorWinterHelmet_ww_female</append>
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/effect_group/passive_effect[@level='20,40,60,80,100']/@tags">,armorWinterOutfit_ww_male,armorWinterGloves_ww_male,armorWinterBoots_ww_male,armorWinterHelmet_ww_male,armorWinterOutfit_ww_female,armorWinterGloves_ww_female,armorWinterBoots_ww_female,armorWinterHelmet_ww_female</append>
+
+</MumpfyAndLittleRedSonja>

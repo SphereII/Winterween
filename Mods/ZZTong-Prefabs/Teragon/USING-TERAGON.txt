@@ -1,0 +1,50 @@
+USING THE ZZTONG-PREFABS MODLET WITH TERAGON
+
+Teragon affords you lots of options -- more than I can support. So these
+instructions describe one method for using the list provided along with the
+list for Vanilla content provided with Teragon.
+
+1. Launch Teragon
+
+2. Load the "world generator 1.ini" present found in the default directory.
+
+3. Switch to the Expert Tab
+
+4. Add an "Add Source Path" step.
+
+    Under the "Available Commands", locate the "Add Source Path" step.
+
+    Double click the "Add Source Path" to add the command to the Command Queue.
+
+    Drag and drop the "Add Source Path" step to follow the "Set Game Data" step.
+
+    Set the "Directory" path to:
+        C:/Users/[username]/AppData/Roaming/7DaysToDie/Mods/ZZTong-Prefabs
+        Note that "[username]" is a variable understood by Teragon.
+
+    Enable "Subdirectories" by checking that box if it is not already enabled.
+
+    Again, that path is for a typical setup. If you locate things in different
+        places then you'll have to sort that out. (I'm not psychic.)
+
+5. Click RUN button (found on the left side of the UI) to generate a world.
+
+6. You will see a Preview after the world is generated but before roads are added.
+Roads take a long time, so take advantage of your opportunity to preview before
+you tell it to Continue with roads.
+
+GATEWAY TILES
+
+As of the time of this writing, Teragon does support Gateway Tiles as part of
+the definition of a Town within the Town Property List. I could provide a list
+for this, but it would assume control over the towns. Thus, if you want to mix
+in this modlet's Tiles for gateways into Towns, you need to use Teragon's
+features related to defining Town Properties where you can specify the Gateway
+Tiles to be used.
+
+EXPECTATIONS
+
+Teragon has appealing features as well as quirks and challenges. There are a
+number of commands and options to get to know. Keep in mind Teragon is still
+under development as is support for it from modlets like this.
+
