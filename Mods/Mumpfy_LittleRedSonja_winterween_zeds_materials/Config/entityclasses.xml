@@ -16,9 +16,9 @@
 
 	<append xpath="entity_classes/entity_class[@name='zombieArleneRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Arlene_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Arlene_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Arlene_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Arlene_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Arlene_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Arlene_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_Rad"/>
 		</effect_group>
 	</append>
 	
@@ -35,9 +35,9 @@
 	
 	<append xpath="entity_classes/entity_class[@name='zombieFemaleFatRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_BigMomma_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_BigMomma_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_BigMomma_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_BigMomma_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_BigMomma_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_BigMomma_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_BigMomma_Rad"/>
 		</effect_group>
 	</append>
 	
@@ -54,7 +54,7 @@
 	
 	<append xpath="entity_classes/entity_class[@name='zombieBikerRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Biker_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Biker_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Biker_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Biker_Rad"/>
 		</effect_group>
 	</append>
 	
@@ -72,9 +72,9 @@
 	
 	<append xpath="entity_classes/entity_class[@name='zombieBoeRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Boe_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Boe_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Boe_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Boe_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Boe_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Boe_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Boe_Rad"/>
 		</effect_group>
 	</append>
 	
@@ -91,7 +91,7 @@
 	
 	<append xpath="entity_classes/entity_class[@name='zombieBurntRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Burnt_Zombie_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Burnt_Zombie_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Burnt_Zombie_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Burnt_Zombie_Rad"/>
 		</effect_group>
 	</append>
 	
@@ -113,9 +113,9 @@
 	
 	<append xpath="entity_classes/entity_class[@name='zombiePartyGirlRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Cocktail_Waitress_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Cocktail_Waitress_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Cocktail_Waitress_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Cocktail_Waitress_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Cocktail_Waitress_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Cocktail_Waitress_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_CocktailWaitress_Rad"/>
 		</effect_group>
 	</append>
 	
@@ -131,7 +131,7 @@
 	
 	<append xpath="entity_classes/entity_class[@name='zombieFatCopRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Cop_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Cop_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Cop_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Cop_Rad"/>
 		</effect_group>
 	</append>
 
@@ -163,9 +163,9 @@
 	
 	<append xpath="entity_classes/entity_class[@name='zombieDarleneRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Darlene_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Darlene_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Darlene_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Darlene_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Darlene_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Darlene_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Darlene_Rad"/>
 		</effect_group>
 	</append>
 	
@@ -175,7 +175,7 @@
 
 	<append xpath="entity_classes/entity_class[@name='zombieDemolition']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Demo" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Demo_COLD"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Demo" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Demo_COLD"/>
 	</effect_group>
 	</append>
 	
@@ -193,11 +193,11 @@
 	
 	<append xpath="entity_classes/entity_class[@name='zombieFatHawaiianRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Hawaiian_Zombie_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Hawaiian_Zombie_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Hawaiian_Zombie_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Hawaiian_Zombie_Radiated4" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Hawaiian_Zombie_Radiated5" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated4" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated5" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
 		</effect_group>
 	</append>
 	
@@ -214,11 +214,11 @@
 	
 	<append xpath="entity_classes/entity_class[@name='zombieBowlerRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Hawaiian_Zombie_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Hawaiian_Zombie_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Hawaiian_Zombie_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Hawaiian_Zombie_Radiated4" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Hawaiian_Zombie_Radiated5" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated4" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hawaiian_Zombie_Radiated5" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_Hawaiian_Zombie Rad"/>
 
 
 		</effect_group>
@@ -236,9 +236,9 @@
 	
 	<append xpath="entity_classes/entity_class[@name='zombieMaleHazmatRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Hazmat_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Hazmat_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Hazmat_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hazmat_Radiated" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hazmat_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Hazmat_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_2.unity3d?HD_HazmatZ_Rad"/>
 		</effect_group>
 	</append>
 	
@@ -255,9 +255,9 @@
 		
 	<append xpath="entity_classes/entity_class[@name='zombieJoeRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Joe_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Joe_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Joe_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Joe_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Joe_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Joe_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Joe_Rad"/>
 		</effect_group>
 	</append>
 	
@@ -274,7 +274,7 @@
 		
 	<append xpath="entity_classes/entity_class[@name='zombieLabRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Lab_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Lab_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Lab_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Lab_Rad"/>
 		</effect_group>
 	</append>
 
@@ -298,7 +298,7 @@
 	
 	<append xpath="entity_classes/entity_class[@name='zombieLumberjackRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_LumberjackZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_LumberjackZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_LumberjackZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_LumberjackZ_Rad"/>
 		</effect_group>
 	</append>
 
@@ -321,9 +321,9 @@
 
 	<append xpath="entity_classes/entity_class[@name='zombieMarleneRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Marlene_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Marlene_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Marlene_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Marlene_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Marlene_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Marlene_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Marlene_Rad"/>
 		</effect_group>
 	</append>
 		
@@ -340,9 +340,9 @@
 	
 	<append xpath="entity_classes/entity_class[@name='zombieJanitorRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Mechanic_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Mechanic_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Mechanic_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Mechanic_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Mechanic_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Mechanic_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_Rad"/>
 		</effect_group>
 	</append>
 		
@@ -359,7 +359,7 @@
 	
 	<append xpath="entity_classes/entity_class[@name='zombieInmateRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Mechanic_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Mechanic_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_MechanicZ_Rad"/>
 		</effect_group>
 	</append>
 
@@ -379,9 +379,9 @@
 						
 	<append xpath="entity_classes/entity_class[@name='zombieMoeRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Moe_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Moe_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Moe_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Moe_Radiated" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Moe_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Moe_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_3.unity3d?HD_Moe_Rad"/>
 		</effect_group>
 	</append>		
 	
@@ -398,9 +398,9 @@
 
 	<append xpath="entity_classes/entity_class[@name='zombieNurseRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_NurseZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_NurseZ_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_NurseZ_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_NurseZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_NurseZ_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_NurseZ_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_NurseZ_Rad"/>
 		</effect_group>
 	</append>				
 				
@@ -418,7 +418,7 @@
 				
 	<append xpath="entity_classes/entity_class[@name='zombieMutatedRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_RadZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_RadZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_RadZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_RadZ_Rad"/>
 		</effect_group>
 	</append>
 
@@ -441,7 +441,7 @@
 		
 	<append xpath="entity_classes/entity_class[@name='zombieScreamerRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Screamer_Radiated" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_Screamer_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Screamer_Radiated" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_Screamer_Rad"/>
 		</effect_group>
 	</append>
 
@@ -464,7 +464,7 @@
 		
 	<append xpath="entity_classes/entity_class[@name='zombieSoldierRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Soldier_Radiated" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_Soldier_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Soldier_Radiated" replace_material="#@modfolder:Resources/ww_zeds_4.unity3d?HD_Soldier_Rad"/>
 		</effect_group>
 	</append>
 
@@ -486,11 +486,11 @@
 
 	<append xpath="entity_classes/entity_class[@name='zombieSteveRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Steve_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Steve_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Steve_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Steve_Radiated4" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Steve_Radiated5" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Steve_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Steve_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Steve_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Steve_Radiated4" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Steve_Radiated5" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Steve_Rad"/>
 
 		</effect_group>
 	</append>				
@@ -508,9 +508,9 @@
 
 	<append xpath="entity_classes/entity_class[@name='zombieBusinessManRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_SuitZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_SuitZ_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_SuitZ_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_SuitZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_SuitZ_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_SuitZ_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_SuitZ_Rad"/>
 		</effect_group>
 	</append>			
 	
@@ -527,9 +527,9 @@
 
 	<append xpath="entity_classes/entity_class[@name='zombieSkateboarderRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Thug_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Thug_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Thug_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Thug_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Thug_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Thug_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Thug_Rad"/>
 		</effect_group>
 	</append>		
 	
@@ -546,9 +546,9 @@
 
 	<append xpath="entity_classes/entity_class[@name='zombieTomClarkRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_TomClark_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_TomClark_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_TomClark_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_TomClark_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_TomClark_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_TomClark_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_TomClark_Rad"/>
 		</effect_group>
 	</append>	
 
@@ -560,7 +560,7 @@
 
 	<append xpath="entity_classes/entity_class[@name='zombieWightRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Wight_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Wight_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Wight_Radiated" replace_material="#@modfolder:Resources/ww_zeds_5.unity3d?HD_Wight_Rad"/>
 		</effect_group>
 	</append>
 
@@ -581,7 +581,7 @@
 		
 	<append xpath="entity_classes/entity_class[@name='zombieSpiderRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_Spider_Radiated" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Spider_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_Spider_Radiated" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Spider_Rad"/>
 		</effect_group>
 	</append>
 
@@ -602,9 +602,9 @@
 
 	<append xpath="entity_classes/entity_class[@name='zombieUtilityWorkerRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_WorkerZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_WorkerZ_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_WorkerZ_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_WorkerZ_Radiated" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_WorkerZ_Radiated2" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_WorkerZ_Radiated3" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Worker_Rad"/>
 		</effect_group>
 	</append>	
 	
@@ -622,9 +622,9 @@
 
 	<append xpath="entity_classes/entity_class[@name='zombieYoRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_YoRadiated" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_YoRadiated2" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_Rad"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="HD_YoRadiated3" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_YoRadiated" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_YoRadiated2" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_Rad"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="HD_YoRadiated3" replace_material="#@modfolder:Resources/ww_zeds_6.unity3d?HD_Yo_Rad"/>
 		</effect_group>
 	</append>	
 	
@@ -634,7 +634,7 @@
 
 	<append xpath="entity_classes/entity_class[@name='animalZombieBear']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="animalBearZombie" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?zombie_bear"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="animalBearZombie" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?zombie_bear"/>
 	</effect_group>
 	</append>
 	
@@ -642,7 +642,7 @@
 
 	<append xpath="entity_classes/entity_class[@name='animalZombieDog']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="zombiedog" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?zombiedog_frozen"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="zombiedog" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?zombiedog_frozen"/>
 	</effect_group>
 	</append>	
 	
@@ -651,7 +651,7 @@
 
 	<append xpath="entity_classes/entity_class[@name='animalDireWolf']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="DireWolf" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?direwolf_frozen 1"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="DireWolf" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?direwolf_frozen 1"/>
 	</effect_group>
 	</append>		
 
@@ -660,19 +660,19 @@
 
 	<append xpath="entity_classes/entity_class[@name='animalZombieVulture']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="animalBirdVulture" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?zombie_vulture"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="animalBirdVulture" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?zombie_vulture"/>
 	</effect_group>
 	</append>		
 
 	<append xpath="entity_classes/entity_class[@name='animalZombieVultureRadiated']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="animalBirdVulture" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?zombie_vulture"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="animalBirdVulture" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?zombie_vulture"/>
 	</effect_group>
 	</append>		
 
 	<append xpath="entity_classes/entity_class[@name='animalBossGrace']">
 		<effect_group name="ReplaceMaterial">
-		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, MaterialModifier" target_material_name="GRACE" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?grace"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" target_material_name="GRACE" replace_material="#@modfolder:Resources/ww_zeds_7.unity3d?grace"/>
 	</effect_group>
 	</append>		
 
